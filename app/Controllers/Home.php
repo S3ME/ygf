@@ -53,7 +53,8 @@ class Home extends BaseController
         $data['desc']           = 'Program YGF 30';
 
 		// Rendering View
-        return view('program', $data);
+        // return view('program', $data);
+        return view('underconstruction', $data);
 	}
 
 	public function news()
@@ -62,20 +63,21 @@ class Home extends BaseController
 		$PressModel = new PressModel();
 
 		// Populating Data
-		$press = $PressModel->orderBy('created_at', 'DESC')->findAll();
+		// $press = $PressModel->orderBy('created_at', 'DESC')->findAll();
 
-		$url = 'https://news.google.com/rss/search?q=Yogyakarta%20Gamelan%20Festival&hl=id&gl=ID&ceid=ID%3Aid';
-		$feeds = simplexml_load_file($url);
+		// $url = 'https://news.google.com/rss/search?q=Yogyakarta%20Gamelan%20Festival&hl=id&gl=ID&ceid=ID%3Aid';
+		// $feeds = simplexml_load_file($url);
 
 		// Parsing Data to View
         $data                   = $this->data;
         $data['title']          = 'Berita YGF 30';
         $data['desc']           = 'Berita YGF 30';
-		$data['articles']		= $press;
-		$data['newses']			= $feeds->channel->item;
+		// $data['articles']		= $press;
+		// $data['newses']			= $feeds->channel->item;
 
 		// Rendering View
-        return view('news', $data);
+        // return view('news', $data);
+        return view('underconstruction', $data);
 	}
 
 	public function newsdetail($slug)
@@ -110,17 +112,18 @@ class Home extends BaseController
 	public function gallery()
 	{
 		// Populating data
-		$dirPath = FCPATH.'/gallery';
-		$files = scandir($dirPath);
+		// $dirPath = FCPATH.'/gallery';
+		// $files = scandir($dirPath);
 		
 		// Parsing Data to View
         $data                   = $this->data;
         $data['title']          = 'Gallery YGF 30';
         $data['desc']           = 'Gallery YGF 30';
-		$data['files']			= $files;
+		// $data['files']			= $files;
 
 		// Rendering View
-        return view('gallery', $data);
+        // return view('gallery', $data);
+        return view('underconstruction', $data);
 	}
 	
 	public function merchandise()
