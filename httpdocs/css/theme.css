@@ -10030,7 +10030,7 @@ ul.uk-nav-sub {
     transition-property: color, background-color, border-color, box-shadow;
     position: relative;
     z-index: 1;
-    font-family: "Cinzel Decorative", serif;
+    /* font-family: "Cinzel Decorative", serif; */
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -18301,12 +18301,12 @@ body {
 }
 
 .about-container {
-    background-color: #21070B;
-    background-image: url(../images/mandala.png), url(../images/29bg.jpg);
-    background-position: 50% -60vh, center;
-    background-repeat: no-repeat, no-repeat;
-	background-size: 60% auto, cover;
-    background-attachment: fixed, fixed;
+    background-color: #fff714;
+    background-image: url(../images/sec2/bg-2.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+	background-size: cover;
+    background-attachment: fixed;
 }
 
 .partners-container {

@@ -23,8 +23,8 @@ class Home extends BaseController
 
         // Parsing Data to View
         $data                   = $this->data;
-        $data['title']          = '29th Yogyakarta Gamelan Festival';
-        $data['desc']           = '29th Yogyakarta Gamelan Festival';
+        $data['title']          = '30th Yogyakarta Gamelan Festival';
+        $data['desc']           = '30th Yogyakarta Gamelan Festival';
         $data['countriesarr']   = $country;
         if (isset($_SESSION['message'])) {
 			$data['messagesession'] = $_SESSION['message'];
@@ -38,8 +38,8 @@ class Home extends BaseController
 	{
 		// Parsing Data to View
         $data                   = $this->data;
-        $data['title']          = 'Tentang YGF 29';
-        $data['desc']           = 'Tentang YGF 29';
+        $data['title']          = 'Tentang YGF 30';
+        $data['desc']           = 'Tentang YGF 30';
 
 		// Rendering View
         return view('about', $data);
@@ -49,8 +49,8 @@ class Home extends BaseController
 	{
 		// Parsing Data to View
         $data                   = $this->data;
-        $data['title']          = 'Program YGF 29';
-        $data['desc']           = 'Program YGF 29';
+        $data['title']          = 'Program YGF 30';
+        $data['desc']           = 'Program YGF 30';
 
 		// Rendering View
         return view('program', $data);
@@ -69,8 +69,8 @@ class Home extends BaseController
 
 		// Parsing Data to View
         $data                   = $this->data;
-        $data['title']          = 'Berita YGF 29';
-        $data['desc']           = 'Berita YGF 29';
+        $data['title']          = 'Berita YGF 30';
+        $data['desc']           = 'Berita YGF 30';
 		$data['articles']		= $press;
 		$data['newses']			= $feeds->channel->item;
 
@@ -88,8 +88,8 @@ class Home extends BaseController
 
 		// Parsing Data to View
         $data                   = $this->data;
-        $data['title']          = 'Berita YGF 29';
-        $data['desc']           = 'Berita YGF 29';
+        $data['title']          = 'Berita YGF 30';
+        $data['desc']           = 'Berita YGF 30';
 		$data['article']		= $article;
 
 		// Rendering View
@@ -100,8 +100,8 @@ class Home extends BaseController
 	{
 		// Parsing Data to View
         $data                   = $this->data;
-        $data['title']          = 'Partner YGF 29';
-        $data['desc']           = 'Partner YGF 29';
+        $data['title']          = 'Partner YGF 30';
+        $data['desc']           = 'Partner YGF 30';
 
 		// Rendering View
         return view('partners', $data);
@@ -115,8 +115,8 @@ class Home extends BaseController
 		
 		// Parsing Data to View
         $data                   = $this->data;
-        $data['title']          = 'Gallery YGF 29';
-        $data['desc']           = 'Gallery YGF 29';
+        $data['title']          = 'Gallery YGF 30';
+        $data['desc']           = 'Gallery YGF 30';
 		$data['files']			= $files;
 
 		// Rendering View
@@ -130,8 +130,8 @@ class Home extends BaseController
 		
 		// Parsing Data to View
         $data                   = $this->data;
-        $data['title']          = 'Gallery YGF 29';
-        $data['desc']           = 'Gallery YGF 29';
+        $data['title']          = 'Gallery YGF 30';
+        $data['desc']           = 'Gallery YGF 30';
 		$data['merchendises']	= $MerchandiseModel->findAll();
 
 		// Rendering View

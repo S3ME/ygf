@@ -26,44 +26,116 @@ foreach ($countriesarr as $countryarr) {
     $countries[] = $countryarr['name']['common'];
 }
 ?>
+
 <section>
     <div class="uk-container uk-container-expand">
-        <div class="uk-grid-small" uk-grid>
-            <div class="uk-width-3-4@m uk-flex uk-flex-bottom">
-                <div class="uk-width-1-1 uk-margin uk-margin-top embed-container">
-                    <iframe src="https://www.youtube.com/embed/96DuZVdDy0Q?modestbranding=1&autoplay=1&mute=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <?php if ($ismobile === false) { ?>
+            <div class="tm-header" style="z-index:2;" uk-header>
+                <div class="uk-navbar-container" style="background: transparent;">
+                    <div class="uk-container uk-container-expand" style="padding-top:15px; padding-bottom:15px;">
+                        <nav uk-navbar>
+                            <div class="uk-navbar-left">
+                                <img src="images/sec1/kmg1.svg" style="height:70px;"/>
+                            </div>
+                            <div class="uk-navbar-center">
+                                <ul class="uk-navbar-nav">
+                                    <li><a href="<?php echo base_url(); ?>" style="background-color:#00ffff; color:#000;">Home</a></li>
+                                    <li><a href="about" style="background-color:#00ffff; color:#000;">About</a></li>
+                                    <!--<li><a href="schedule" style="background-color:#00ffff; color:#000;">Schedule</a></li>
+                                    <li><a href="artist" style="background-color:#00ffff; color:#000;">Artist</a></li>-->
+                                    <li><a href="program" style="background-color:#00ffff; color:#000;">Program</a></li>
+                                    <li><a href="news" style="background-color:#00ffff; color:#000;">News</a></li>
+                                    <li><a href="galeri" style="background-color:#00ffff; color:#000;">Gallery</a></li>
+                                    <!-- <li><a href="merchandise" style="background-color:#00ffff; color:#000;">Merchandise</a></li> -->
+                                    <li><a href="partners" style="background-color:#00ffff; color:#000;">Partners</a></li>
+                                </ul>
+                            </div>
+                            <div class="uk-navbar-right">
+                                <a href="<?php echo base_url(); ?>"><img src="images/sec1/ygf-top-right-1.svg" style="height:75px;"/></a>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
-                <!-- <div class="uk-width-1-1 uk-height-large uk-flex uk-flex-middle uk-flex-center uk-margin-top">
-                    <div class="uk-h1 uk-text-center uk-light">THANK YOU!<br/><br/>See you next year..</div>
-                </div> -->
-                <!-- <div class="uk-width-1-1 uk-height-large uk-margin uk-margin-top uk-flex uk-flex middle uk-flex-center">
-                    <div class="uk-flex uk-flex-middle">
-                        <div class="uk-grid-small uk-child-width-auto uk-light" uk-grid uk-countdown="date: 2023-08-20T15:00:00+07:00">
-                            <div>
-                                <div class="uk-countdown-number uk-countdown-days"></div>
-                                <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Days</div>
+            </div>
+        <?php } else { ?>
+            <div class="tm-header-mobile" style="z-index:2;">
+                <div>
+                    <div class="uk-navbar-container" style="background-color:transparent;">
+                        <nav uk-navbar>
+                            <div class="uk-navbar-left">
+                                <a class="uk-navbar-toggle" href="#offcanvas" uk-toggle uk-navbar-toggle-icon></a>
                             </div>
-                            <div class="uk-countdown-separator">:</div>
-                            <div>
-                                <div class="uk-countdown-number uk-countdown-hours"></div>
-                                <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Hours</div>
+                            <div class="uk-navbar-center">
+                                <img src="images/sec1/kmg1.svg" style="height:40px;" />
                             </div>
-                            <div class="uk-countdown-separator">:</div>
-                            <div>
-                                <div class="uk-countdown-number uk-countdown-minutes"></div>
-                                <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Minutes</div>
+                            <div class="uk-navbar-right">
+                                <a href="<?php echo base_url(); ?>"><img src="images/sec1/ygf-top-right-1.svg" style="height:40px; color: #000;" /></a>
                             </div>
-                            <div class="uk-countdown-separator">:</div>
-                            <div>
-                                <div class="uk-countdown-number uk-countdown-seconds"></div>
-                                <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Seconds</div>
+                        </nav>
+                    </div>
+                    <div id="offcanvas" uk-offcanvas mode="push" overlay>
+                        <div class="uk-offcanvas-bar uk-flex">
+                            <button class="uk-offcanvas-close" type="button" uk-close></button>
+                            <div class="uk-margin-auto-vertical uk-width-1-1">
+                                <div class="uk-child-width-1-1" uk-grid>
+                                    <div>
+                                        <div class="uk-panel" id="module-menu-mobile">
+                                            <ul class="uk-nav uk-nav-primary">
+                                                <li><a href="<?php echo base_url(); ?>">Home</a></li>
+                                                <li><a href="about">About</a></li>
+                                                <!--<li><a href="schedule">Schedule</a></li>
+                                                <li><a href="artist">Artist</a></li>-->
+                                                <li><a href="program">Program</a></li>
+                                                <li><a href="news">News</a></li>
+                                                <li><a href="galeri">Gallery</a></li>
+                                                <!-- <li><a href="merchandise">Merchandise</a></li> -->
+                                                <li><a href="partners">Partners</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
+        <?php } ?>
+        <div class="uk-grid-small" uk-grid>
+            <div class="uk-width-3-4@m uk-height-large uk-margin uk-margin-top uk-flex uk-flex middle uk-flex-center">
+                <div class="uk-flex uk-flex-middle">
+                    <div class="uk-grid-small uk-child-width-auto uk-light" uk-grid uk-countdown="date: 2025-07-21T15:00:00+07:00">
+                        <div>
+                            <div class="uk-countdown-number uk-countdown-days" style="color:#000 !important;"></div>
+                            <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s" style="color:#000 !important;">Days</div>
+                        </div>
+                        <div class="uk-countdown-separator" style="color:#000 !important;">:</div>
+                        <div>
+                            <div class="uk-countdown-number uk-countdown-hours" style="color:#000 !important;"></div>
+                            <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s" style="color:#000 !important;">Hours</div>
+                        </div>
+                        <div class="uk-countdown-separator" style="color:#000 !important;">:</div>
+                        <div>
+                            <div class="uk-countdown-number uk-countdown-minutes" style="color:#000 !important;"></div>
+                            <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s" style="color:#000 !important;">Minutes</div>
+                        </div>
+                        <div class="uk-countdown-separator" style="color:#000 !important;">:</div>
+                        <div>
+                            <div class="uk-countdown-number uk-countdown-seconds" style="color:#000 !important;"></div>
+                            <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s" style="color:#000 !important;">Seconds</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="uk-width-3-4@m uk-flex uk-flex-bottom"> -->
+                <!-- <div class="uk-width-1-1 uk-margin uk-margin-top embed-container">
+                    <iframe src="https://www.youtube.com/embed/96DuZVdDy0Q?modestbranding=1&autoplay=1&mute=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div> -->
+                <!-- <div class="uk-width-1-1 uk-height-large uk-flex uk-flex-middle uk-flex-center uk-margin-top">
+                    <div class="uk-h1 uk-text-center uk-light">THANK YOU!<br/><br/>See you next year..</div>
+                </div> -->
+            <!-- </div> -->
             <div class="uk-width-1-4@m">
-                <!-- <div style="background-color:rgba(4,1,51,.71);">
+                <div style="background-color: #ff00ff;">
                     <div id="showmessage" class="uk-margin-top uk-panel uk-panel-scrollable" style="height:500px; border:none;">
                     </div>
                     <script type="application/javascript">
@@ -147,17 +219,37 @@ foreach ($countriesarr as $countryarr) {
                             });
                         </script>
                     </div>
-                    <div id="openingformcontainer" class="uk-margin-bottom uk-padding-small uk-light" style="border: 2px solid #000;" <?php echo $hidden; ?>>
-                        <form id="openingform" class="uk-margin-small-top uk-form-stacked">
-                            <div class="uk-margin">
-                                <div class="uk-form-controls">
-                                    <input id="openingmessage" class="uk-input" name="openingmessage" type="text" placeholder="Message" required required onkeydown="popup()" style="font-weight:700;">
+                    <style>
+                        #openingmessage::placeholder {
+                            color: #000;
+                        }
+                        #openingmessage::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                            color: #000;
+                        }
+                        #openingmessage::-moz-placeholder { /* Firefox 19+ */
+                            color: #000;
+                        }
+                        #openingmessage:-ms-input-placeholder { /* IE 10+ */
+                            color: #000;
+                        }
+                        #openingmessage:-moz-placeholder { /* Firefox 18- */
+                            color: #000;
+                        }
+                    </style>
+                    <div class="uk-padding-small uk-margin-top">
+                        <div id="openingformcontainer" class="uk-margin-bottom uk-padding-small uk-light" style="border: 2px solid #d9e021; border-radius: 10px;" <?php echo $hidden; ?>>
+                            <form id="openingform" class="uk-form-stacked" style="background-color: #d9e021; color: #000; border-radius: 10px;">
+                                <div>
+                                    <div class="uk-form-controls">
+                                        <input id="openingmessage" class="uk-input uk-text-right" name="openingmessage" type="text" placeholder="Message" required required onkeydown="popup()" style="font-weight:700;">
+                                    </div>
                                 </div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
-                </div> -->
-				<div class="uk-position-relative uk-visible-toggle uk-margin-top" tabindex="-1" uk-slideshow="animation: pull; autoplay: true; ratio: 9:16">
+                    <!-- <img src="images/sec1/msg1.png" alt="message-icon" style="position: fixed; bottom: 150px; right: 350px; width: 150px;" /> -->
+                </div>
+				<!-- <div class="uk-position-relative uk-visible-toggle uk-margin-top" tabindex="-1" uk-slideshow="animation: pull; autoplay: true; ratio: 9:16">
 					<ul class="uk-slideshow-items">
 						<li>
 							<a href="program#lokakarya-gamelan"><img src="images/LOKAKARYA-01.jpg" alt="Lokakarya" uk-cover></a>
@@ -168,7 +260,7 @@ foreach ($countriesarr as $countryarr) {
 					</ul>
 					<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
 					<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-				</div>
+				</div> -->
                 <div id="datacontainer" class="uk-flex-top" uk-modal>
                     <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-light" style="background-color:#000; border:2px solid #fff; width:350px;">
                         <p>Mohon masukkan data diri anda untuk bisa memulai mengirim pesan</p>
@@ -234,15 +326,13 @@ foreach ($countriesarr as $countryarr) {
             <style>
                 .button-home {
                     display: block;
-                    background-image: url(images/29bg.jpg);
+                    /* background-color: #f05a25; */
                     background-size: cover;
                     background-repeat: no-repeat;
-                    border: 2px solid #fff;
                     border-radius: 10px;
-                    color: #fff;
-                    padding: 15px 15px 15px 60px;
-                    font-family: "Cinzel Decorative", serif;
-                    font-size: 30px;
+                    /* color: #fff; */
+                    padding: 10px;
+                    font-size: 20px;
                     line-height: 1;
                     font-weight: 700;
                     position: relative;
@@ -250,15 +340,8 @@ foreach ($countriesarr as $countryarr) {
                 }
                 .button-home:hover,
                 .button-home:active {
-                    color: #fff;
+                    color: #000 !important;
                     text-decoration: none;
-                }
-                .home-button-image {
-                    height: 100px;
-                    width: 100px;
-                    position: absolute;
-                    left: -50px;
-                    bottom: -50px;
                 }
             </style>
             <?php
@@ -274,16 +357,28 @@ foreach ($countriesarr as $countryarr) {
             ?>
             <div class="uk-margin uk-grid-small uk-child-width-auto <?=$menu?>" uk-grid>
                 <div>
-                    <a class="button-home" href="program#lokakarya"><img class="home-button-image" src="images/mandala.png" /> Lokakarya</a>
+                    <a class="button-home" style="background-color:#f05a25; color:#fff;" href="program#lokakarya">Gaung Gamelan</a>
                 </div>
                 <div>
-                    <a class="button-home" href="program#rembug-budaya"><img class="home-button-image" src="images/mandala.png" /> Rembug Budaya</a>
+                    <a class="button-home" style="background-color:#d9e021; color:#0000ff;" href="program#rembug-budaya">Panggung Slenthem</a>
                 </div>
                 <div>
-                    <a class="button-home" href="program#konser-gamelan"><img class="home-button-image" src="images/mandala.png" /> Concert</a>
+                    <a class="button-home" style="background-color:#0071bc; color:#fff;" href="program#rembug-budaya">Pasar Cokekan</a>
                 </div>
                 <div>
-                    <a class="button-home" href="program#gaung-gamelan"><img class="home-button-image" src="images/mandala.png" /> Gaung Gamelan</a>
+                    <a class="button-home" style="background-color:#9e005d; color:#fff;" href="program#rembug-budaya">Kongres Gamelan</a>
+                </div>
+                <div>
+                    <a class="button-home" style="background-color:#662d91; color:#fff;" href="program#rembug-budaya">Lokakarya</a>
+                </div>
+                <div>
+                    <a class="button-home" style="background-color:#ac25f7; color:#fff;" href="program#rembug-budaya">Sorot Sumirat</a>
+                </div>
+                <div>
+                    <a class="button-home" style="background-color:#f05a25; color:#fff;" href="program#rembug-budaya">Konser Maestro</a>
+                </div>
+                <div>
+                    <a class="button-home" style="background-color:#f05a25; color:#fff;" href="program#rembug-budaya">Konser Gamelan</a>
                 </div>
             </div>
             <div class="uk-margin uk-light uk-child-width-auto <?=$socmed?>" uk-grid>
@@ -298,6 +393,9 @@ foreach ($countriesarr as $countryarr) {
                 </div>
                 <div>
                     <a class="uk-link-text" href="https://www.youtube.com/@Gayam16" target="_blank"><i class="fa-brands fa-youtube"></i> Gayam16</a>
+                </div>
+                <div>
+                    <a class="uk-link-text" href="" target="_blank">#YGF30</a>
                 </div>
             </div>
             <div class="uk-margin uk-light <?=$copyright?>">

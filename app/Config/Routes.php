@@ -33,15 +33,15 @@ $routes->get('/', 'Home::index');
 $routes->get('about', 'Home::about');
 $routes->get('program', 'Home::program');
 $routes->get('partners', 'Home::partners');
-$routes->get('galeri', 'Home::gallery');
-$routes->get('merchandise', 'Home::merchandise');
-$routes->post('sendmessage', 'Home::sendmessage');
-$routes->get('showmessage', 'Home::showmessage');
-$routes->get('clearchat', 'Home::softcleatchat');
-$routes->get('purgechat', 'Home::purgechat');
-$routes->get('test', 'Home::test');
-$routes->get('clearsession', 'Home::clearsession');
-$routes->get('migration', 'Home::migration');
+// $routes->get('galeri', 'Home::gallery');
+// $routes->get('merchandise', 'Home::merchandise');
+// $routes->post('sendmessage', 'Home::sendmessage');
+// $routes->get('showmessage', 'Home::showmessage');
+// $routes->get('clearchat', 'Home::softcleatchat');
+// $routes->get('purgechat', 'Home::purgechat');
+// $routes->get('test', 'Home::test');
+// $routes->get('clearsession', 'Home::clearsession');
+// $routes->get('migration', 'Home::migration');
 
 $routes->group('news', static function ($routes) {
     $routes->get('', 'Home::news');

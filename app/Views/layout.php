@@ -41,10 +41,19 @@
 		  gtag('config', 'G-QFPERZQMRJ');
 		</script>
         <?= $this->renderSection('pageStyles') ?>
+		<style>
+			.home-section {
+				background-color: #FFF2CC;
+				background-image: url(../images/sec1/footer-1-1.svg), url(../images/sec1/hero-cloud.svg);
+				background-position: bottom center, bottom;
+				background-repeat: no-repeat, no-repeat;
+				background-size: cover, cover;
+				background-attachment: fixed, fixed;
+			}
+		</style>
     </head>
     <body>
-		<div class="main-container" uk-height-viewport>
-			<?= view('Views/menu') ?>
+		<div class="home-section" uk-height-viewport>
 			<?= $this->renderSection('main') ?>
 		</div>
 		<!-- <footer class="tm-footer uk-section-small">
