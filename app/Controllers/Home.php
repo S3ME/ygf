@@ -53,16 +53,16 @@ class Home extends BaseController
         $data['desc']           = 'Program YGF 30';
 
 		// Rendering View
-        // return view('program', $data);
-        return view('underconstruction', $data);
+        return view('program', $data);
+        // return view('underconstruction', $data);
 	}
 
 	public function news()
 	{
-		// Calling Models
-		$PressModel = new PressModel();
+		// // Calling Models
+		// $PressModel = new PressModel();
 
-		// Populating Data
+		// // Populating Data
 		// $press = $PressModel->orderBy('created_at', 'DESC')->findAll();
 
 		// $url = 'https://news.google.com/rss/search?q=Yogyakarta%20Gamelan%20Festival&hl=id&gl=ID&ceid=ID%3Aid';
@@ -76,8 +76,8 @@ class Home extends BaseController
 		// $data['newses']			= $feeds->channel->item;
 
 		// Rendering View
-        // return view('news', $data);
-        return view('underconstruction', $data);
+        return view('news', $data);
+        // return view('underconstruction', $data);
 	}
 
 	public function newsdetail($slug)
@@ -122,8 +122,8 @@ class Home extends BaseController
 		// $data['files']			= $files;
 
 		// Rendering View
-        // return view('gallery', $data);
-        return view('underconstruction', $data);
+        return view('gallery', $data);
+        // return view('underconstruction', $data);
 	}
 	
 	public function merchandise()

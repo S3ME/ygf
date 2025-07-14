@@ -18309,12 +18309,13 @@ body {
     background-attachment: fixed;
 }
 
-.partners-container {
-    background-color: #21070B;
-    background-image: url(../images/mandala.png), url(../images/29bg.jpg);
-    background-position: 50% 50vh, center;
-    background-repeat: no-repeat, no-repeat;
-	background-size: 60% auto, cover;
+.news-container {
+    background-color: #00efe8;
+    background-image: url(../images/sec3/bg-3-2.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+	background-size: cover;
+    background-attachment: fixed;
 }
 
 .uk-light .uk-button-primary {
