@@ -59,21 +59,21 @@ class Home extends BaseController
 
 	public function news()
 	{
-		// // Calling Models
-		// $PressModel = new PressModel();
+		// Calling Models
+		$PressModel = new PressModel();
 
-		// // Populating Data
-		// $press = $PressModel->orderBy('created_at', 'DESC')->findAll();
+		// Populating Data
+		$press = $PressModel->orderBy('created_at', 'DESC')->findAll();
 
-		// $url = 'https://news.google.com/rss/search?q=Yogyakarta%20Gamelan%20Festival&hl=id&gl=ID&ceid=ID%3Aid';
-		// $feeds = simplexml_load_file($url);
+		$url = 'https://news.google.com/rss/search?q=Yogyakarta%20Gamelan%20Festival&hl=id&gl=ID&ceid=ID%3Aid';
+		$feeds = simplexml_load_file($url);
 
 		// Parsing Data to View
         $data                   = $this->data;
         $data['title']          = 'Berita YGF 30';
         $data['desc']           = 'Berita YGF 30';
-		// $data['articles']		= $press;
-		// $data['newses']			= $feeds->channel->item;
+		$data['articles']		= $press;
+		$data['newses']			= $feeds->channel->item;
 
 		// Rendering View
         return view('news', $data);

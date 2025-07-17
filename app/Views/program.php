@@ -1,19 +1,131 @@
 <?= $this->extend('layout-3') ?>
 
 <?= $this->section('main') ?>
+<style>
+    .outline-text {
+        color: #fff;
+        text-shadow:
+            -1px -1px 0 #000,  
+            1px -1px 0 #000,
+            -1px  1px 0 #000,
+            1px  1px 0 #000;
+        font-weight: bold;
+    }
+</style>
 <div class="fixed-overlay">
     <div class="scroll-area">
-        <div class="uk-section uk-section-xlarge uk-container uk-text-center">
-            <h2 class="uk-heading-small uk-text-bold" style="color: #fff;">
+        <div class="uk-section uk-section-small">
+            <!-- <h2 class="uk-heading-small uk-text-bold" style="color: #fff;">
                 Yogyakarta Gamelan Festival 30
             </h2>
             <p class="uk-text-lead uk-margin-medium-top" style="color: #fff;">
                 Kami sedang mempersiapkan pengalaman budaya yang luar biasa untuk Anda. 
-                <span class="uk-text-bold" style="color: #fff;"><?= $title ?></span> akan hadir sebentar lagi!
+                <span class="uk-text-bold" style="color: #fff;"></?= $title ?></span> akan hadir sebentar lagi!
             </p>
             <p class="uk-text-muted uk-margin">
                 Tandai kalender Anda dan jangan lewatkan perjalanan musikal yang memukau ini.
-            </p>
+            </p> -->
+            <div id="gaung-gamelan" class="uk-margin">
+                <h2 class="uk-text-uppercase outline-text">GAUNG GAMELAN</h2>
+                <div class="uk-text-center">
+                    <img class="uk-width-2-3@m" src="images/gaung_gamelan.jpg" alt="Gaung Gamelan" />
+                </div>
+                <p class="outline-text">Gaung Gamelan, sebagai pembuka rangkaian Yogyakarta Gamelan Festival 30 dan merupakan program andalan yang merangkum beberapa desa budaya di Yogyakarta untuk memainkan beberapa komposisi 3 gending gaya Yogyakarta secara bersamaan. Gending-gending ini sebelumnya akan dibagikan kepada publik dan dilatih bersama Komunitas Gayam 16.</p>
+                <p class="outline-text">Perpaduan bunyi gamelan dari berbagai laras akan menghasilkan simfoni yang sangat indah dan kompleks. Kompleksitas orkestrasi bunyi gamelan ini tidak akan diamplifikasi oleh tata suara modern. Hal ini bertujuan agar simfoni yang tercipta dapat terdengar secara langsung oleh telinga.</p>
+                <div class="uk-h5 outline-text">
+                    Senin, 21 Juli 2025<br/>
+                    15.30 WIB<br/>
+                    <b><a class="uk-link-text" href="https://maps.app.goo.gl/iGSNmpLeqN3t9U9n8" target="_blank">Taman Budaya Embung Giwangan</a></b>
+                </div>
+            </div>
+            <hr class="uk-divider-icon">
+            <div id="lokakarya" class="uk-margin">
+                <h2 class="uk-text-uppercase outline-text">LOKAKARYA</h2>
+                <div class="uk-text-center">
+                    <img class="uk-width-2-3@m" src="images/lokakarya.jpg" alt="Lokakarya" />
+                </div>
+                <p class="outline-text">Lokakarya Gamelan yang menjadi salah satu rangkaian acara Yogyakarta Gamelan Festival (YGF)#30. Dengan mengangkat tema "Gamelan Tanpa Tembok" diharap mampu menjadi ruang partisipatif yang menjembatani generasi muda dan masyarakat luas untuk lebih dekat, mengenal, dan  turut melestarikan gamelan sebagai warisan budaya yang hidup dan relevan dengan zaman.</p>
+                <p class="outline-text">Seorang lelaki bernama Sahrul Yuliyanto yang mencintai gamelan & karawitan ini disematkan “Kepek–nama dusunnya” dan populer sebagai @sahrul_kepek.<br/>Dan di program Lokakarya nanti, Mas Sahrul akan menjadi narasumbernya, dengan benefit mantep yang bisa kamu dapat.</p>
+                <div class="uk-h5 outline-text">
+                    Senin - Kamis,<br/>
+                    22 - 24 Juli 2025<br/>
+                    13.00 - 16.00 WIB<br/>
+                    <b><a class="uk-link-text" href="https://maps.app.goo.gl/iGSNmpLeqN3t9U9n8" target="_blank">selasar kawasan Taman Budaya Embung Giwangan</a></b>
+                </div>
+                <p>
+                    <span class="uk-text-bold uk-text-large outline-text">LIMITED PARTICIPANT!</span><br/>
+                    Link pendaftaran : <a href="https://wa.me/6285183013381" target="_blank">+6285183013381</a><br/>
+                    <!-- Fasilitas : Sertifikat, Konsumsi -->
+                </p>
+                <!-- <p class="outline-text">CP; <a href="https://wa.me/6285183013381" target="_blank">+6285183013381</a></p> -->
+            </div>
+            <hr class="uk-divider-icon">
+            <div id="konser-maestro" class="uk-margin">
+                <h2 class="uk-text-uppercase outline-text">Konser Maestro</h2>
+                <div class="uk-text-center">
+                    <img class="uk-width-2-3@m" src="images/konser_maestro.jpg" alt="Konser Maestro" />
+                </div>
+                <p class="outline-text">Yogyakarta Gamelan Festival dan Gayam16 ingin kembali menghidupkan karya – karya dari para maestro yang pernah menjadi bagian dari tumbuh dan berprosesnya mereka hari ini.</p>
+                <p class="outline-text">Merayakan tiga dekade perjalanan Yogyakarta Gamelan Festival, Konser Maestro menghadirkan karya-karya ikonik dari tiga tokoh penting dunia gamelan: Sapto Raharjo bersama Gayam16, Harry Roesli bersama Rumah Musik Harry Roesli, dan Djaduk Ferianto bersama Kuaetnika.</p>
+                <p class="outline-text">Konser ini menjadi ruang penghormatan sekaligus pengalaman musikal yang menggabungkan warisan, keberanian bereksperimen, dan semangat lintas zaman.</p>
+                <div class="uk-h5 outline-text">
+                    Rabu, 23 Juli 2025<br/>
+                    20.00 WIB<br/>
+                    <b><a class="uk-link-text" href="https://maps.app.goo.gl/iGSNmpLeqN3t9U9n8" target="_blank">Gedung Grha Budaya (Concert Hall) Taman Budaya Embung Giwangan</a></b>
+                </div>
+                <p class="outline-text">
+                    <!-- <span class="uk-text-bold uk-text-large">LIMITED PARTICIPANT!</span><br/> -->
+                    Link Pembelian Tiket Konser Maestro : <a href="https://artatix.co.id/event/konser-maestro-yogyakarta-gamelan-festival " target="_blank">https://artatix.co.id/event/konser-maestro-yogyakarta-gamelan-festival </a>
+                </p>
+                <!-- <p>CP; <a href="https://wa.me/6282227862104" target="_blank">+6282227862104</a></p> -->
+            </div>
+            <!-- <hr class="uk-divider-icon">
+            <div id="rembug-budaya" class="uk-margin">
+                <h2 class="uk-text-uppercase">REMBUG BUDAYA</h2>
+                <div class="uk-text-center">
+                    <img class="uk-width-2-3@m" src="images/rembug_budaya.jpg" alt="Rembug Budaya" />
+                </div>
+                <div class="uk-h5">
+                    6 Agustus 2024<br/>
+                    15.00 WIB - selesai<br/>
+                    <b><a class="uk-link-text" href="https://maps.app.goo.gl/hDz4qVVTySqL1o7Q6" target="_blank">OKID Cafe</a></b>
+                </div>
+                <h4>“Arsip musik sebagai warisan”</h4>
+                <p>Mengelola arsip musik dapat juga dianggap sebagai usaha dalam merawat sebuah warisan. Merawat bukan hanya bersifat fisik namun berupa upaya mengembangkan semangat-semangat masa lalu sebagai bekal masa depan.</p>
+                <p class="uk-margin-remove-bottom">Pembicara :</p>
+                <ol class="uk-margin-remove-top">
+                    <li>Jody Diamond (American Gamelan Institute/SUNY New Paltz)</li>
+                    <li>Danang Rusdy (Lokananta)</li>
+                </ol>
+                <p>Moderator : Himan (Jogja Sonic Index)</p>
+                <p>
+                    <span class="uk-text-bold uk-text-large">LIMITED PARTICIPANT!</span><br/>
+                    Link pendaftaran : <a href="https://bit.ly/LKYGF29" target="_blank">bit.ly/LKYGF29</a>
+                </p>
+                <p>CP; <a href="https://wa.me/6282227862104" target="_blank">+6282227862104</a></p>
+            </div>
+            <hr class="uk-divider-icon">
+            <div id="konser-gamelan" class="uk-margin">
+                <h2 class="uk-text-uppercase">KONSER GAMELAN</h2>
+                <div class="uk-text-center">
+                    <img class="uk-width-2-3@m" src="images/konser_gamelan.jpg" alt="Konser Gamelan" />
+                </div>
+                <div class="uk-h5">
+                    8 - 10 Agustus 2024<br/>
+                    19.00 WIB - selesai<br/>
+                    <b><a class="uk-link-text" href="https://maps.app.goo.gl/z1pGYyUapEATSBSQ9" target="_blank">Plaza Pasar Ngasem</a></b>
+                </div>
+                <h4>“Piweling”</h4>
+                <p class="uk-margin-remove-bottom">Konser pertunjukan gamelan yang akan menampilkan kelompok gamelan dari kategori anak-anak / pelajar, kategori kreasi baru / kontemporer, kategori internasional, dan kategori klasik / tradisi. Tiap kategori ini akan dihadirkan selama 3 hari berturut-turut, Tahun ini selain dari Indonesia, juga akan tampil seniman gamelan dari Prancis dan Kanada, antara lain :</p>
+                <ol class="uk-margin-remove-top">
+                    <li>Canasia - Canada & Indonesia</li>
+                    <li>Gamelan Kotekan - France</li>
+                    <li>Sanggar Kawindra (anak) - Kediri</li>
+                    <li>Harry Roesli Music School - Bandung</li>
+                    <li>Rebanana - Banyuwangi</li>
+                </ol>
+                <p><span class="uk-text-bold uk-text-large">GRATIS!</span></p>
+            </div> -->
         </div>
     </div>
 </div>

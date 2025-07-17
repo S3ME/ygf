@@ -40,7 +40,87 @@
 
 		  gtag('config', 'G-QFPERZQMRJ');
 		</script>
+
 		<style>
+			html, body {
+				margin: 0;
+				padding: 0;
+				height: 100%;
+				overflow: hidden;
+			}
+
+			.about-container {
+				display: flex;
+				flex-direction: column;
+				height: 100vh;
+				background-color: #fff714;
+				background-image: url(../images/sec2/bg-2.svg);
+				background-position: bottom;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-attachment: fixed;
+				overflow: hidden;
+			}
+
+			.fixed-overlay {
+				position: fixed;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 90%;
+				max-width: 1200px;
+				background-color: rgba(255, 255, 231, 0.8);
+				border: 4px solid #fff;
+				border-radius: 20px;
+				z-index: 10;
+				display: flex;
+				flex-direction: column;
+				overflow: hidden;
+				box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+				transition: top 0.3s ease;
+			}
+
+			.scroll-area {
+				flex: 1;
+				overflow-y: auto;
+				padding: 20px;
+				scrollbar-width: none; /* Firefox */
+				-ms-overflow-style: none;  /* IE 10+ */
+			}
+			.scroll-area::-webkit-scrollbar {
+				display: none; /* Chrome, Safari, Opera */
+			}
+
+			/* Desktop: center overlay vertically */
+			@media (min-width: 769px) {
+				.fixed-overlay {
+					top: 50%;
+					transform: translate(-50%, -50%);
+					max-height: 75vh;
+				}
+			}
+
+			/* Mobile */
+			@media (max-width: 768px) {
+				.fixed-overlay {
+					top: 100px;
+					max-height: 80vh;
+					border-radius: 12px;
+				}
+
+				.scroll-area {
+					padding: 16px;
+					max-height: 60vh;
+				}
+
+				html.uk-offcanvas-page .fixed-overlay {
+					transform: translateX(30%);
+				}
+				html.uk-offcanvas-page footer {
+					transform: translateX(80%);
+				}
+			}
+		</style>
+		<!-- <style>
 			body, .uk-offcanvas-page body {
 				overflow: hidden;
 			}
@@ -68,7 +148,7 @@
 					transform: translateX(270px);
 				}
 			}
-		</style>
+		</style> -->
     </head>
     <body>
 		<div class="about-container" uk-height-viewport>
@@ -144,31 +224,33 @@
 				</div>
 			<?php } ?>
 			<!-- </?= view('Views/menu') ?> -->
-			<?php if ($ismobile) {
-				$sectionclass = '';
-			} else {
-				$sectionclass = 'uk-section uk-padding-remove-bottom';
-			} ?>
-			<section class="<?= $sectionclass; ?>">
-				<style>
-					.outline-text {
-						color: #000;
-						text-shadow:
-							-1px -1px 0 #fff,  
-							1px -1px 0 #fff,
-							-1px  1px 0 #fff,
-							1px  1px 0 #fff;
-						font-weight: bold;
-					}
-				</style>
-				<div class="uk-container" style="background-color: rgba(255, 255, 231, 0.8); border: 4px solid #fff; border-radius:20px; font-weight: 600;">
-					<div class="uk-section-small">
+    		<div class="fixed-overlay">
+				<div class="scroll-area">
+					<section>
+						<style>
+							.outline-text {
+								color: #000;
+								text-shadow:
+									-1px -1px 0 #fff,  
+									1px -1px 0 #fff,
+									-1px  1px 0 #fff,
+									1px  1px 0 #fff;
+								font-weight: bold;
+							}
+						</style>
 						<div class="uk-text-center uk-margin">
 							<img class="uk-width-1-2 uk-width-1-3@m" src="images/sec1/ygf1.svg" />
 						</div>
-						<p class="outline-text">Yogyakarta Gamelan Festival (YGF) merupakan festival yang mempertemukan pemain dan pencinta gamelan. Beberapa tahun yang lalu dunia dilanda pandemi, dan di masa-masa itu dunia seakan reset, kembali seperti semula, lalu setelah berhasil “bangkit’ dari masa pandemi yang merupakan masa kegelapan bagi seluruh dunia.</p>
-						<h3 class="outline-text" style="font-weight: 800 !important;">"PIWELING"</h3>
-						<p class="outline-text">Bahwa manusia mulai merindukan asalnya, natural, alami, mendengarkan hati dan berterima kasih, menjaga kebersamaan, untuk merawat dan berkembang.</p>
+						<h2 class="outline-text uk-text-center">Mulabuka 30th YGF Spirit “Gamelan”</h2>
+						<p class="outline-text">Yogyakarta Gamelan Festival telah menjadi ruang/ wadah/ tempat dan rumah yang secara kontinyu berfungsi sebagai sarana berkumpul, berkomunikasi dan berinteraksi bagi para pecinta seni gamelan.</p>
+						<p class="outline-text">Mengusung, mempercayai dan merawat spirit yang ada pada “gamelan: gotong royong, kebersamaan, toleransi, & kasih sayang” membuktikan bahwa YGF bukan hanya sekadar kegiatan namun sebuah cita–cita yang ditanam oleh Sapto Raharjo dan dipupuk, serta dirawat oleh seluruh kawan Gayam16 dan diaminkan oleh seluruh lapisan masyarakat hingga hari ini.</p>
+						<p class="outline-text">30th Yogyakarta Gamelan Festival akan menjadi ruang/ wadah/ tempat dan rumah bagi lebih banyak entitas/ komunitas/ seni/ seniman. Mari kita lanjutkan perjalan, dan merayakan pertemuan–pertemuan.</p>
+						<p class="outline-text">Festival Musik, Seni, dan Anak Muda, dengan Spirit “Gamelan” Sejak 1995 – hingga hari ini giat dan bentuk dari sebuah perayaan/festival telah terselenggara. Lebih dari 200 kelompok seni gamelan yang tersebar di 36 Negara pernah terlibat di dalamnya.</p>
+						<p class="outline-text">Mengusung tema “Festival Musik, Seni dan Anak Muda, dengan Spirit Gamelan”, Yogyakarta Gamelan Festival ke 30th menawarkan kebaruan bentuk. Mengajak dan melibatkan lebih banyak entitas/ kolektif kelompok seni gamelan maupun diluar gamelan.</p>
+						<p class="outline-text">Kegiatan ini akan menjadi sebuah tawaran baru bagi masyarakat untuk dapat menikmati, mengapresiasi dan melibatkan diri dalam proses bertumbuhnya “Kesenian” di Indonesia, khususnya Yogyakarta.<br/>Pun bagi Gayam16 sendiri, ini merupakan tantangan baru yang akan diperjuangkan demi cita-cita, mencipta dan merawat anak muda bersama gamelan yang adaptif dan hidup dan menghidupi seni dengan spirit dari gamelan itu sendiri.</p>
+						<p class="outline-text">30th YGF adalah wadah seni: musik, puppet/wayang/, sastra, hobi, tari dan film.</p>
+						<!-- <h3 class="outline-text" style="font-weight: 800 !important;">"PIWELING"</h3>
+						<p class="outline-text">Bahwa manusia mulai merindukan asalnya, natural, alami, mendengarkan hati dan berterima kasih, menjaga kebersamaan, untuk merawat dan berkembang.</p> -->
 						<div class="uk-margin-large-top uk-grid-small uk-grid-divider uk-flex-center uk-child-width-auto" uk-grid>
 							<div>
 								<a href="https://ygf25.ygflive.com" target="_blank" style="font-weight: 600 !important;" class="outline-text">YGF 25</a>
@@ -186,9 +268,9 @@
 								<a href="https://ygf29.ygflive.com" target="_blank" style="font-weight: 600 !important;" class="outline-text">YGF 29</a>
 							</div>
 						</div>
-					</div>
+					</section>
 				</div>
-			</section>
+			</div>
 			<footer style="position:fixed; bottom: 0; left: 0; right: 0;">
 				<div class="uk-container uk-text-center uk-margin-top uk-padding-small" style="background-color: #f05a25; color: #fff; border-radius: 20px;">
 					<?php

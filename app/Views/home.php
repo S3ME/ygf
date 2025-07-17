@@ -101,7 +101,7 @@ foreach ($countriesarr as $countryarr) {
             </div>
         <?php } ?>
         <div class="uk-grid-small" uk-grid>
-            <div class="uk-width-3-4@m uk-height-large uk-margin uk-margin-top uk-flex uk-flex middle uk-flex-center">
+            <!-- <div class="uk-width-3-4@m uk-height-large uk-margin uk-margin-top uk-flex uk-flex middle uk-flex-center">
                 <div class="uk-flex uk-flex-middle">
                     <div class="uk-grid-small uk-child-width-auto uk-light" uk-grid uk-countdown="date: 2025-07-21T15:00:00+07:00">
                         <div>
@@ -125,15 +125,15 @@ foreach ($countriesarr as $countryarr) {
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- <div class="uk-width-3-4@m uk-flex uk-flex-bottom"> -->
-                <!-- <div class="uk-width-1-1 uk-margin uk-margin-top embed-container">
-                    <iframe src="https://www.youtube.com/embed/96DuZVdDy0Q?modestbranding=1&autoplay=1&mute=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div> -->
+            </div> -->
+            <div class="uk-width-3-4@m uk-flex uk-flex-bottom">
+                <div class="uk-width-1-1 uk-margin uk-margin-top embed-container">
+                    <iframe src="https://www.youtube.com/embed/T_jt6buYY1g?modestbranding=1&autoplay=1&mute=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
                 <!-- <div class="uk-width-1-1 uk-height-large uk-flex uk-flex-middle uk-flex-center uk-margin-top">
                     <div class="uk-h1 uk-text-center uk-light">THANK YOU!<br/><br/>See you next year..</div>
                 </div> -->
-            <!-- </div> -->
+            </div>
             <div class="uk-width-1-4@m">
                 <div style="background-color: #ff00ff;">
                     <div id="showmessage" class="uk-margin-top uk-panel uk-panel-scrollable" style="height:500px; border:none;">
@@ -366,19 +366,19 @@ foreach ($countriesarr as $countryarr) {
                     <a class="button-home" style="background-color:#0071bc; color:#fff;" href="program#rembug-budaya">Pasar Cokekan</a>
                 </div>
                 <div>
-                    <a class="button-home" style="background-color:#9e005d; color:#fff;" href="program#rembug-budaya">Kongres Gamelan</a>
+                    <a class="button-home" style="background-color:#9e005d; color:#fff;" href="program#kongres-gamelan">Kongres Gamelan</a>
                 </div>
                 <div>
-                    <a class="button-home" style="background-color:#662d91; color:#fff;" href="program#rembug-budaya">Lokakarya</a>
+                    <a class="button-home" style="background-color:#662d91; color:#fff;" href="program#lokakarya">Lokakarya</a>
                 </div>
                 <div>
-                    <a class="button-home" style="background-color:#ac25f7; color:#fff;" href="program#rembug-budaya">Sorot Sumirat</a>
+                    <a class="button-home" style="background-color:#ac25f7; color:#fff;" href="program#sorot-sumirat">Sorot Sumirat</a>
                 </div>
                 <div>
-                    <a class="button-home" style="background-color:#f05a25; color:#fff;" href="program#rembug-budaya">Konser Maestro</a>
+                    <a class="button-home" style="background-color:#f05a25; color:#fff;" href="program#konser-maestro">Konser Maestro</a>
                 </div>
                 <div>
-                    <a class="button-home" style="background-color:#f05a25; color:#fff;" href="program#rembug-budaya">Konser Gamelan</a>
+                    <a class="button-home" style="background-color:#f05a25; color:#fff;" href="program#konser-gamelan">Konser Gamelan</a>
                 </div>
             </div>
             <div class="uk-margin uk-light uk-child-width-auto <?=$socmed?>" uk-grid>
