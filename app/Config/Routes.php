@@ -38,14 +38,14 @@ $routes->group('news', static function ($routes) {
 });
 $routes->get('galeri', 'Home::gallery');
 $routes->get('partners', 'Home::partners');
-// $routes->get('merchandise', 'Home::merchandise');
-// $routes->post('sendmessage', 'Home::sendmessage');
-// $routes->get('showmessage', 'Home::showmessage');
-// $routes->get('clearchat', 'Home::softcleatchat');
-// $routes->get('purgechat', 'Home::purgechat');
-// $routes->get('test', 'Home::test');
-// $routes->get('clearsession', 'Home::clearsession');
-// $routes->get('migration', 'Home::migration');
+$routes->get('merchandise', 'Home::merchandise');
+$routes->post('sendmessage', 'Home::sendmessage');
+$routes->get('showmessage', 'Home::showmessage');
+$routes->get('clearchat', 'Home::softcleatchat');
+$routes->get('purgechat', 'Home::purgechat');
+$routes->get('test', 'Home::test');
+$routes->get('clearsession', 'Home::clearsession');
+$routes->get('migration', 'Home::migration');
 
 /*
  * --------------------------------------------------------------------

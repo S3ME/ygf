@@ -39,6 +39,21 @@
                 </div>
             </div>
             <hr class="uk-divider-icon">
+            <div id="panggung-slenthem" class="uk-margin">
+                <h2 class="uk-text-uppercase outline-text">Panggung Slenthem</h2>
+                <div class="uk-text-center">
+                    <img class="uk-width-2-3@m" src="images/panggung_slenthem.jpg" alt="Panggung Slenthem" />
+                </div>
+                <p class="outline-text">Salah satu wahana bagi beberapa penampil di Yogyakarta Gamelan Festival ke-30 tahun ini bernama Panggung Slenthem.</p>
+                <p class="outline-text">Panggung ini akan menampilkan keberagaman musik dengan performa mantap dari tiap penampilnya. Dan akan ada rekan-rekan @simaksiar juga di sana.</p>
+                <div class="uk-h5 outline-text">
+                    Selasa - Kamis,<br/>
+                    22 - 24 Juli 2025<br/>
+                    16.00 WIB<br/>
+                    <b><a class="uk-link-text" href="https://maps.app.goo.gl/iGSNmpLeqN3t9U9n8" target="_blank">Panggung Utama Taman Budaya Embung Giwangan</a></b>
+                </div>
+            </div>
+            <hr class="uk-divider-icon">
             <div id="lokakarya" class="uk-margin">
                 <h2 class="uk-text-uppercase outline-text">LOKAKARYA</h2>
                 <div class="uk-text-center">
@@ -47,7 +62,7 @@
                 <p class="outline-text">Lokakarya Gamelan yang menjadi salah satu rangkaian acara Yogyakarta Gamelan Festival (YGF)#30. Dengan mengangkat tema "Gamelan Tanpa Tembok" diharap mampu menjadi ruang partisipatif yang menjembatani generasi muda dan masyarakat luas untuk lebih dekat, mengenal, dan  turut melestarikan gamelan sebagai warisan budaya yang hidup dan relevan dengan zaman.</p>
                 <p class="outline-text">Seorang lelaki bernama Sahrul Yuliyanto yang mencintai gamelan & karawitan ini disematkan “Kepek–nama dusunnya” dan populer sebagai @sahrul_kepek.<br/>Dan di program Lokakarya nanti, Mas Sahrul akan menjadi narasumbernya, dengan benefit mantep yang bisa kamu dapat.</p>
                 <div class="uk-h5 outline-text">
-                    Senin - Kamis,<br/>
+                    Selasa - Kamis,<br/>
                     22 - 24 Juli 2025<br/>
                     13.00 - 16.00 WIB<br/>
                     <b><a class="uk-link-text" href="https://maps.app.goo.gl/iGSNmpLeqN3t9U9n8" target="_blank">selasar kawasan Taman Budaya Embung Giwangan</a></b>

@@ -144,80 +144,82 @@ foreach ($countriesarr as $countryarr) {
                             $('#showmessage').scrollTop($('#showmessage')[0].scrollHeight);
                         }, 10000);
                     </script>
-                    <div id="messagecontainer" class="uk-margin-bottom uk-padding-small uk-light" style="border: 2px solid #fff;" <?php echo $unhide; ?>>
-                        <form id="messageform" class="uk-form-stacked" method="post" accept-charset="utf-8">
-                            <div class="uk-margin" hidden>
-                                <div class="uk-form-controls">
-                                    <input id="messagename" class="uk-input" name="name" type="text" placeholder="Name" <?php echo $name; ?>>
+                    <div class="uk-padding-small uk-margin-top">
+                        <div id="messagecontainer" class="uk-margin-top uk-padding-small uk-light" style="border: 2px solid #d9e021; border-radius: 10px;" <?php echo $unhide; ?>>
+                            <form id="messageform" class="uk-form-stacked" method="post" accept-charset="utf-8" style="background-color: #d9e021; color: #000 !important; border-radius: 10px;">
+                                <div class="uk-margin" hidden>
+                                    <div class="uk-form-controls">
+                                        <input id="messagename" class="uk-input" name="name" type="text" placeholder="Name" <?php echo $name; ?>>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="uk-margin" hidden>
-                                <div class="uk-form-controls">
-                                    <input id="messageemail" class="uk-input" name="email" type="email" placeholder="Email" <?php echo $email; ?>>
+                                <div class="uk-margin" hidden>
+                                    <div class="uk-form-controls">
+                                        <input id="messageemail" class="uk-input" name="email" type="email" placeholder="Email" <?php echo $email; ?>>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="uk-margin" hidden>
-                                <div class="uk-form-controls">
-                                    <input id="messagecountry" class="uk-input" name="country" type="text" placeholder="Country" <?php echo $country; ?>>
+                                <div class="uk-margin" hidden>
+                                    <div class="uk-form-controls">
+                                        <input id="messagecountry" class="uk-input" name="country" type="text" placeholder="Country" <?php echo $country; ?>>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="uk-margin" hidden>
-                                <div class="uk-form-controls">
-                                    <input id="messageage" class="uk-input" name="age" type="number" placeholder="Age" <?php echo $age; ?>>
+                                <div class="uk-margin" hidden>
+                                    <div class="uk-form-controls">
+                                        <input id="messageage" class="uk-input" name="age" type="number" placeholder="Age" <?php echo $age; ?>>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="uk-margin">
-                                <div class="uk-form-controls">
-                                    <input id="messagetext" class="uk-input" name="message" type="text" placeholder="Message" required>
+                                <div class="uk-margin">
+                                    <div class="uk-form-controls">
+                                        <input id="messagetext" class="uk-input uk-text-right" name="message" type="text" placeholder="Message" required>
+                                    </div>
                                 </div>
-                            </div>
-                            <button class="uk-button uk-button-default" type="submit" hidden>Submit</button>
-                        </form>
-                        <script type="application/javascript">
-                            $(document).ready(function() {
-                                $('#messageform').submit(function(event) {
-                                    var formData = {
-                                        'name'			: $('input[name="name"]').val(),
-                                        'email'			: $('input[name="email"]').val(),
-                                        'country'		: $('input[name="country"]').val(),
-                                        'age'			: $('input[name="age"]').val(),
-                                        'message'		: $('input[name="message"]').val()
-                                    };
-                                    
-                                    $.ajax({
-                                        type        : 'POST',
-                                        url         : 'sendmessage',
-                                        data        : formData,
-                                        dataType    : 'text',
-                                        //encode      : true,
-                                        error: function () {
-                                            console.log('error', arguments);
-                                        },
-                                        complete: function () {
-                                            console.log('complete', arguments);
-                                            var name = document.getElementById("messagename");
-                                            var email = document.getElementById("messageemail");
-                                            var country = document.getElementById("messagecountry");
-                                            var age = document.getElementById("messageage");
-                                            var text = document.getElementById("messagetext");
-                                            
-                                            name.setAttribute('hidden', '');
-                                            email.setAttribute('hidden', '');
-                                            country.setAttribute('hidden', '');
-                                            age.setAttribute('hidden', '');
-                                            text.value = '';
-                                        }
-                                    })
-                                    .done(function(data) {
-                                        console.log(data);
-                                    })
-                                    .fail(function(data) {
-                                        console.log(data);
+                                <button class="uk-button uk-button-default" type="submit" hidden>Submit</button>
+                            </form>
+                            <script type="application/javascript">
+                                $(document).ready(function() {
+                                    $('#messageform').submit(function(event) {
+                                        var formData = {
+                                            'name'			: $('input[name="name"]').val(),
+                                            'email'			: $('input[name="email"]').val(),
+                                            'country'		: $('input[name="country"]').val(),
+                                            'age'			: $('input[name="age"]').val(),
+                                            'message'		: $('input[name="message"]').val()
+                                        };
+                                        
+                                        $.ajax({
+                                            type        : 'POST',
+                                            url         : 'sendmessage',
+                                            data        : formData,
+                                            dataType    : 'text',
+                                            //encode      : true,
+                                            error: function () {
+                                                console.log('error', arguments);
+                                            },
+                                            complete: function () {
+                                                console.log('complete', arguments);
+                                                var name = document.getElementById("messagename");
+                                                var email = document.getElementById("messageemail");
+                                                var country = document.getElementById("messagecountry");
+                                                var age = document.getElementById("messageage");
+                                                var text = document.getElementById("messagetext");
+                                                
+                                                name.setAttribute('hidden', '');
+                                                email.setAttribute('hidden', '');
+                                                country.setAttribute('hidden', '');
+                                                age.setAttribute('hidden', '');
+                                                text.value = '';
+                                            }
+                                        })
+                                        .done(function(data) {
+                                            console.log(data);
+                                        })
+                                        .fail(function(data) {
+                                            console.log(data);
+                                        });
+                                        event.preventDefault();
                                     });
-                                    event.preventDefault();
                                 });
-                            });
-                        </script>
+                            </script>
+                        </div>
                     </div>
                     <style>
                         #openingmessage::placeholder {
@@ -241,7 +243,7 @@ foreach ($countriesarr as $countryarr) {
                             <form id="openingform" class="uk-form-stacked" style="background-color: #d9e021; color: #000; border-radius: 10px;">
                                 <div>
                                     <div class="uk-form-controls">
-                                        <input id="openingmessage" class="uk-input uk-text-right" name="openingmessage" type="text" placeholder="Message" required required onkeydown="popup()" style="font-weight:700;">
+                                        <input id="openingmessage" class="uk-input uk-text-right" name="openingmessage" type="text" placeholder="Message" required onkeydown="popup()" style="font-weight:700;">
                                     </div>
                                 </div>
                             </form>
@@ -360,7 +362,7 @@ foreach ($countriesarr as $countryarr) {
                     <a class="button-home" style="background-color:#f05a25; color:#fff;" href="program#lokakarya">Gaung Gamelan</a>
                 </div>
                 <div>
-                    <a class="button-home" style="background-color:#d9e021; color:#0000ff;" href="program#rembug-budaya">Panggung Slenthem</a>
+                    <a class="button-home" style="background-color:#d9e021; color:#0000ff;" href="program#panggung-slenthem">Panggung Slenthem</a>
                 </div>
                 <div>
                     <a class="button-home" style="background-color:#0071bc; color:#fff;" href="program#rembug-budaya">Pasar Cokekan</a>
