@@ -40,7 +40,7 @@
             </div>
             <hr class="uk-divider-icon">
             <div id="panggung-slenthem" class="uk-margin">
-                <h2 class="uk-text-uppercase outline-text">Panggung Slenthem</h2>
+                <h2 class="uk-text-uppercase outline-text">PANGGUNG SLENTHEM</h2>
                 <div class="uk-text-center">
                     <img class="uk-width-2-3@m" src="images/panggung_slenthem.jpg" alt="Panggung Slenthem" />
                 </div>
@@ -76,7 +76,7 @@
             </div>
             <hr class="uk-divider-icon">
             <div id="konser-maestro" class="uk-margin">
-                <h2 class="uk-text-uppercase outline-text">Konser Maestro</h2>
+                <h2 class="uk-text-uppercase outline-text">KONSER MAESTRO</h2>
                 <div class="uk-text-center">
                     <img class="uk-width-2-3@m" src="images/konser_maestro.jpg" alt="Konser Maestro" />
                 </div>
@@ -118,29 +118,23 @@
                     Link pendaftaran : <a href="https://bit.ly/LKYGF29" target="_blank">bit.ly/LKYGF29</a>
                 </p>
                 <p>CP; <a href="https://wa.me/6282227862104" target="_blank">+6282227862104</a></p>
-            </div>
+            </div> -->
             <hr class="uk-divider-icon">
             <div id="konser-gamelan" class="uk-margin">
-                <h2 class="uk-text-uppercase">KONSER GAMELAN</h2>
+                <h2 class="uk-text-uppercase outline-text">KONSER GAMELAN</h2>
                 <div class="uk-text-center">
                     <img class="uk-width-2-3@m" src="images/konser_gamelan.jpg" alt="Konser Gamelan" />
                 </div>
+                <p class="outline-text">Konser Gamelan merupakan salah satu program yang menjadi wadah pertemuan antara para pelaku, pecinta, dan penikmat Gamelan dari berbagai penjuru dunia.</p>
+                <p class="outline-text">Melalui konser ini, tradisi dan inovasi dalam dunia Gamelan saling bersilangan, menciptakan ruang apresiasi,  kolaborasi, dan dialog budaya yang hidup.</p>
                 <div class="uk-h5">
-                    8 - 10 Agustus 2024<br/>
-                    19.00 WIB - selesai<br/>
-                    <b><a class="uk-link-text" href="https://maps.app.goo.gl/z1pGYyUapEATSBSQ9" target="_blank">Plaza Pasar Ngasem</a></b>
+                    Jumat - Minggu,<br/>
+                    25 - 27 Juli 2025<br/>
+                    19.00 - 22.00 WIB<br/>
+                    <b><a class="uk-link-text" href="https://maps.app.goo.gl/iGSNmpLeqN3t9U9n8" target="_blank">Panggung Utama Taman Budaya Embung Giwangan</a></b>
                 </div>
-                <h4>“Piweling”</h4>
-                <p class="uk-margin-remove-bottom">Konser pertunjukan gamelan yang akan menampilkan kelompok gamelan dari kategori anak-anak / pelajar, kategori kreasi baru / kontemporer, kategori internasional, dan kategori klasik / tradisi. Tiap kategori ini akan dihadirkan selama 3 hari berturut-turut, Tahun ini selain dari Indonesia, juga akan tampil seniman gamelan dari Prancis dan Kanada, antara lain :</p>
-                <ol class="uk-margin-remove-top">
-                    <li>Canasia - Canada & Indonesia</li>
-                    <li>Gamelan Kotekan - France</li>
-                    <li>Sanggar Kawindra (anak) - Kediri</li>
-                    <li>Harry Roesli Music School - Bandung</li>
-                    <li>Rebanana - Banyuwangi</li>
-                </ol>
-                <p><span class="uk-text-bold uk-text-large">GRATIS!</span></p>
-            </div> -->
+                <!-- <p><span class="uk-text-bold uk-text-large">GRATIS!</span></p> -->
+            </div>
         </div>
     </div>
 </div>
