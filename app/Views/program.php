@@ -67,8 +67,8 @@
                     13.00 - 16.00 WIB<br/>
                     <b><a class="uk-link-text" href="https://maps.app.goo.gl/iGSNmpLeqN3t9U9n8" target="_blank">selasar kawasan Taman Budaya Embung Giwangan</a></b>
                 </div>
-                <p>
-                    <span class="uk-text-bold uk-text-large outline-text">LIMITED PARTICIPANT!</span><br/>
+                <p class="outline-text">
+                    <span class="uk-text-bold uk-text-large">LIMITED PARTICIPANT!</span><br/>
                     Link pendaftaran : <a href="https://wa.me/6285183013381" target="_blank">+6285183013381</a><br/>
                     <!-- Fasilitas : Sertifikat, Konsumsi -->
                 </p>
@@ -127,11 +127,39 @@
                 </div>
                 <p class="outline-text">Konser Gamelan merupakan salah satu program yang menjadi wadah pertemuan antara para pelaku, pecinta, dan penikmat Gamelan dari berbagai penjuru dunia.</p>
                 <p class="outline-text">Melalui konser ini, tradisi dan inovasi dalam dunia Gamelan saling bersilangan, menciptakan ruang apresiasi,  kolaborasi, dan dialog budaya yang hidup.</p>
-                <div class="uk-h5">
+                <div class="uk-h5 outline-text">
                     Jumat - Minggu,<br/>
                     25 - 27 Juli 2025<br/>
                     19.00 - 22.00 WIB<br/>
                     <b><a class="uk-link-text" href="https://maps.app.goo.gl/iGSNmpLeqN3t9U9n8" target="_blank">Panggung Utama Taman Budaya Embung Giwangan</a></b>
+                </div>
+                <!-- <p><span class="uk-text-bold uk-text-large">GRATIS!</span></p> -->
+            </div>
+            <hr class="uk-divider-icon">
+            <div id="exhibition" class="uk-margin">
+                <h2 class="uk-text-uppercase outline-text">EXHIBITION</h2>
+                <div class="uk-text-center">
+                    <img class="uk-width-2-3@m" src="images/exhibition.jpg" alt="Exhibition" />
+                </div>
+                <p class="outline-text">Satu program Yogyakarta Gamelan Festival ini juga menarik untuk dikunjungi dan disaksikan, adalah Exhibition atau pameran. Dan berikut mereka para seniman yang akan berpameran beserta karyanya:</p>
+                <ol class="uk-list uk-list-decimal outline-text">
+                    <li>
+                        “Gamelan Kyai Setrodinomo”, kolaborasi antara Seniman :
+                        <ul class="uk-list uk-list-hyphen outline-text">
+                            <li>@jompetkuswidananto,</li>
+                            <li>Wibowo S.sn @mastergamelan,</li>
+                            <li>@ikballubys.</li>
+                        </ul>
+                    </li>
+                    <li>“Gameltron” - Departemen Teknik Elektro dan Teknologi Informasi Fakultas Teknik UGM dan Gayam16.</li>
+                    <li>Parafrase Trilogi - Mading Arsip 25 Tahun Gayam16 - Gayam16.</li>
+                </ol>
+                <p class="outline-text">Dan pada 25 Juli 2025 juga akan ada sesi Bincang Seniman bersama Jompet Kuswidananto & Wibowo S.Sn.</p>
+                <div class="uk-h5 outline-text">
+                    Senin - Minggu,<br/>
+                    21 - 27 Juli 2025<br/>
+                    15.00 - 22.00 WIB<br/>
+                    <b><a class="uk-link-text" href="https://maps.app.goo.gl/iGSNmpLeqN3t9U9n8" target="_blank">Exhibition Hall Taman Budaya Embung Giwangan</a></b>
                 </div>
                 <!-- <p><span class="uk-text-bold uk-text-large">GRATIS!</span></p> -->
             </div>
