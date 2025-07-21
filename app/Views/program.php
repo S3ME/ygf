@@ -37,6 +37,7 @@
                     15.30 WIB<br/>
                     <b><a class="uk-link-text" href="https://maps.app.goo.gl/iGSNmpLeqN3t9U9n8" target="_blank">Taman Budaya Embung Giwangan</a></b>
                 </div>
+                <p><span class="uk-text-bold uk-text-large outline-text">GRATIS!</span></p>
             </div>
             <hr class="uk-divider-icon">
             <div id="panggung-slenthem" class="uk-margin">
@@ -52,6 +53,7 @@
                     16.00 WIB<br/>
                     <b><a class="uk-link-text" href="https://maps.app.goo.gl/iGSNmpLeqN3t9U9n8" target="_blank">Panggung Utama Taman Budaya Embung Giwangan</a></b>
                 </div>
+                <p><span class="uk-text-bold uk-text-large outline-text">GRATIS!</span></p>
             </div>
             <hr class="uk-divider-icon">
             <div id="pasar-cokekan" class="uk-margin">
@@ -67,6 +69,7 @@
                     15.00 - 22.00 WIB<br/>
                     <b><a class="uk-link-text" href="https://maps.app.goo.gl/iGSNmpLeqN3t9U9n8" target="_blank">Street stage area Pasar Cokekan, Taman Budaya Embung Giwangan.</a></b>
                 </div>
+                <p><span class="uk-text-bold uk-text-large outline-text">GRATIS!</span></p>
             </div>
             <hr class="uk-divider-icon">
             <div id="lokakarya" class="uk-margin">
@@ -148,7 +151,7 @@
                     19.00 - 22.00 WIB<br/>
                     <b><a class="uk-link-text" href="https://maps.app.goo.gl/iGSNmpLeqN3t9U9n8" target="_blank">Panggung Utama Taman Budaya Embung Giwangan</a></b>
                 </div>
-                <!-- <p><span class="uk-text-bold uk-text-large">GRATIS!</span></p> -->
+                <p><span class="uk-text-bold uk-text-large outline-text">GRATIS!</span></p>
             </div>
             <hr class="uk-divider-icon">
             <div id="exhibition" class="uk-margin">
