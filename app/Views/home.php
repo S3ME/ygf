@@ -365,7 +365,7 @@ foreach ($countriesarr as $countryarr) {
                     <a class="button-home" style="background-color:#d9e021; color:#0000ff;" href="program#panggung-slenthem">Panggung Slenthem</a>
                 </div>
                 <div>
-                    <a class="button-home" style="background-color:#0071bc; color:#fff;" href="program#rembug-budaya">Pasar Cokekan</a>
+                    <a class="button-home" style="background-color:#0071bc; color:#fff;" href="program#pasar-cokekan">Pasar Cokekan</a>
                 </div>
                 <div>
                     <a class="button-home" style="background-color:#9e005d; color:#fff;" href="program#kongres-gamelan">Kongres Gamelan</a>

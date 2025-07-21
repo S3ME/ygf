@@ -54,6 +54,21 @@
                 </div>
             </div>
             <hr class="uk-divider-icon">
+            <div id="pasar-cokekan" class="uk-margin">
+                <h2 class="uk-text-uppercase outline-text">PASAR COKEKAN</h2>
+                <div class="uk-text-center">
+                    <img class="uk-width-2-3@m" src="images/panggung_cokekan.jpg" alt="Panggung Cokekan" />
+                </div>
+                <p class="outline-text">Ada yang menarik di Yogyakarta Gamelan Festival ke-30 tahun ini, beda juga dari penyelenggaraan sebelum-sebelumnya, adalah hadirnya Panggung Cokekan yang memanggungkan banyak penampil unik setiap harinya.</p>
+                <p class="outline-text">Dan Pasar Cokekan yang akan memenuhi kebutuhan kulinermu.</p>
+                <div class="uk-h5 outline-text">
+                    Senin - Minggu,<br/>
+                    21 - 27 Juli 2025<br/>
+                    15.00 - 22.00 WIB<br/>
+                    <b><a class="uk-link-text" href="https://maps.app.goo.gl/iGSNmpLeqN3t9U9n8" target="_blank">Street stage area Pasar Cokekan, Taman Budaya Embung Giwangan.</a></b>
+                </div>
+            </div>
+            <hr class="uk-divider-icon">
             <div id="lokakarya" class="uk-margin">
                 <h2 class="uk-text-uppercase outline-text">LOKAKARYA</h2>
                 <div class="uk-text-center">
