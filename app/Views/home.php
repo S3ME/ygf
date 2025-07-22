@@ -135,7 +135,7 @@ foreach ($countriesarr as $countryarr) {
                 </div> -->
             </div>
             <div class="uk-width-1-4@m">
-                <div style="background-color: #ff00ff;">
+                <!-- <div style="background-color: #ff00ff;">
                     <div id="showmessage" class="uk-margin-top uk-panel uk-panel-scrollable" style="height:500px; border:none;">
                     </div>
                     <script type="application/javascript">
@@ -249,21 +249,41 @@ foreach ($countriesarr as $countryarr) {
                             </form>
                         </div>
                     </div>
-                    <!-- <img src="images/sec1/msg1.png" alt="message-icon" style="position: fixed; bottom: 150px; right: 350px; width: 150px;" /> -->
-                </div>
-				<!-- <div class="uk-position-relative uk-visible-toggle uk-margin-top" tabindex="-1" uk-slideshow="animation: pull; autoplay: true; ratio: 9:16">
+                </div> -->
+				<div class="uk-position-relative uk-visible-toggle uk-margin-top" tabindex="-1" uk-slideshow="animation: pull; autoplay: true; ratio: 9:16">
 					<ul class="uk-slideshow-items">
 						<li>
-							<a href="program#lokakarya-gamelan"><img src="images/LOKAKARYA-01.jpg" alt="Lokakarya" uk-cover></a>
+							<a href="program#gaung-gamelan"><img src="images/slideshow/gaung_gamelan.jpg" alt="Gaung Gamelan" uk-cover></a>
 						</li>
 						<li>
-							<a href="program#rembug-budaya"><img src="images/REMBUG-03.jpg" alt="Rembug Budaya" uk-cover></a>
+							<a href="program#panggung-slenthem"><img src="images/slideshow/panggung_slenthem.jpg" alt="Panggung Slenthem" uk-cover></a>
+						</li>
+						<li>
+							<a href="program#pasar-cokekan"><img src="images/slideshow/panggung_cokekan.jpg" alt="Pasar Cokekan" uk-cover></a>
+						</li>
+						<!-- <li>
+							<a href="program#kongres-gamelan"><img src="images/slideshow/kongres_gamelan.jpg" alt="Kongres Gamelan" uk-cover></a>
+						</li> -->
+						<li>
+							<a href="program#lokakarya-gamelan"><img src="images/slideshow/lokakarya.jpg" alt="Lokakarya" uk-cover></a>
+						</li>
+						<li>
+							<a href="program#sorot-sumirat"><img src="images/slideshow/sorot_sumirat.jpg" alt="Sorot Sumirat" uk-cover></a>
+						</li>
+						<li>
+							<a href="program#konser-maestro"><img src="images/slideshow/konser_maestro.jpg" alt="Konser Maestro" uk-cover></a>
+						</li>
+						<li>
+							<a href="program#konser-gamelan"><img src="images/slideshow/konser_gamelan.jpg" alt="Konser Gamelan" uk-cover></a>
+						</li>
+						<li>
+							<a href="program#exhibition"><img src="images/slideshow/exhibition.jpg" alt="Exhibition" uk-cover></a>
 						</li>
 					</ul>
 					<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
 					<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-				</div> -->
-                <div id="datacontainer" class="uk-flex-top" uk-modal>
+				</div>
+                <!-- <div id="datacontainer" class="uk-flex-top" uk-modal>
                     <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-light" style="background-color:#000; border:2px solid #fff; width:350px;">
                         <p>Mohon masukkan data diri anda untuk bisa memulai mengirim pesan</p>
                         <form id="dataform" class="uk-form-stacked">
@@ -281,7 +301,7 @@ foreach ($countriesarr as $countryarr) {
                                 <div class="uk-form-controls">
                                     <select id="datacountry" class="uk-select" name="datacountry">
                                         <option value="" disabled selected>-- Select Country --</option>
-                                        <?php
+                                        </?php
                                         foreach ($countries as $country) {
                                             echo '<option value="'.$country.'">'.$country.'</option>';
                                         }
@@ -321,7 +341,7 @@ foreach ($countriesarr as $countryarr) {
                             event.preventDefault();
                         });
                     });
-                </script>
+                </script> -->
             </div>
         </div>
         <div>

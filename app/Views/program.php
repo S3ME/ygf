@@ -93,6 +93,22 @@
                 <!-- <p class="outline-text">CP; <a href="https://wa.me/6285183013381" target="_blank">+6285183013381</a></p> -->
             </div>
             <hr class="uk-divider-icon">
+            <div id="sorot-sumirat" class="uk-margin">
+                <h2 class="uk-text-uppercase outline-text">SOROT SUMIRAT</h2>
+                <div class="uk-text-center">
+                    <img class="uk-width-2-3@m" src="images/sorot_sumirat.jpg" alt="Sorot Sumirat" />
+                </div>
+                <p class="outline-text">Salah satu program baru Yogyakarta Gamelan Festival ke-30 tahun ini yang juga menarik dan sayang jika dilewatkan, adalah Sorot Sumirat.</p>
+                <p class="outline-text">Pertunjukan atraksi tata cahaya memukau yang akan menjadikan salah satu titik di Taman Budaya Embung Giwangan untuk dijadikan objek yang akan disorot cahaya ragam dan rupa warna oleh para seniman tata cahaya.</p>
+                <div class="uk-h5 outline-text">
+                    Rabu - Jumat,<br/>
+                    23 - 25 Juli 2025<br/>
+                    22.00 WIB<br/>
+                    <b><a class="uk-link-text" href="https://maps.app.goo.gl/iGSNmpLeqN3t9U9n8" target="_blank">Taman Budaya Embung Giwangan</a></b>
+                </div>
+                <p><span class="uk-text-bold uk-text-large outline-text">GRATIS!</span></p>
+            </div>
+            <hr class="uk-divider-icon">
             <div id="konser-maestro" class="uk-margin">
                 <h2 class="uk-text-uppercase outline-text">KONSER MAESTRO</h2>
                 <div class="uk-text-center">
