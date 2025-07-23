@@ -128,7 +128,7 @@ foreach ($countriesarr as $countryarr) {
             </div> -->
             <div class="uk-width-3-4@m uk-flex uk-flex-bottom">
                 <div class="uk-width-1-1 uk-margin uk-margin-top embed-container">
-                    <iframe src="https://www.youtube.com/embed/u0REhx29iLA?modestbranding=1&autoplay=1&mute=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/vcFjD2ooflk?modestbranding=1&autoplay=1&mute=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <!-- <div class="uk-width-1-1 uk-height-large uk-flex uk-flex-middle uk-flex-center uk-margin-top">
                     <div class="uk-h1 uk-text-center uk-light">THANK YOU!<br/><br/>See you next year..</div>
@@ -145,26 +145,26 @@ foreach ($countriesarr as $countryarr) {
                         }, 10000);
                     </script>
                     <div class="uk-padding-small uk-margin-top">
-                        <div id="messagecontainer" class="uk-margin-top uk-padding-small uk-light" style="border: 2px solid #d9e021; border-radius: 10px;" <?php echo $unhide; ?>>
+                        <div id="messagecontainer" class="uk-margin-top uk-padding-small uk-light" style="border: 2px solid #d9e021; border-radius: 10px;" </?php echo $unhide; ?>>
                             <form id="messageform" class="uk-form-stacked" method="post" accept-charset="utf-8" style="background-color: #d9e021; color: #000 !important; border-radius: 10px;">
                                 <div class="uk-margin" hidden>
                                     <div class="uk-form-controls">
-                                        <input id="messagename" class="uk-input" name="name" type="text" placeholder="Name" <?php echo $name; ?>>
+                                        <input id="messagename" class="uk-input" name="name" type="text" placeholder="Name" </?php echo $name; ?>>
                                     </div>
                                 </div>
                                 <div class="uk-margin" hidden>
                                     <div class="uk-form-controls">
-                                        <input id="messageemail" class="uk-input" name="email" type="email" placeholder="Email" <?php echo $email; ?>>
+                                        <input id="messageemail" class="uk-input" name="email" type="email" placeholder="Email" </?php echo $email; ?>>
                                     </div>
                                 </div>
                                 <div class="uk-margin" hidden>
                                     <div class="uk-form-controls">
-                                        <input id="messagecountry" class="uk-input" name="country" type="text" placeholder="Country" <?php echo $country; ?>>
+                                        <input id="messagecountry" class="uk-input" name="country" type="text" placeholder="Country" </?php echo $country; ?>>
                                     </div>
                                 </div>
                                 <div class="uk-margin" hidden>
                                     <div class="uk-form-controls">
-                                        <input id="messageage" class="uk-input" name="age" type="number" placeholder="Age" <?php echo $age; ?>>
+                                        <input id="messageage" class="uk-input" name="age" type="number" placeholder="Age" </?php echo $age; ?>>
                                     </div>
                                 </div>
                                 <div class="uk-margin">
@@ -239,7 +239,7 @@ foreach ($countriesarr as $countryarr) {
                         }
                     </style>
                     <div class="uk-padding-small uk-margin-top">
-                        <div id="openingformcontainer" class="uk-margin-bottom uk-padding-small uk-light" style="border: 2px solid #d9e021; border-radius: 10px;" <?php echo $hidden; ?>>
+                        <div id="openingformcontainer" class="uk-margin-bottom uk-padding-small uk-light" style="border: 2px solid #d9e021; border-radius: 10px;" </?php echo $hidden; ?>>
                             <form id="openingform" class="uk-form-stacked" style="background-color: #d9e021; color: #000; border-radius: 10px;">
                                 <div>
                                     <div class="uk-form-controls">
@@ -250,7 +250,7 @@ foreach ($countriesarr as $countryarr) {
                         </div>
                     </div>
                 </div> -->
-				<div class="uk-position-relative uk-visible-toggle uk-margin-top" tabindex="-1" uk-slideshow="animation: pull; autoplay: true; ratio: 9:16">
+				<div class="uk-position-relative uk-visible-toggle uk-margin-top" tabindex="-1" uk-slideshow="animation: pull; autoplay: true; ratio: 9:16" style="border: 2px solid #000;">
 					<ul class="uk-slideshow-items">
 						<li>
 							<a href="program#gaung-gamelan"><img src="images/slideshow/gaung_gamelan.jpg" alt="Gaung Gamelan" uk-cover></a>
