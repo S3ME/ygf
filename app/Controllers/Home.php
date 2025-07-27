@@ -112,17 +112,102 @@ class Home extends BaseController
 	public function gallery()
 	{
 		// Populating data
-		// $dirPath = FCPATH.'/gallery';
-		// $files = scandir($dirPath);
+		$dirPath = FCPATH.'/gallery';
+		$files = scandir($dirPath);
 		
 		// Parsing Data to View
         $data                   = $this->data;
         $data['title']          = 'Gallery YGF 30';
         $data['desc']           = 'Gallery YGF 30';
-		// $data['files']			= $files;
+		$data['files']			= $files;
 
 		// Rendering View
         return view('gallery', $data);
+        // return view('underconstruction', $data);
+	}
+	
+	public function day1()
+	{
+		// Populating data
+		$dirPath = FCPATH.'/gallery/day1';
+		$files = scandir($dirPath);
+		
+		// Parsing Data to View
+        $data                   = $this->data;
+        $data['title']          = 'Gallery Day 1 YGF 30';
+        $data['desc']           = 'Gallery Day 1 YGF 30';
+		$data['files']			= $files;
+
+		// Rendering View
+        return view('day1', $data);
+        // return view('underconstruction', $data);
+	}
+	
+	public function day2()
+	{
+		// Populating data
+		$dirPath = FCPATH.'/gallery/day2';
+		$files = scandir($dirPath);
+		
+		// Parsing Data to View
+        $data                   = $this->data;
+        $data['title']          = 'Gallery Day 2 YGF 30';
+        $data['desc']           = 'Gallery Day 2 YGF 30';
+		$data['files']			= $files;
+
+		// Rendering View
+        return view('day2', $data);
+        // return view('underconstruction', $data);
+	}
+	
+	public function day3()
+	{
+		// Populating data
+		// $dirPath = FCPATH.'/gallery/day3';
+		// $files = scandir($dirPath);
+		
+		// Parsing Data to View
+        $data                   = $this->data;
+        $data['title']          = 'Gallery Day 3 YGF 30';
+        $data['desc']           = 'Gallery Day 3 YGF 30';
+		// $data['files']			= $files;
+
+		// Rendering View
+        return view('day3', $data);
+        // return view('underconstruction', $data);
+	}
+	
+	public function day4()
+	{
+		// Populating data
+		$dirPath = FCPATH.'/gallery/day4';
+		$files = scandir($dirPath);
+		
+		// Parsing Data to View
+        $data                   = $this->data;
+        $data['title']          = 'Gallery Day 4 YGF 30';
+        $data['desc']           = 'Gallery Day 4 YGF 30';
+		$data['files']			= $files;
+
+		// Rendering View
+        return view('day4', $data);
+        // return view('underconstruction', $data);
+	}
+	
+	public function day5()
+	{
+		// Populating data
+		// $dirPath = FCPATH.'/gallery/day5';
+		// $files = scandir($dirPath);
+		
+		// Parsing Data to View
+        $data                   = $this->data;
+        $data['title']          = 'Gallery Day 5 YGF 30';
+        $data['desc']           = 'Gallery Day 5 YGF 30';
+		// $data['files']			= $files;
+
+		// Rendering View
+        return view('day5', $data);
         // return view('underconstruction', $data);
 	}
 	
