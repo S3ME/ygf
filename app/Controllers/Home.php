@@ -163,14 +163,14 @@ class Home extends BaseController
 	public function day3()
 	{
 		// Populating data
-		// $dirPath = FCPATH.'/gallery/day3';
-		// $files = scandir($dirPath);
+		$dirPath = FCPATH.'/gallery/day3';
+		$files = scandir($dirPath);
 		
 		// Parsing Data to View
         $data                   = $this->data;
         $data['title']          = 'Gallery Day 3 YGF 30';
         $data['desc']           = 'Gallery Day 3 YGF 30';
-		// $data['files']			= $files;
+		$data['files']			= $files;
 
 		// Rendering View
         return view('day3', $data);
@@ -197,14 +197,14 @@ class Home extends BaseController
 	public function day5()
 	{
 		// Populating data
-		// $dirPath = FCPATH.'/gallery/day5';
-		// $files = scandir($dirPath);
+		$dirPath = FCPATH.'/gallery/day5';
+		$files = scandir($dirPath);
 		
 		// Parsing Data to View
         $data                   = $this->data;
         $data['title']          = 'Gallery Day 5 YGF 30';
         $data['desc']           = 'Gallery Day 5 YGF 30';
-		// $data['files']			= $files;
+		$data['files']			= $files;
 
 		// Rendering View
         return view('day5', $data);
