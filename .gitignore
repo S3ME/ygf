@@ -125,3 +125,10 @@ nb-configuration.xml
 /phpunit*.xml
 /.phpunit.*.cache
 
+# Dockerize
+.env.production
+.dockerignore
+docker-compose.yml
+docker/
+env.docker
+DockerFile

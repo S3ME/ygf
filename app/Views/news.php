@@ -9,7 +9,7 @@
     <div class="scroll-area">
         <!-- <div class="uk-section uk-section-xlarge uk-container uk-text-center">
             <h2 class="uk-heading-small uk-text-bold" style="color: #fff;">
-                Yogyakarta Gamelan Festival 30
+                Yogyakarta Gamelan Festival 31
             </h2>
             <p class="uk-text-lead uk-margin-medium-top" style="color: #fff;">
                 Kami sedang mempersiapkan pengalaman budaya yang luar biasa untuk Anda. 

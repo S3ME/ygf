@@ -38,7 +38,60 @@
 
 		  gtag('config', 'G-QFPERZQMRJ');
 		</script>
+		<style>
+			.home-section {
+				background-image: url(../images/coming-soon/bg-2.svg);
+				background-position: bottom center;
+				background-repeat: no-repeat;
+				background-size: content;
+				background-attachment: fixed;
+			}
+		</style>
     </head>
-    <body class="uk-width-1-1 uk-background-contain" uk-height-viewport style="background-image: url(images/CI_HORISONTAL_2.jpg);">
+    <body class="uk-width-1-1 uk-background-cover" uk-height-viewport style="background-image: url(images/coming-soon/comingsoon-bg-1.svg);">
+		<div class="home-section uk-padding" uk-height-viewport>
+			<div class="uk-container uk-container-xlarge">
+				<?php if ($ismobile === false) { ?>
+					<div class="tm-header" style="z-index:2;" uk-header>
+						<div class="uk-navbar-container" style="background: transparent;">
+							<div class="uk-container uk-container-expand" style="padding-top:15px; padding-bottom:15px;">
+								<nav uk-navbar>
+									<div class="uk-navbar-left">
+										<img src="images/coming-soon/kg-1.svg" style="height:70px;"/>
+									</div>
+									<div class="uk-navbar-right">
+										<a href="<?php echo base_url(); ?>"><img src="images/coming-soon/ygf-right.svg" style="height:75px;"/></a>
+									</div>
+								</nav>
+							</div>
+						</div>
+					</div>
+				<?php } else { ?>
+					<div class="tm-header-mobile" style="z-index:2;">
+						<div>
+							<div class="uk-navbar-container" style="background-color:transparent;">
+								<nav uk-navbar>
+									<div class="uk-navbar-left">
+										<img src="images/coming-soon/kg-1.svg" style="height:40px;" />
+									</div>
+									<div class="uk-navbar-right">
+										<a href="<?php echo base_url(); ?>"><img src="images/coming-soon/ygf-right.svg" style="height:40px; color: #000;" /></a>
+									</div>
+								</nav>
+							</div>
+						</div>
+					</div>
+				<?php } ?>
+
+				<div class="uk-position-center">
+					<div>
+						<img src="images/coming-soon/main-hero.svg" style="height:450px;"/>
+					</div>
+					<div class="uk-text-center uk-margin-large">
+						<a href="https://drive.google.com/drive/folders/1HEP1bDuQAlfX3IOUy1QBc2QoKzVHWgmH?usp=sharing" target="_blank" class="uk-button uk-button-large uk-button-primary">MEDIA KIT</a>
+					</div>
+				</div>
+			</div>
+		</div>
     </body>
 </html>

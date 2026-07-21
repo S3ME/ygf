@@ -99,11 +99,11 @@ if (isset($messagesession)) {
         <div class="uk-section uk-flex uk-flex-middle uk-flex-center uk-text-center" style="padding: 20px;">
             <div class="uk-width-3-4@m">
                 <h2 class="uk-heading-small uk-text-bold" style="color: #000;">
-                    Yogyakarta Gamelan Festival 30
+                    Yogyakarta Gamelan Festival 31
                 </h2>
                 <p class="uk-text-lead uk-margin-medium-top" style="color: #333;">
                     Kami sedang mempersiapkan pengalaman budaya yang luar biasa untuk Anda. 
-                    <span class="uk-text-bold" style="color: #f05a25;">YGF30</span> akan hadir sebentar lagi!
+                    <span class="uk-text-bold" style="color: #f05a25;">YGF31</span> akan hadir sebentar lagi!
                 </p>
                 <p class="uk-text-muted uk-margin">
                     Tandai kalender Anda dan jangan lewatkan perjalanan musikal yang memukau ini.
@@ -113,7 +113,7 @@ if (isset($messagesession)) {
 
         <div class="uk-height-large uk-flex uk-flex middle uk-flex-center">
             <div class="uk-flex uk-flex-middle">
-                <div class="uk-grid-small uk-child-width-auto uk-light" uk-grid uk-countdown="date: 2025-07-21T15:00:00+07:00">
+                <div class="uk-grid-small uk-child-width-auto uk-light" uk-grid uk-countdown="date: 2026-07-21T15:00:00+07:00">
                     <div>
                         <div class="uk-countdown-number uk-countdown-days" style="color:#000 !important;"></div>
                         <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s" style="color:#000 !important;">Days</div>
@@ -162,7 +162,7 @@ if (isset($messagesession)) {
                     <a class="uk-link-text" href="https://www.youtube.com/@Gayam16" target="_blank"><i class="fa-brands fa-youtube"></i> Gayam16</a>
                 </div>
                 <div>
-                    <a class="uk-link-text" href="" target="_blank">#YGF30</a>
+                    <a class="uk-link-text" href="" target="_blank">#YGF31</a>
                 </div>
             </div>
             <div class="uk-margin uk-light <?=$copyright?>">

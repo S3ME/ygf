@@ -10,51 +10,80 @@ class Home extends BaseController
 {
     public function index()
     {
-        // Calling Services
-        $session = \Config\Services::session();
+        // // Calling Services
+        // $session = \Config\Services::session();
 
-        $curl = curl_init();
-        curl_setopt($curl, CURLOPT_URL, "https://restcountries.com/v3.1/all?fields=name");
-        curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-        $country = json_decode(curl_exec($curl), true);
-        $countrysort = array_column($country, 'name');
-        array_multisort($countrysort, SORT_ASC, $country);
-        curl_close($curl);
+        // $curl = curl_init();
+        // curl_setopt($curl, CURLOPT_URL, "https://restcountries.com/v3.1/all?fields=name");
+        // curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+        // $country = json_decode(curl_exec($curl), true);
+        // $countrysort = array_column($country, 'name');
+        // array_multisort($countrysort, SORT_ASC, $country);
+        // curl_close($curl);
+
+		// Calling Services
+		$session = \Config\Services::session();
+
+		$curl = curl_init();
+		curl_setopt($curl, CURLOPT_URL, "https://restcountries.com/v3.1/all?fields=name");
+		curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+		
+		$response = curl_exec($curl);
+		$country = [];
+
+		// Check if cURL request was successful
+		if ($response !== false) {
+			$decoded = json_decode($response, true);
+			if (is_array($decoded)) {
+				$country = $decoded;
+				
+				// The API returns name as an array: ['name' => ['common' => 'Indonesia', ...]]
+				// We extract the 'common' name for sorting
+				$countrysort = array_map(function($item) {
+					return $item['name']['common'] ?? '';
+				}, $country);
+				
+				array_multisort($countrysort, SORT_ASC, $country);
+			}
+		}
+		curl_close($curl);
 
         // Parsing Data to View
         $data                   = $this->data;
-        $data['title']          = '30th Yogyakarta Gamelan Festival';
-        $data['desc']           = '30th Yogyakarta Gamelan Festival';
+        $data['title']          = '31th Yogyakarta Gamelan Festival';
+        $data['desc']           = '31th Yogyakarta Gamelan Festival';
         $data['countriesarr']   = $country;
         if (isset($_SESSION['message'])) {
 			$data['messagesession'] = $_SESSION['message'];
 		}
 
         // Rendering View
-        return view('home', $data);
+        // return view('home', $data);
+        return view('comingsoon', $data);
     }
 
 	public function about()
 	{
 		// Parsing Data to View
         $data                   = $this->data;
-        $data['title']          = 'Tentang YGF 30';
-        $data['desc']           = 'Tentang YGF 30';
+        $data['title']          = 'Tentang YGF 31';
+        $data['desc']           = 'Tentang YGF 31';
 
 		// Rendering View
-        return view('about', $data);
+        // return view('about', $data);
+        return view('comingsoon', $data);
 	}
 
 	public function program()
 	{
 		// Parsing Data to View
         $data                   = $this->data;
-        $data['title']          = 'Program YGF 30';
-        $data['desc']           = 'Program YGF 30';
+        $data['title']          = 'Program YGF 31';
+        $data['desc']           = 'Program YGF 31';
 
 		// Rendering View
-        return view('program', $data);
-        // return view('underconstruction', $data);
+        // return view('program', $data);
+        return view('comingsoon', $data);
 	}
 
 	public function news()
@@ -70,14 +99,14 @@ class Home extends BaseController
 
 		// Parsing Data to View
         $data                   = $this->data;
-        $data['title']          = 'Berita YGF 30';
-        $data['desc']           = 'Berita YGF 30';
+        $data['title']          = 'Berita YGF 31';
+        $data['desc']           = 'Berita YGF 31';
 		$data['articles']		= $press;
 		$data['newses']			= $feeds->channel->item;
 
 		// Rendering View
-        return view('news', $data);
-        // return view('underconstruction', $data);
+        // return view('news', $data);
+        return view('comingsoon', $data);
 	}
 
 	public function newsdetail($slug)
@@ -90,23 +119,25 @@ class Home extends BaseController
 
 		// Parsing Data to View
         $data                   = $this->data;
-        $data['title']          = 'Berita YGF 30';
-        $data['desc']           = 'Berita YGF 30';
+        $data['title']          = 'Berita YGF 31';
+        $data['desc']           = 'Berita YGF 31';
 		$data['article']		= $article;
 
 		// Rendering View
-        return view('newsdetail', $data);
+        // return view('newsdetail', $data);
+        return view('comingsoon', $data);
 	}
 
 	public function partners()
 	{
 		// Parsing Data to View
         $data                   = $this->data;
-        $data['title']          = 'Partner YGF 30';
-        $data['desc']           = 'Partner YGF 30';
+        $data['title']          = 'Partner YGF 31';
+        $data['desc']           = 'Partner YGF 31';
 
 		// Rendering View
-        return view('partners', $data);
+        // return view('partners', $data);
+        return view('comingsoon', $data);
 	}
 	
 	public function gallery()
@@ -117,13 +148,13 @@ class Home extends BaseController
 		
 		// Parsing Data to View
         $data                   = $this->data;
-        $data['title']          = 'Gallery YGF 30';
-        $data['desc']           = 'Gallery YGF 30';
+        $data['title']          = 'Gallery YGF 31';
+        $data['desc']           = 'Gallery YGF 31';
 		$data['files']			= $files;
 
 		// Rendering View
-        return view('gallery', $data);
-        // return view('underconstruction', $data);
+        // return view('gallery', $data);
+        return view('comingsoon', $data);
 	}
 	
 	public function day1()
@@ -134,13 +165,13 @@ class Home extends BaseController
 		
 		// Parsing Data to View
         $data                   = $this->data;
-        $data['title']          = 'Gallery Day 1 YGF 30';
-        $data['desc']           = 'Gallery Day 1 YGF 30';
+        $data['title']          = 'Gallery Day 1 YGF 31';
+        $data['desc']           = 'Gallery Day 1 YGF 31';
 		$data['files']			= $files;
 
 		// Rendering View
-        return view('day1', $data);
-        // return view('underconstruction', $data);
+        // return view('day1', $data);
+        return view('comingsoon', $data);
 	}
 	
 	public function day2()
@@ -151,13 +182,13 @@ class Home extends BaseController
 		
 		// Parsing Data to View
         $data                   = $this->data;
-        $data['title']          = 'Gallery Day 2 YGF 30';
-        $data['desc']           = 'Gallery Day 2 YGF 30';
+        $data['title']          = 'Gallery Day 2 YGF 31';
+        $data['desc']           = 'Gallery Day 2 YGF 31';
 		$data['files']			= $files;
 
 		// Rendering View
-        return view('day2', $data);
-        // return view('underconstruction', $data);
+        // return view('day2', $data);
+        return view('comingsoon', $data);
 	}
 	
 	public function day3()
@@ -168,13 +199,13 @@ class Home extends BaseController
 		
 		// Parsing Data to View
         $data                   = $this->data;
-        $data['title']          = 'Gallery Day 3 YGF 30';
-        $data['desc']           = 'Gallery Day 3 YGF 30';
+        $data['title']          = 'Gallery Day 3 YGF 31';
+        $data['desc']           = 'Gallery Day 3 YGF 31';
 		$data['files']			= $files;
 
 		// Rendering View
-        return view('day3', $data);
-        // return view('underconstruction', $data);
+        // return view('day3', $data);
+        return view('comingsoon', $data);
 	}
 	
 	public function day4()
@@ -185,13 +216,13 @@ class Home extends BaseController
 		
 		// Parsing Data to View
         $data                   = $this->data;
-        $data['title']          = 'Gallery Day 4 YGF 30';
-        $data['desc']           = 'Gallery Day 4 YGF 30';
+        $data['title']          = 'Gallery Day 4 YGF 31';
+        $data['desc']           = 'Gallery Day 4 YGF 31';
 		$data['files']			= $files;
 
 		// Rendering View
-        return view('day4', $data);
-        // return view('underconstruction', $data);
+        // return view('day4', $data);
+        return view('comingsoon', $data);
 	}
 	
 	public function day5()
@@ -202,13 +233,13 @@ class Home extends BaseController
 		
 		// Parsing Data to View
         $data                   = $this->data;
-        $data['title']          = 'Gallery Day 5 YGF 30';
-        $data['desc']           = 'Gallery Day 5 YGF 30';
+        $data['title']          = 'Gallery Day 5 YGF 31';
+        $data['desc']           = 'Gallery Day 5 YGF 31';
 		$data['files']			= $files;
 
 		// Rendering View
-        return view('day5', $data);
-        // return view('underconstruction', $data);
+        // return view('day5', $data);
+        return view('comingsoon', $data);
 	}
 	
 	public function merchandise()
@@ -218,12 +249,13 @@ class Home extends BaseController
 		
 		// Parsing Data to View
         $data                   = $this->data;
-        $data['title']          = 'Gallery YGF 30';
-        $data['desc']           = 'Gallery YGF 30';
+        $data['title']          = 'Gallery YGF 31';
+        $data['desc']           = 'Gallery YGF 31';
 		$data['merchendises']	= $MerchandiseModel->findAll();
 
 		// Rendering View
-        return view('merchandise', $data);
+        // return view('merchandise', $data);
+        return view('comingsoon', $data);
 	}
 
     public function sendmessage()

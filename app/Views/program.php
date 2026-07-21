@@ -16,7 +16,7 @@
     <div class="scroll-area">
         <div class="uk-section uk-section-small">
             <!-- <h2 class="uk-heading-small uk-text-bold" style="color: #fff;">
-                Yogyakarta Gamelan Festival 30
+                Yogyakarta Gamelan Festival 31
             </h2>
             <p class="uk-text-lead uk-margin-medium-top" style="color: #fff;">
                 Kami sedang mempersiapkan pengalaman budaya yang luar biasa untuk Anda. 
@@ -30,7 +30,7 @@
                 <div class="uk-text-center">
                     <img class="uk-width-2-3@m" src="images/gaung_gamelan.jpg" alt="Gaung Gamelan" />
                 </div>
-                <p class="outline-text">Gaung Gamelan, sebagai pembuka rangkaian Yogyakarta Gamelan Festival 30 dan merupakan program andalan yang merangkum beberapa desa budaya di Yogyakarta untuk memainkan beberapa komposisi 3 gending gaya Yogyakarta secara bersamaan. Gending-gending ini sebelumnya akan dibagikan kepada publik dan dilatih bersama Komunitas Gayam 16.</p>
+                <p class="outline-text">Gaung Gamelan, sebagai pembuka rangkaian Yogyakarta Gamelan Festival 31 dan merupakan program andalan yang merangkum beberapa desa budaya di Yogyakarta untuk memainkan beberapa komposisi 3 gending gaya Yogyakarta secara bersamaan. Gending-gending ini sebelumnya akan dibagikan kepada publik dan dilatih bersama Komunitas Gayam 16.</p>
                 <p class="outline-text">Perpaduan bunyi gamelan dari berbagai laras akan menghasilkan simfoni yang sangat indah dan kompleks. Kompleksitas orkestrasi bunyi gamelan ini tidak akan diamplifikasi oleh tata suara modern. Hal ini bertujuan agar simfoni yang tercipta dapat terdengar secara langsung oleh telinga.</p>
                 <div class="uk-h5 outline-text">
                     Senin, 21 Juli 2025<br/>
@@ -45,7 +45,7 @@
                 <div class="uk-text-center">
                     <img class="uk-width-2-3@m" src="images/panggung_slenthem.jpg" alt="Panggung Slenthem" />
                 </div>
-                <p class="outline-text">Salah satu wahana bagi beberapa penampil di Yogyakarta Gamelan Festival ke-30 tahun ini bernama Panggung Slenthem.</p>
+                <p class="outline-text">Salah satu wahana bagi beberapa penampil di Yogyakarta Gamelan Festival ke-31 tahun ini bernama Panggung Slenthem.</p>
                 <p class="outline-text">Panggung ini akan menampilkan keberagaman musik dengan performa mantap dari tiap penampilnya. Dan akan ada rekan-rekan @simaksiar juga di sana.</p>
                 <div class="uk-h5 outline-text">
                     Selasa - Kamis,<br/>
@@ -61,7 +61,7 @@
                 <div class="uk-text-center">
                     <img class="uk-width-2-3@m" src="images/panggung_cokekan.jpg" alt="Panggung Cokekan" />
                 </div>
-                <p class="outline-text">Ada yang menarik di Yogyakarta Gamelan Festival ke-30 tahun ini, beda juga dari penyelenggaraan sebelum-sebelumnya, adalah hadirnya Panggung Cokekan yang memanggungkan banyak penampil unik setiap harinya.</p>
+                <p class="outline-text">Ada yang menarik di Yogyakarta Gamelan Festival ke-31 tahun ini, beda juga dari penyelenggaraan sebelum-sebelumnya, adalah hadirnya Panggung Cokekan yang memanggungkan banyak penampil unik setiap harinya.</p>
                 <p class="outline-text">Dan Pasar Cokekan yang akan memenuhi kebutuhan kulinermu.</p>
                 <div class="uk-h5 outline-text">
                     Senin - Minggu,<br/>
@@ -77,7 +77,7 @@
                 <div class="uk-text-center">
                     <img class="uk-width-2-3@m" src="images/lokakarya.jpg" alt="Lokakarya" />
                 </div>
-                <p class="outline-text">Lokakarya Gamelan yang menjadi salah satu rangkaian acara Yogyakarta Gamelan Festival (YGF)#30. Dengan mengangkat tema "Gamelan Tanpa Tembok" diharap mampu menjadi ruang partisipatif yang menjembatani generasi muda dan masyarakat luas untuk lebih dekat, mengenal, dan  turut melestarikan gamelan sebagai warisan budaya yang hidup dan relevan dengan zaman.</p>
+                <p class="outline-text">Lokakarya Gamelan yang menjadi salah satu rangkaian acara Yogyakarta Gamelan Festival (YGF)#31. Dengan mengangkat tema "Gamelan Tanpa Tembok" diharap mampu menjadi ruang partisipatif yang menjembatani generasi muda dan masyarakat luas untuk lebih dekat, mengenal, dan  turut melestarikan gamelan sebagai warisan budaya yang hidup dan relevan dengan zaman.</p>
                 <p class="outline-text">Seorang lelaki bernama Sahrul Yuliyanto yang mencintai gamelan & karawitan ini disematkan “Kepek–nama dusunnya” dan populer sebagai @sahrul_kepek.<br/>Dan di program Lokakarya nanti, Mas Sahrul akan menjadi narasumbernya, dengan benefit mantep yang bisa kamu dapat.</p>
                 <div class="uk-h5 outline-text">
                     Selasa - Kamis,<br/>
@@ -98,7 +98,7 @@
                 <div class="uk-text-center">
                     <img class="uk-width-2-3@m" src="images/sorot_sumirat.jpg" alt="Sorot Sumirat" />
                 </div>
-                <p class="outline-text">Salah satu program baru Yogyakarta Gamelan Festival ke-30 tahun ini yang juga menarik dan sayang jika dilewatkan, adalah Sorot Sumirat.</p>
+                <p class="outline-text">Salah satu program baru Yogyakarta Gamelan Festival ke-31 tahun ini yang juga menarik dan sayang jika dilewatkan, adalah Sorot Sumirat.</p>
                 <p class="outline-text">Pertunjukan atraksi tata cahaya memukau yang akan menjadikan salah satu titik di Taman Budaya Embung Giwangan untuk dijadikan objek yang akan disorot cahaya ragam dan rupa warna oleh para seniman tata cahaya.</p>
                 <div class="uk-h5 outline-text">
                     Rabu - Jumat,<br/>

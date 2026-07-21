@@ -2,6 +2,73 @@
 
 <?= $this->section('pageStyles') ?>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+    #showmessage {
+        height: 500px;
+        border: none;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: left; 
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .chat-bubble {
+        background-color: #fbcbc9;
+        color: #000000;
+        padding: 2px 6px;
+        margin-bottom: 15px;
+        display: inline;
+        box-decoration-break: clone;
+        -webkit-box-decoration-break: clone;
+    }
+
+    .message-row {
+        margin-bottom: 15px;
+        display: block; 
+    }
+
+    #messagetext, #openingmessage {
+        background-color: #fbcbc9 !important;
+        color: #000000 !important;
+        font-weight: bold;
+        border: none;
+    }
+
+    #messagetext::placeholder, #openingmessage::placeholder {
+        color: #000000;
+        opacity: 0.6;
+    }
+    #messagetext::-webkit-input-placeholder, #openingmessage::-webkit-input-placeholder {
+        color: #000000;
+        opacity: 0.6;
+    }
+
+    .button-home {
+        display: block;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-size: 20px;
+        line-height: 1;
+        font-weight: 700;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+    .button-home:hover,
+    .button-home:active {
+        color: #000 !important;
+        text-decoration: none;
+    }
+    .button-home span {
+        background-color: #fbcbc9;
+        padding: 2px 6px;
+    }
+</style>
 <?= $this->endSection() ?>
 
 <?= $this->section('main') ?>
@@ -34,24 +101,29 @@ foreach ($countriesarr as $countryarr) {
                 <div class="uk-navbar-container" style="background: transparent;">
                     <div class="uk-container uk-container-expand" style="padding-top:15px; padding-bottom:15px;">
                         <nav uk-navbar>
-                            <div class="uk-navbar-left">
-                                <img src="images/sec1/kmg1.svg" style="height:70px;"/>
+                            <div class="uk-navbar-left" uk-grid>
+                                <div>
+                                    <img src="images/sec-1/kmg1.svg" style="height:70px;"/>
+                                </div>
+                                <div>
+                                    <img src="images/sec-1/bwdd.svg" style="height:100px;"/>
+                                </div>
                             </div>
                             <div class="uk-navbar-center">
                                 <ul class="uk-navbar-nav">
-                                    <li><a href="<?php echo base_url(); ?>" style="background-color:#00ffff; color:#000;">Home</a></li>
-                                    <li><a href="about" style="background-color:#00ffff; color:#000;">About</a></li>
-                                    <!--<li><a href="schedule" style="background-color:#00ffff; color:#000;">Schedule</a></li>
-                                    <li><a href="artist" style="background-color:#00ffff; color:#000;">Artist</a></li>-->
-                                    <li><a href="program" style="background-color:#00ffff; color:#000;">Program</a></li>
-                                    <li><a href="news" style="background-color:#00ffff; color:#000;">News</a></li>
-                                    <li><a href="galeri" style="background-color:#00ffff; color:#000;">Gallery</a></li>
-                                    <!-- <li><a href="merchandise" style="background-color:#00ffff; color:#000;">Merchandise</a></li> -->
-                                    <li><a href="partners" style="background-color:#00ffff; color:#000;">Partners</a></li>
+                                    <li><a href="<?php echo base_url(); ?>" style="background-color:#FD6119"><span style="background-color:#fbcbc9; color:#000000;">Home</span></a></li>
+                                    <li><a href="about" style="background-color:#fe891c"><span style="background-color:#fbcbc9; color:#000000;">About</span></a></li>
+                                    <!--<li><a href="schedule" style="background-color:#00ffff"><span style="background-color:#fbcbc9; color:#000000;">Schedule</span></a></li>
+                                    <li><a href="artist" style="background-color:#00ffff"><span style="background-color:#fbcbc9; color:#000000;">Artist</span></a></li>-->
+                                    <li><a href="program" style="background-color:#ffd84d"><span style="background-color:#fbcbc9; color:#000000;">Program</span></a></li>
+                                    <li><a href="news" style="background-color:#ffff00"><span style="background-color:#fbcbc9; color:#000000;">News</span></a></li>
+                                    <li><a href="galeri" style="background-color:#cccf5d"><span style="background-color:#fbcbc9; color:#000000;">Gallery</span></a></li>
+                                    <li><a href="merchandise" style="background-color:#ffffff"><span style="background-color:#fbcbc9; color:#000000;">Merchandise</span></a></li>
+                                    <li><a href="partners" style="background-color:#000000; color:#fd6119;"><span style="background-color:#fbcbc9; color:#fd6119;">Partners</span></a></li>
                                 </ul>
                             </div>
                             <div class="uk-navbar-right">
-                                <a href="<?php echo base_url(); ?>"><img src="images/sec1/ygf-top-right-1.svg" style="height:75px;"/></a>
+                                <a href="<?php echo base_url(); ?>"><img src="images/sec-1/ygf-logo-1.svg" style="height:75px;"/></a>
                             </div>
                         </nav>
                     </div>
@@ -65,11 +137,16 @@ foreach ($countriesarr as $countryarr) {
                             <div class="uk-navbar-left">
                                 <a class="uk-navbar-toggle" href="#offcanvas" uk-toggle uk-navbar-toggle-icon></a>
                             </div>
-                            <div class="uk-navbar-center">
-                                <img src="images/sec1/kmg1.svg" style="height:40px;" />
+                            <div class="uk-navbar-center" uk-grid>
+                                <div>
+                                    <img src="images/sec-1/kmg1.svg" style="height:40px;" />
+                                </div>
+                                <div>
+                                    <img src="images/sec-1/bwdd.svg" style="height:60px;" />
+                                </div>
                             </div>
                             <div class="uk-navbar-right">
-                                <a href="<?php echo base_url(); ?>"><img src="images/sec1/ygf-top-right-1.svg" style="height:40px; color: #000;" /></a>
+                                <a href="<?php echo base_url(); ?>"><img src="images/sec-1/ygf-logo-1.svg" style="height:40px; color: #000;" /></a>
                             </div>
                         </nav>
                     </div>
@@ -88,7 +165,7 @@ foreach ($countriesarr as $countryarr) {
                                                 <li><a href="program">Program</a></li>
                                                 <li><a href="news">News</a></li>
                                                 <li><a href="galeri">Gallery</a></li>
-                                                <!-- <li><a href="merchandise">Merchandise</a></li> -->
+                                                <li><a href="merchandise">Merchandise</a></li>
                                                 <li><a href="partners">Partners</a></li>
                                             </ul>
                                         </div>
@@ -101,9 +178,9 @@ foreach ($countriesarr as $countryarr) {
             </div>
         <?php } ?>
         <div class="uk-grid-small" uk-grid>
-            <!-- <div class="uk-width-3-4@m uk-height-large uk-margin uk-margin-top uk-flex uk-flex middle uk-flex-center">
+            <div class="uk-width-3-4@m uk-height-large uk-margin uk-margin-top uk-flex uk-flex middle uk-flex-center">
                 <div class="uk-flex uk-flex-middle">
-                    <div class="uk-grid-small uk-child-width-auto uk-light" uk-grid uk-countdown="date: 2025-07-21T15:00:00+07:00">
+                    <div class="uk-grid-small uk-child-width-auto uk-light" uk-grid uk-countdown="date: 2026-07-21T15:00:00+07:00">
                         <div>
                             <div class="uk-countdown-number uk-countdown-days" style="color:#000 !important;"></div>
                             <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s" style="color:#000 !important;">Days</div>
@@ -125,19 +202,18 @@ foreach ($countriesarr as $countryarr) {
                         </div>
                     </div>
                 </div>
-            </div> -->
-            <div class="uk-width-3-4@m uk-flex uk-flex-bottom">
+            </div>
+            <!-- <div class="uk-width-3-4@m uk-flex uk-flex-bottom">
                 <div class="uk-width-1-1 uk-margin uk-margin-top embed-container">
                     <iframe src="https://www.youtube.com/embed/vcFjD2ooflk?modestbranding=1&autoplay=1&mute=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <!-- <div class="uk-width-1-1 uk-height-large uk-flex uk-flex-middle uk-flex-center uk-margin-top">
+                <div class="uk-width-1-1 uk-height-large uk-flex uk-flex-middle uk-flex-center uk-margin-top">
                     <div class="uk-h1 uk-text-center uk-light">THANK YOU!<br/><br/>See you next year..</div>
-                </div> -->
-            </div>
+                </div>
+            </div> -->
             <div class="uk-width-1-4@m">
-                <!-- <div style="background-color: #ff00ff;">
-                    <div id="showmessage" class="uk-margin-top uk-panel uk-panel-scrollable" style="height:500px; border:none;">
-                    </div>
+                <div style="background-color: #ffff00;" hidden>
+                    <div id="showmessage" class="uk-margin-top uk-panel uk-panel-scrollable" style="height:500px; border:none;"></div>
                     <script type="application/javascript">
                         setInterval(function(){
                             $('#showmessage').load('showmessage');
@@ -145,26 +221,26 @@ foreach ($countriesarr as $countryarr) {
                         }, 10000);
                     </script>
                     <div class="uk-padding-small uk-margin-top">
-                        <div id="messagecontainer" class="uk-margin-top uk-padding-small uk-light" style="border: 2px solid #d9e021; border-radius: 10px;" </?php echo $unhide; ?>>
+                        <div id="messagecontainer" class="uk-margin-top uk-padding-small uk-light" style="border: 2px solid #d9e021; border-radius: 10px;" <?php echo $unhide; ?>>
                             <form id="messageform" class="uk-form-stacked" method="post" accept-charset="utf-8" style="background-color: #d9e021; color: #000 !important; border-radius: 10px;">
                                 <div class="uk-margin" hidden>
                                     <div class="uk-form-controls">
-                                        <input id="messagename" class="uk-input" name="name" type="text" placeholder="Name" </?php echo $name; ?>>
+                                        <input id="messagename" class="uk-input" name="name" type="text" placeholder="Name" <?php echo $name; ?>>
                                     </div>
                                 </div>
                                 <div class="uk-margin" hidden>
                                     <div class="uk-form-controls">
-                                        <input id="messageemail" class="uk-input" name="email" type="email" placeholder="Email" </?php echo $email; ?>>
+                                        <input id="messageemail" class="uk-input" name="email" type="email" placeholder="Email" <?php echo $email; ?>>
                                     </div>
                                 </div>
                                 <div class="uk-margin" hidden>
                                     <div class="uk-form-controls">
-                                        <input id="messagecountry" class="uk-input" name="country" type="text" placeholder="Country" </?php echo $country; ?>>
+                                        <input id="messagecountry" class="uk-input" name="country" type="text" placeholder="Country" <?php echo $country; ?>>
                                     </div>
                                 </div>
                                 <div class="uk-margin" hidden>
                                     <div class="uk-form-controls">
-                                        <input id="messageage" class="uk-input" name="age" type="number" placeholder="Age" </?php echo $age; ?>>
+                                        <input id="messageage" class="uk-input" name="age" type="number" placeholder="Age" <?php echo $age; ?>>
                                     </div>
                                 </div>
                                 <div class="uk-margin">
@@ -178,11 +254,11 @@ foreach ($countriesarr as $countryarr) {
                                 $(document).ready(function() {
                                     $('#messageform').submit(function(event) {
                                         var formData = {
-                                            'name'			: $('input[name="name"]').val(),
-                                            'email'			: $('input[name="email"]').val(),
-                                            'country'		: $('input[name="country"]').val(),
-                                            'age'			: $('input[name="age"]').val(),
-                                            'message'		: $('input[name="message"]').val()
+                                            'name'          : $('input[name="name"]').val(),
+                                            'email'         : $('input[name="email"]').val(),
+                                            'country'       : $('input[name="country"]').val(),
+                                            'age'           : $('input[name="age"]').val(),
+                                            'message'       : $('input[name="message"]').val()
                                         };
                                         
                                         $.ajax({
@@ -239,7 +315,7 @@ foreach ($countriesarr as $countryarr) {
                         }
                     </style>
                     <div class="uk-padding-small uk-margin-top">
-                        <div id="openingformcontainer" class="uk-margin-bottom uk-padding-small uk-light" style="border: 2px solid #d9e021; border-radius: 10px;" </?php echo $hidden; ?>>
+                        <div id="openingformcontainer" class="uk-margin-bottom uk-padding-small uk-light" style="border: 2px solid #d9e021; border-radius: 10px;" <?php echo $hidden; ?>>
                             <form id="openingform" class="uk-form-stacked" style="background-color: #d9e021; color: #000; border-radius: 10px;">
                                 <div>
                                     <div class="uk-form-controls">
@@ -249,40 +325,40 @@ foreach ($countriesarr as $countryarr) {
                             </form>
                         </div>
                     </div>
+                </div>
+                <!-- <div class="uk-position-relative uk-visible-toggle uk-margin-top" tabindex="-1" uk-slideshow="animation: pull; autoplay: true; ratio: 9:16" style="border: 2px solid #000;">
+                    <ul class="uk-slideshow-items">
+                        <li>
+                            <a href="program#gaung-gamelan"><img src="images/slideshow/gaung_gamelan.jpg" alt="Gaung Gamelan" uk-cover></a>
+                        </li>
+                        <li>
+                            <a href="program#panggung-slenthem"><img src="images/slideshow/panggung_slenthem.jpg" alt="Panggung Slenthem" uk-cover></a>
+                        </li>
+                        <li>
+                            <a href="program#pasar-cokekan"><img src="images/slideshow/panggung_cokekan.jpg" alt="Pasar Cokekan" uk-cover></a>
+                        </li>
+                        <li>
+                            <a href="program#kongres-gamelan"><img src="images/slideshow/kongres_gamelan.jpg" alt="Kongres Gamelan" uk-cover></a>
+                        </li>
+                        <li>
+                            <a href="program#lokakarya-gamelan"><img src="images/slideshow/lokakarya.jpg" alt="Lokakarya" uk-cover></a>
+                        </li>
+                        <li>
+                            <a href="program#sorot-sumirat"><img src="images/slideshow/sorot_sumirat.jpg" alt="Sorot Sumirat" uk-cover></a>
+                        </li>
+                        <li>
+                            <a href="program#konser-maestro"><img src="images/slideshow/konser_maestro.jpg" alt="Konser Maestro" uk-cover></a>
+                        </li>
+                        <li>
+                            <a href="program#konser-gamelan"><img src="images/slideshow/konser_gamelan.jpg" alt="Konser Gamelan" uk-cover></a>
+                        </li>
+                        <li>
+                            <a href="program#exhibition"><img src="images/slideshow/exhibition.jpg" alt="Exhibition" uk-cover></a>
+                        </li>
+                    </ul>
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
                 </div> -->
-				<div class="uk-position-relative uk-visible-toggle uk-margin-top" tabindex="-1" uk-slideshow="animation: pull; autoplay: true; ratio: 9:16" style="border: 2px solid #000;">
-					<ul class="uk-slideshow-items">
-						<li>
-							<a href="program#gaung-gamelan"><img src="images/slideshow/gaung_gamelan.jpg" alt="Gaung Gamelan" uk-cover></a>
-						</li>
-						<li>
-							<a href="program#panggung-slenthem"><img src="images/slideshow/panggung_slenthem.jpg" alt="Panggung Slenthem" uk-cover></a>
-						</li>
-						<li>
-							<a href="program#pasar-cokekan"><img src="images/slideshow/panggung_cokekan.jpg" alt="Pasar Cokekan" uk-cover></a>
-						</li>
-						<!-- <li>
-							<a href="program#kongres-gamelan"><img src="images/slideshow/kongres_gamelan.jpg" alt="Kongres Gamelan" uk-cover></a>
-						</li> -->
-						<li>
-							<a href="program#lokakarya-gamelan"><img src="images/slideshow/lokakarya.jpg" alt="Lokakarya" uk-cover></a>
-						</li>
-						<li>
-							<a href="program#sorot-sumirat"><img src="images/slideshow/sorot_sumirat.jpg" alt="Sorot Sumirat" uk-cover></a>
-						</li>
-						<li>
-							<a href="program#konser-maestro"><img src="images/slideshow/konser_maestro.jpg" alt="Konser Maestro" uk-cover></a>
-						</li>
-						<li>
-							<a href="program#konser-gamelan"><img src="images/slideshow/konser_gamelan.jpg" alt="Konser Gamelan" uk-cover></a>
-						</li>
-						<li>
-							<a href="program#exhibition"><img src="images/slideshow/exhibition.jpg" alt="Exhibition" uk-cover></a>
-						</li>
-					</ul>
-					<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-					<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-				</div>
                 <!-- <div id="datacontainer" class="uk-flex-top" uk-modal>
                     <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-light" style="background-color:#000; border:2px solid #fff; width:350px;">
                         <p>Mohon masukkan data diri anda untuk bisa memulai mengirim pesan</p>
@@ -344,68 +420,52 @@ foreach ($countriesarr as $countryarr) {
                 </script> -->
             </div>
         </div>
-        <div>
-            <style>
-                .button-home {
-                    display: block;
-                    /* background-color: #f05a25; */
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    border-radius: 10px;
-                    /* color: #fff; */
-                    padding: 10px;
-                    font-size: 20px;
-                    line-height: 1;
-                    font-weight: 700;
-                    position: relative;
-                    overflow: hidden;
-                }
-                .button-home:hover,
-                .button-home:active {
-                    color: #000 !important;
-                    text-decoration: none;
-                }
-            </style>
+        <div class="uk-margin-top">
             <?php
             if ($ismobile) {
                 $menu = 'uk-flex-center';
                 $socmed = 'uk-flex-center';
                 $copyright = 'uk-text-center';
             } else {
-                $menu = 'uk-flex-between';
+                $menu = 'uk-flex-left';
                 $socmed = 'uk-flex-left';
                 $copyright = 'uk-text-left';
             }
             ?>
+            
             <div class="uk-margin uk-grid-small uk-child-width-auto <?=$menu?>" uk-grid>
+                <!-- <div>
+                    <a class="button-home" style="background-color:#f05a25;" href="program#lokakarya"><span style="color:#ffffff;">Gaung Gamelan</span></a>
+                </div> -->
+                <!-- <div>
+                    <a class="button-home" style="background-color:#ffff00;" href="program#panggung-slenthem"><span style="color:#0000ff;">Panggung Slenthem</span></a>
+                </div> -->
+                <!-- <div>
+                    <a class="button-home" style="background-color:#0071bc;" href="program#pasar-cokekan"><span style="color:#ffffff;">Pasar Cokekan</span></a>
+                </div> -->
+                <!-- <div>
+                    <a class="button-home" style="background-color:#9e005d;" href="program#kongres-gamelan"><span style="color:#ffffff;">Kongres Gamelan</span></a>
+                </div> -->
                 <div>
-                    <a class="button-home" style="background-color:#f05a25; color:#fff;" href="program#lokakarya">Gaung Gamelan</a>
+                    <a class="button-home" style="background-color:#f05a25;" href="program#lokakarya"><span style="color:#ffffff;">LOKAKARYA</span></a>
                 </div>
                 <div>
-                    <a class="button-home" style="background-color:#d9e021; color:#0000ff;" href="program#panggung-slenthem">Panggung Slenthem</a>
+                    <a class="button-home" style="background-color:#ffff00;" href="program#rembug-budaya"><span style="color:#0000ff;">REMBUG BUDAYA</span></a>
                 </div>
+                <!-- <div>
+                    <a class="button-home" style="background-color:#ac25f7;" href="program#sorot-sumirat"><span style="color:#ffffff;">Sorot Sumirat</span></a>
+                </div> -->
+                <!-- <div>
+                    <a class="button-home" style="background-color:#f05a25;" href="program#konser-maestro"><span style="color:#ffffff;">Konser Maestro</span></a>
+                </div> -->
                 <div>
-                    <a class="button-home" style="background-color:#0071bc; color:#fff;" href="program#pasar-cokekan">Pasar Cokekan</a>
-                </div>
-                <div>
-                    <a class="button-home" style="background-color:#9e005d; color:#fff;" href="program#kongres-gamelan">Kongres Gamelan</a>
-                </div>
-                <div>
-                    <a class="button-home" style="background-color:#662d91; color:#fff;" href="program#lokakarya">Lokakarya</a>
-                </div>
-                <div>
-                    <a class="button-home" style="background-color:#ac25f7; color:#fff;" href="program#sorot-sumirat">Sorot Sumirat</a>
-                </div>
-                <div>
-                    <a class="button-home" style="background-color:#f05a25; color:#fff;" href="program#konser-maestro">Konser Maestro</a>
-                </div>
-                <div>
-                    <a class="button-home" style="background-color:#f05a25; color:#fff;" href="program#konser-gamelan">Konser Gamelan</a>
+                    <a class="button-home" style="background-color:#000000;" href="program#konser-gamelan"><span style="color:#ffffff; background-color: transparent; padding: 0;">KONSER GAMELAN</span></a>
                 </div>
             </div>
-            <div class="uk-margin uk-light uk-child-width-auto <?=$socmed?>" uk-grid>
+            
+            <div class="uk-margin uk-light uk-child-width-auto uk-grid-medium <?=$socmed?>" uk-grid style="font-size: 20px;">
                 <div>
-                    <a class="uk-link-text" href="https://www.facebook.com/YogyakartaGamelanFestival" target="_blank"><i class="fa-brands fa-facebook"></i> YogyakartaGamelanFestival</a>
+                    <a class="uk-link-text" href="https://www.facebook.com/YogyakartaGamelanFestival" target="_blank"><i class="fa-brands fa-facebook"></i> komunitasgayam16</a>
                 </div>
                 <div>
                     <a class="uk-link-text" href="https://www.instagram.com/komunitasgayam16/" target="_blank"><i class="fa-brands fa-instagram"></i> komunitasgayam16</a>
@@ -417,10 +477,14 @@ foreach ($countriesarr as $countryarr) {
                     <a class="uk-link-text" href="https://www.youtube.com/@Gayam16" target="_blank"><i class="fa-brands fa-youtube"></i> Gayam16</a>
                 </div>
                 <div>
-                    <a class="uk-link-text" href="" target="_blank">#YGF30</a>
+                    <a class="uk-link-text" href="https://www.tiktok.com/@gayam16" target="_blank"><i class="fa-brands fa-tiktok"></i> gayam16</a>
+                </div>
+                <div>
+                    <a class="uk-link-text" style="font-weight: bold; cursor: default;">#YGF31</a>
                 </div>
             </div>
-            <div class="uk-margin uk-light <?=$copyright?>">
+
+            <div class="uk-margin uk-light <?=$copyright?>" style="margin-top: 25px !important;">
                 Developed by <a class="uk-text-bold" href="https://binary111.com" target="_blank">Kodebiner Teknologi Indonesia</a>
             </div>
         </div>

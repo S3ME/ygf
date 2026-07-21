@@ -262,7 +262,7 @@
 							<a class="uk-link-text" href="https://www.youtube.com/@Gayam16" target="_blank"><i class="fa-brands fa-youtube"></i> Gayam16</a>
 						</div>
 						<div>
-							<a class="uk-link-text" href="/" target="_blank">#YGF30</a>
+							<a class="uk-link-text" href="/" target="_blank">#YGF31</a>
 						</div>
 					</div>
 					<div class="uk-light uk-text-center">

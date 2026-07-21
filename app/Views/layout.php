@@ -43,12 +43,13 @@
         <?= $this->renderSection('pageStyles') ?>
 		<style>
 			.home-section {
-				background-color: #FFF2CC;
-				background-image: url(../images/sec1/footer-1-1.svg), url(../images/sec1/hero-cloud.svg);
-				background-position: bottom center, bottom;
-				background-repeat: no-repeat, no-repeat;
-				background-size: cover, cover;
-				background-attachment: fixed, fixed;
+				background-color: #009389;
+				background-image: url(../images/sec-1/bg-1.svg);
+				/* background-image: url(../images/sec1/footer-1-1.svg), url(../images/sec1/hero-cloud.svg); */
+				background-position: bottom center;
+				background-repeat: no-repeat;
+				background-size: content;
+				background-attachment: fixed;
 			}
 		</style>
     </head>
