@@ -58,8 +58,8 @@ class Home extends BaseController
 		}
 
         // Rendering View
-        // return view('home', $data);
-        return view('comingsoon', $data);
+        return view('home', $data);
+        // return view('comingsoon', $data);
     }
 
 	public function about()
@@ -70,8 +70,8 @@ class Home extends BaseController
         $data['desc']           = 'Tentang YGF 31';
 
 		// Rendering View
-        // return view('about', $data);
-        return view('comingsoon', $data);
+        return view('about', $data);
+        // return view('comingsoon', $data);
 	}
 
 	public function program()
@@ -82,8 +82,8 @@ class Home extends BaseController
         $data['desc']           = 'Program YGF 31';
 
 		// Rendering View
-        // return view('program', $data);
-        return view('comingsoon', $data);
+        return view('program', $data);
+        // return view('comingsoon', $data);
 	}
 
 	public function news()
@@ -105,8 +105,8 @@ class Home extends BaseController
 		$data['newses']			= $feeds->channel->item;
 
 		// Rendering View
-        // return view('news', $data);
-        return view('comingsoon', $data);
+        return view('news', $data);
+        // return view('comingsoon', $data);
 	}
 
 	public function newsdetail($slug)
@@ -124,8 +124,8 @@ class Home extends BaseController
 		$data['article']		= $article;
 
 		// Rendering View
-        // return view('newsdetail', $data);
-        return view('comingsoon', $data);
+        return view('newsdetail', $data);
+        // return view('comingsoon', $data);
 	}
 
 	public function partners()
@@ -136,8 +136,8 @@ class Home extends BaseController
         $data['desc']           = 'Partner YGF 31';
 
 		// Rendering View
-        // return view('partners', $data);
-        return view('comingsoon', $data);
+        return view('partners', $data);
+        // return view('comingsoon', $data);
 	}
 	
 	public function gallery()
@@ -153,8 +153,8 @@ class Home extends BaseController
 		$data['files']			= $files;
 
 		// Rendering View
-        // return view('gallery', $data);
-        return view('comingsoon', $data);
+        return view('gallery', $data);
+        // return view('comingsoon', $data);
 	}
 	
 	public function day1()
@@ -170,8 +170,8 @@ class Home extends BaseController
 		$data['files']			= $files;
 
 		// Rendering View
-        // return view('day1', $data);
-        return view('comingsoon', $data);
+        return view('day1', $data);
+        // return view('comingsoon', $data);
 	}
 	
 	public function day2()
@@ -187,8 +187,8 @@ class Home extends BaseController
 		$data['files']			= $files;
 
 		// Rendering View
-        // return view('day2', $data);
-        return view('comingsoon', $data);
+        return view('day2', $data);
+        // return view('comingsoon', $data);
 	}
 	
 	public function day3()
@@ -204,8 +204,8 @@ class Home extends BaseController
 		$data['files']			= $files;
 
 		// Rendering View
-        // return view('day3', $data);
-        return view('comingsoon', $data);
+        return view('day3', $data);
+        // return view('comingsoon', $data);
 	}
 	
 	public function day4()
@@ -221,8 +221,8 @@ class Home extends BaseController
 		$data['files']			= $files;
 
 		// Rendering View
-        // return view('day4', $data);
-        return view('comingsoon', $data);
+        return view('day4', $data);
+        // return view('comingsoon', $data);
 	}
 	
 	public function day5()
@@ -238,8 +238,8 @@ class Home extends BaseController
 		$data['files']			= $files;
 
 		// Rendering View
-        // return view('day5', $data);
-        return view('comingsoon', $data);
+        return view('day5', $data);
+        // return view('comingsoon', $data);
 	}
 	
 	public function merchandise()
@@ -254,8 +254,8 @@ class Home extends BaseController
 		$data['merchendises']	= $MerchandiseModel->findAll();
 
 		// Rendering View
-        // return view('merchandise', $data);
-        return view('comingsoon', $data);
+        return view('merchandise', $data);
+        // return view('comingsoon', $data);
 	}
 
     public function sendmessage()

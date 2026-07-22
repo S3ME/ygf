@@ -177,7 +177,7 @@ foreach ($countriesarr as $countryarr) {
                 </div>
             </div>
         <?php } ?>
-        <div class="uk-grid-small" uk-grid>
+        <div class="uk-grid-small uk-flex-middle" uk-grid>
             <div class="uk-width-3-4@m uk-height-large uk-margin uk-margin-top uk-flex uk-flex middle uk-flex-center">
                 <div class="uk-flex uk-flex-middle">
                     <div class="uk-grid-small uk-child-width-auto uk-light" uk-grid uk-countdown="date: 2026-07-21T15:00:00+07:00">
@@ -212,7 +212,7 @@ foreach ($countriesarr as $countryarr) {
                 </div>
             </div> -->
             <div class="uk-width-1-4@m">
-                <div style="background-color: #ffff00;" hidden>
+                <div style="background-color: #ffff00;">
                     <div id="showmessage" class="uk-margin-top uk-panel uk-panel-scrollable" style="height:500px; border:none;"></div>
                     <script type="application/javascript">
                         setInterval(function(){

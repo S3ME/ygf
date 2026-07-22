@@ -43,132 +43,134 @@
 
         <style>
             html, body {
-				margin: 0;
-				padding: 0;
-				height: 100%;
-				overflow: hidden;
-				font-family: Arial, sans-serif;
-			}
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                overflow: hidden;
+            }
 
-			/* Container Utama (Latar Belakang Oranye) */
-			.section-3 {
-				display: flex;
-				flex-direction: column;
-				height: 100vh;
-				width: 100vw;
-				background-color: #ff8819;
-				/* Jika memakai SVG pattern oranye */
-				background-image: url('../images/sec-3/bg-3.svg'); 
-				background-position: center center;
-				background-repeat: repeat;
-				background-size: cover;
-				position: relative;
-				overflow: hidden;
-			}
+            .section-2 {
+                flex-direction: column;
+                height: 100vh;
+                background-color: #ffff00;
+                background-image: url(../images/sec-2/bg-2-2.svg), url(../images/sec-2/bg-2-1.svg);
+                background-position: center center, center center;
+                background-repeat: no-repeat, no-repeat;
+                background-size: min(80vw, 65vh), cover;
+                background-attachment: fixed, fixed;
+                overflow: hidden;
+            }
 
-			/* Fixed Overlay (Card Tengah Berwarna Biru dengan Lis Putih) */
-			.fixed-overlay {
-				position: absolute;
-				left: 50%;
-				top: 52%;
-				transform: translate(-50%, -50%);
-				width: 88%;
-				max-width: 1280px;
-				height: 68vh;
-				
-				/* Background Layer Kedua (Warna Kebiruan + Pattern) */
-				background-color: #61879f;
-				/* Ganti path ini ke file pattern/layer kedua kamu */
-				background-image: url('../images/sec-3/bg-2.svg'); 
-				background-position: center center;
-				background-repeat: repeat;
-				background-size: cover;
+            .fixed-overlay {
+                position: fixed;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 90%;
+                max-width: 1200px;
+                background-color: rgba(255, 255, 231, 0.8);
+                border: 4px solid #fff;
+                border-radius: 20px;
+                z-index: 10;
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+                transition: top 0.3s ease;
+            }
 
-				/* Border Putih & Border Radius presisi Gambar 1 */
-				border: 4px solid #ffffff;
-				border-radius: 32px;
-				z-index: 10;
-				display: flex;
-				flex-direction: column;
-				overflow: hidden;
-				box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-			}
+            .scroll-area {
+                flex: 1;
+                overflow-y: auto;
+                padding: 20px;
+                scrollbar-width: none; /* Firefox */
+                -ms-overflow-style: none;  /* IE 10+ */
+            }
+            .scroll-area::-webkit-scrollbar {
+                display: none; /* Chrome, Safari, Opera */
+            }
 
-			/* Scrollable Content Inside Overlay */
-			.scroll-area {
-				flex: 1;
-				overflow-y: auto;
-				padding: 24px;
-				scrollbar-width: none; /* Firefox */
-				-ms-overflow-style: none; /* IE 10+ */
-			}
-			.scroll-area::-webkit-scrollbar {
-				display: none; /* Chrome, Safari, Opera */
-			}
+            /* Desktop: center overlay vertically */
+            @media (min-width: 769px) {
+                .fixed-overlay {
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    max-height: 75vh;
+                }
+            }
 
-			/* Navbar Button Styles (Menyesuaikan Warna Tosca Gambar 1) */
-			.uk-navbar-nav {
-				gap: 8px;
-			}
+            /* Mobile */
+            @media (max-width: 768px) {
+                .fixed-overlay {
+                    top: 100px;
+                    max-height: 80vh;
+                    border-radius: 12px;
+                }
 
-			.uk-navbar-nav > li > a.nav-btn {
-				display: inline-flex !important;
-				align-items: center;
-				justify-content: center;
-				height: auto !important;
-				min-height: initial !important;
-				background-color: #00a8a8;
+                .scroll-area {
+                    padding: 16px;
+                    max-height: 60vh;
+                }
+
+                html.uk-offcanvas-page .fixed-overlay {
+                    transform: translateX(30%);
+                }
+                html.uk-offcanvas-page footer {
+                    transform: translateX(80%);
+                }
+            }
+
+            .uk-navbar-nav {
+                gap: 8px;
+            }
+
+            .uk-navbar-nav > li > a.nav-btn {
+                display: inline-flex !important;
+                align-items: center;
+                justify-content: center;
+                height: auto !important;
+                min-height: initial !important;
+                background-color: #fd6119;
                 padding: 8px 18px !important;
                 border-radius: 10px;
                 text-decoration: none !important;
-				border: 1px solid rgba(255, 255, 255, 0.6); 
-				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); 
-				transition: all 0.2s ease-in-out;
-			}
-			
-			.uk-navbar-nav > li > a.nav-btn span {
-				background-color: transparent;
-				color: #ffffff;
-				font-family: Arial, sans-serif;
-				font-weight: bold;
-				font-size: 14px;
-				letter-spacing: 0.8px;
-				padding: 2px 6px;
-				display: inline-block;
-				line-height: 1.2;
-				text-transform: uppercase;
-			}
-			
-			/* State Hover & Active Navbar */
-			.uk-navbar-nav > li > a.nav-btn:hover {
-				background-color: #008080; /* Tosca lebih gelap saat hover */
-				transform: translateY(-2px);
-				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-			}
-			
-			.uk-navbar-nav > li > a.nav-btn:hover span {
-				color: #ffffff;
-			}
-
-			.uk-navbar-nav > li > a.nav-btn:active {
-				transform: translateY(0);
-				box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-			}
-
-			/* Responsive adjustments */
-			@media (max-width: 768px) {
-				.fixed-overlay {
-					width: 92%;
-					height: 70vh;
-					top: 55%;
-					border-radius: 20px;
-					border-width: 3px;
-				}
-			}
+                border: 2px solid #ffffff; 
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+                transition: all 0.2s ease-in-out;
+            }
+            
+            .uk-navbar-nav > li > a.nav-btn span {
+                background-color: #fbcbc9;
+                color: #000000;
+                font-family: Arial, sans-serif;
+                font-weight: bold;
+                font-size: 14px;
+                letter-spacing: 0.5px;
+                padding: 2px 6px;
+                display: inline-block;
+                line-height: 1.2;
+                text-transform: uppercase;
+            }
+            
+            /* Hover State */
+            .uk-navbar-nav > li > a.nav-btn:hover {
+                background-color: #e04f0b;
+                transform: translateY(-2px);
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 6px 12px rgba(0, 0, 0, 0.15);
+            }
+            
+            .uk-navbar-nav > li > a.nav-btn:hover span {
+                background-color: #ffffff;
+                color: #fd6119;
+            }
+            
+            .uk-navbar-nav > li > a.nav-btn:active {
+                transform: translateY(0);
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
         </style>
     </head>
     <body>
-        <div class="section-3" uk-height-viewport>
+        <div class="section-2" uk-height-viewport>
             <!-- Navbar -->
             <?php if ($ismobile === false) { ?>
                 <div class="tm-header uk-margin-top" style="z-index:2;" uk-header>
@@ -247,7 +249,7 @@
 
             <!-- Footer -->
             <footer style="position:fixed; bottom: 0; left: 0; right: 0;">
-                <div class="uk-container uk-text-center uk-margin-top uk-padding-small" style="color: #fff">
+                <div class="uk-container uk-text-center uk-margin-top uk-padding-small" style="background-color: #fd6119; color: #fff; border-radius: 20px 20px 0 0;">
                     <?php
                     if ($ismobile) {
                         $socmed = 'uk-flex-center';
