@@ -75,16 +75,7 @@
 				width: 88%;
 				max-width: 1280px;
 				height: 68vh;
-				
-				/* Background Layer Kedua (Warna Kebiruan + Pattern) */
-				background-color: #61879f;
-				/* Ganti path ini ke file pattern/layer kedua kamu */
-				background-image: url('../images/sec-3/bg-2.svg'); 
-				background-position: center center;
-				background-repeat: repeat;
-				background-size: cover;
-
-				/* Border Putih & Border Radius presisi Gambar 1 */
+				background-color: #00a99d;
 				border: 4px solid #ffffff;
 				border-radius: 32px;
 				z-index: 10;
@@ -159,8 +150,9 @@
 			@media (max-width: 768px) {
 				.fixed-overlay {
 					width: 92%;
-					height: 70vh;
-					top: 55%;
+					height: 60vh;
+					top: 50%;
+					transform: translate(-50%, -50%);
 					border-radius: 20px;
 					border-width: 3px;
 				}
@@ -206,12 +198,17 @@
                                 <div class="uk-navbar-left">
                                     <a class="uk-navbar-toggle" href="#offcanvas" uk-toggle uk-navbar-toggle-icon></a>
                                 </div>
-                                <div class="uk-navbar-center">
-                                    <img src="images/sec1/kmg1.svg" style="height:40px;" uk-svg/>
-                                </div>
-                                <div class="uk-navbar-right">
-                                    <a href="<?php echo base_url(); ?>"><img src="images/sec1/ygf-top-right-1.svg" style="height:40px; color: #000;" uk-svg/></a>
-                                </div>
+								<div class="uk-navbar-center" uk-grid>
+									<div>
+										<img src="images/sec-1/kmg1.svg" style="height:40px;" />
+									</div>
+									<div>
+										<img src="images/sec-1/bwdd.svg" style="height:60px;" />
+									</div>
+								</div>
+								<div class="uk-navbar-right">
+									<a href="<?php echo base_url(); ?>"><img src="images/sec-1/ygf-logo-1.svg" style="height:40px; color: #000;" /></a>
+								</div>
                             </nav>
                         </div>
                         <div id="offcanvas" uk-offcanvas mode="push" overlay>

@@ -62,11 +62,13 @@
             }
 
             .fixed-overlay {
-                position: fixed;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 90%;
-                max-width: 1200px;
+				position: absolute;
+				left: 50%;
+				top: 52%;
+				transform: translate(-50%, -50%);
+				width: 88%;
+				max-width: 1280px;
+				height: 68vh;
                 background-color: rgba(255, 255, 231, 0.8);
                 border: 4px solid #fff;
                 border-radius: 20px;
@@ -81,7 +83,7 @@
             .scroll-area {
                 flex: 1;
                 overflow-y: auto;
-                padding: 20px;
+                padding: 24px;
                 scrollbar-width: none; /* Firefox */
                 -ms-overflow-style: none;  /* IE 10+ */
             }
@@ -89,33 +91,15 @@
                 display: none; /* Chrome, Safari, Opera */
             }
 
-            /* Desktop: center overlay vertically */
-            @media (min-width: 769px) {
-                .fixed-overlay {
-                    top: 50%;
-                    transform: translate(-50%, -50%);
-                    max-height: 75vh;
-                }
-            }
-
             /* Mobile */
             @media (max-width: 768px) {
                 .fixed-overlay {
-                    top: 100px;
-                    max-height: 80vh;
-                    border-radius: 12px;
-                }
-
-                .scroll-area {
-                    padding: 16px;
-                    max-height: 60vh;
-                }
-
-                html.uk-offcanvas-page .fixed-overlay {
-                    transform: translateX(30%);
-                }
-                html.uk-offcanvas-page footer {
-                    transform: translateX(80%);
+                    width: 92%;
+                    height: 60vh;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    border-radius: 20px;
+                    border-width: 3px;
                 }
             }
 
@@ -208,12 +192,17 @@
                                 <div class="uk-navbar-left">
                                     <a class="uk-navbar-toggle" href="#offcanvas" uk-toggle uk-navbar-toggle-icon></a>
                                 </div>
-                                <div class="uk-navbar-center">
-                                    <img src="images/sec1/kmg1.svg" style="height:40px;" uk-svg/>
-                                </div>
-                                <div class="uk-navbar-right">
-                                    <a href="<?php echo base_url(); ?>"><img src="images/sec1/ygf-top-right-1.svg" style="height:40px; color: #000;" uk-svg/></a>
-                                </div>
+								<div class="uk-navbar-center" uk-grid>
+									<div>
+										<img src="images/sec-1/kmg1.svg" style="height:40px;" />
+									</div>
+									<div>
+										<img src="images/sec-1/bwdd.svg" style="height:60px;" />
+									</div>
+								</div>
+								<div class="uk-navbar-right">
+									<a href="<?php echo base_url(); ?>"><img src="images/sec-1/ygf-logo-1.svg" style="height:40px; color: #000;" /></a>
+								</div>
                             </nav>
                         </div>
                         <div id="offcanvas" uk-offcanvas mode="push" overlay>
