@@ -71,8 +71,13 @@
             $i++;
         }
         ?>
-        <div class="uk-flex uk-flex-center uk-margin-top">
-            <button id="loadMore" class="uk-button uk-button-primary uk-button-large">Load More</button>
+        <div class="uk-flex uk-flex-center uk-margin-top uk-child-width-auto uk-grid-small" uk-grid>
+            <div>
+                <button id="loadMore" class="uk-button uk-button-primary uk-button-large">Load More</button>
+            </div>
+            <div>
+                <a href="https://drive.google.com/drive/folders/1HEP1bDuQAlfX3IOUy1QBc2QoKzVHWgmH?usp=sharing" target="_blank" class="uk-button uk-button-large uk-button-secondary">Media Kit</a>
+            </div>
         </div>
     </div>
 </div>

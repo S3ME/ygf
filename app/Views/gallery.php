@@ -4,16 +4,16 @@
 <div class="fixed-overlay">
     <div class="scroll-area">
         <div class="uk-section uk-section-small uk-container uk-text-center">
-            <!-- <h2 class="uk-heading-small uk-text-bold" style="color: #fff;">
+            <h2 class="uk-heading-small uk-text-bold" style="color: #fff;">
                 Yogyakarta Gamelan Festival 31
             </h2>
             <p class="uk-text-lead uk-margin-medium-top" style="color: #fff;">
                 Kami sedang mempersiapkan pengalaman budaya yang luar biasa untuk Anda. 
-                <span class="uk-text-bold" style="color: #fff;"></?= $title ?></span> akan hadir sebentar lagi!
+                <span class="uk-text-bold" style="color: #fff;"><?= $title ?></span> akan hadir sebentar lagi!
             </p>
             <p class="uk-text-muted uk-margin">
                 Tandai kalender Anda dan jangan lewatkan perjalanan musikal yang memukau ini.
-            </p> -->
+            </p>
             
 			<!-- <div class="uk-child-width-1-2 uk-child-width-1-4@m uk-grid-small" uk-grid="masonry: true" uk-lightbox="animation: slide">
 				</?php
@@ -32,7 +32,7 @@
 				?>
 			</div> -->
             
-			<div class="uk-grid-small uk-child-width-1-2 uk-child-width-1-3@m" uk-grid uk-height-match="target: > div > a > .folder-card">
+			<!-- <div class="uk-grid-small uk-child-width-1-2 uk-child-width-1-3@m" uk-grid uk-height-match="target: > div > a > .folder-card">
                 <div>
                     <a href="galeri/day1">
                         <div class="folder-card uk-card uk-card-default uk-card-body uk-flex uk-flex-middle uk-flex-center">
@@ -73,7 +73,7 @@
                         </div>
                     </a>
                 </div>
-            </div>
+            </div> -->
 
             <style>
             .folder-card {

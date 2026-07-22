@@ -187,7 +187,7 @@
                                         <li><a href="program" class="nav-btn"><span>Program</span></a></li>
                                         <li><a href="news" class="nav-btn"><span>News</span></a></li>
                                         <li><a href="galeri" class="nav-btn"><span>Gallery</span></a></li>
-                                        <!-- <li><a href="merchandise" class="nav-btn"><span>Merchandise</span></a></li> -->
+                                        <li><a href="merchandise" class="nav-btn"><span>Merchandise</span></a></li>
                                         <li><a href="partners" class="nav-btn"><span>Partners</span></a></li>
                                     </ul>
                                 </div>
@@ -229,7 +229,7 @@
                                                     <li><a href="program">Program</a></li>
                                                     <li><a href="news">News</a></li>
                                                     <li><a href="galeri">Gallery</a></li>
-                                                    <!-- <li><a href="merchandise">Merchandise</a></li> -->
+                                                    <li><a href="merchandise">Merchandise</a></li>
                                                     <li><a href="partners">Partners</a></li>
                                                 </ul>
                                             </div>

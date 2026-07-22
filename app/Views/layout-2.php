@@ -139,7 +139,7 @@
             }
             
             .uk-navbar-nav > li > a.nav-btn span {
-                background-color: #fbcbc9;
+                /* background-color: #fbcbc9; */
                 color: #000000;
                 font-family: Arial, sans-serif;
                 font-weight: bold;
@@ -158,10 +158,10 @@
                 box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 6px 12px rgba(0, 0, 0, 0.15);
             }
             
-            .uk-navbar-nav > li > a.nav-btn:hover span {
+            /* .uk-navbar-nav > li > a.nav-btn:hover span {
                 background-color: #ffffff;
                 color: #fd6119;
-            }
+            } */
             
             .uk-navbar-nav > li > a.nav-btn:active {
                 transform: translateY(0);
@@ -189,7 +189,7 @@
                                         <li><a href="program" class="nav-btn"><span>Program</span></a></li>
                                         <li><a href="news" class="nav-btn"><span>News</span></a></li>
                                         <li><a href="galeri" class="nav-btn"><span>Gallery</span></a></li>
-                                        <!-- <li><a href="merchandise" class="nav-btn"><span>Merchandise</span></a></li> -->
+                                        <li><a href="merchandise" class="nav-btn"><span>Merchandise</span></a></li>
                                         <li><a href="partners" class="nav-btn"><span>Partners</span></a></li>
                                     </ul>
                                 </div>
@@ -231,7 +231,7 @@
                                                     <li><a href="program">Program</a></li>
                                                     <li><a href="news">News</a></li>
                                                     <li><a href="galeri">Gallery</a></li>
-                                                    <!-- <li><a href="merchandise">Merchandise</a></li> -->
+                                                    <li><a href="merchandise">Merchandise</a></li>
                                                     <li><a href="partners">Partners</a></li>
                                                 </ul>
                                             </div>

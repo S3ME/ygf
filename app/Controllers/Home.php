@@ -249,8 +249,8 @@ class Home extends BaseController
 		
 		// Parsing Data to View
         $data                   = $this->data;
-        $data['title']          = 'Gallery YGF 31';
-        $data['desc']           = 'Gallery YGF 31';
+        $data['title']          = 'Merchandise YGF 31';
+        $data['desc']           = 'Merchandise YGF 31';
 		$data['merchendises']	= $MerchandiseModel->findAll();
 
 		// Rendering View

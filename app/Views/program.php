@@ -25,7 +25,7 @@
             <p class="uk-text-muted uk-margin">
                 Tandai kalender Anda dan jangan lewatkan perjalanan musikal yang memukau ini.
             </p> -->
-            <div id="gaung-gamelan" class="uk-margin">
+            <!-- <div id="gaung-gamelan" class="uk-margin">
                 <h2 class="uk-text-uppercase outline-text">GAUNG GAMELAN</h2>
                 <div class="uk-text-center">
                     <img class="uk-width-2-3@m" src="images/gaung_gamelan.jpg" alt="Gaung Gamelan" />
@@ -39,8 +39,8 @@
                 </div>
                 <p><span class="uk-text-bold uk-text-large outline-text">GRATIS!</span></p>
             </div>
-            <hr class="uk-divider-icon">
-            <div id="panggung-slenthem" class="uk-margin">
+            <hr class="uk-divider-icon"> -->
+            <!-- <div id="panggung-slenthem" class="uk-margin">
                 <h2 class="uk-text-uppercase outline-text">PANGGUNG SLENTHEM</h2>
                 <div class="uk-text-center">
                     <img class="uk-width-2-3@m" src="images/panggung_slenthem.jpg" alt="Panggung Slenthem" />
@@ -55,8 +55,8 @@
                 </div>
                 <p><span class="uk-text-bold uk-text-large outline-text">GRATIS!</span></p>
             </div>
-            <hr class="uk-divider-icon">
-            <div id="pasar-cokekan" class="uk-margin">
+            <hr class="uk-divider-icon"> -->
+            <!-- <div id="pasar-cokekan" class="uk-margin">
                 <h2 class="uk-text-uppercase outline-text">PASAR COKEKAN</h2>
                 <div class="uk-text-center">
                     <img class="uk-width-2-3@m" src="images/panggung_cokekan.jpg" alt="Panggung Cokekan" />
@@ -71,29 +71,67 @@
                 </div>
                 <p><span class="uk-text-bold uk-text-large outline-text">GRATIS!</span></p>
             </div>
-            <hr class="uk-divider-icon">
+            <hr class="uk-divider-icon"> -->
             <div id="lokakarya" class="uk-margin">
                 <h2 class="uk-text-uppercase outline-text">LOKAKARYA</h2>
                 <div class="uk-text-center">
                     <img class="uk-width-2-3@m" src="images/lokakarya.jpg" alt="Lokakarya" />
                 </div>
-                <p class="outline-text">Lokakarya Gamelan yang menjadi salah satu rangkaian acara Yogyakarta Gamelan Festival (YGF)#31. Dengan mengangkat tema "Gamelan Tanpa Tembok" diharap mampu menjadi ruang partisipatif yang menjembatani generasi muda dan masyarakat luas untuk lebih dekat, mengenal, dan  turut melestarikan gamelan sebagai warisan budaya yang hidup dan relevan dengan zaman.</p>
-                <p class="outline-text">Seorang lelaki bernama Sahrul Yuliyanto yang mencintai gamelan & karawitan ini disematkan “Kepek–nama dusunnya” dan populer sebagai @sahrul_kepek.<br/>Dan di program Lokakarya nanti, Mas Sahrul akan menjadi narasumbernya, dengan benefit mantep yang bisa kamu dapat.</p>
+                <p class="outline-text">Road to Yogyakarta Gamelan Festival.</p>
+                <p class="outline-text">Tema : Gamelan untuk Meditasi: Eksplorasi Pendengaran melalui Membunyikan Gamelan.</p>
+                <p class="outline-text">Fasilitator : Gatot Danar Sulistiyanto.</p>
                 <div class="uk-h5 outline-text">
-                    Selasa - Kamis,<br/>
-                    22 - 24 Juli 2025<br/>
-                    13.00 - 16.00 WIB<br/>
-                    <b><a class="uk-link-text" href="https://maps.app.goo.gl/iGSNmpLeqN3t9U9n8" target="_blank">selasar kawasan Taman Budaya Embung Giwangan</a></b>
+                    Selasa - Rabu,<br/>
+                    21 - 22 Juli 2026<br/>
+                    15.00 - 18.30 WIB<br/>
+                    <b><a class="uk-link-text" href="https://maps.app.goo.gl/i8LoM1hToaSbzbAW8" target="_blank">Komunitas Gayam16</a></b>
                 </div>
                 <p class="outline-text">
-                    <span class="uk-text-bold uk-text-large">LIMITED PARTICIPANT!</span><br/>
-                    Link pendaftaran : <a href="https://wa.me/6285183013381" target="_blank">+6285183013381</a><br/>
+                    <!-- <span class="uk-text-bold uk-text-large">LIMITED PARTICIPANT!</span><br/> -->
+                    Link pendaftaran : <a href="https://bit.ly/LokakaryaYGF31" target="_blank">Link Pendaftaran!</a><br/>
                     <!-- Fasilitas : Sertifikat, Konsumsi -->
                 </p>
-                <!-- <p class="outline-text">CP; <a href="https://wa.me/6285183013381" target="_blank">+6285183013381</a></p> -->
+                <p class="outline-text">CP: <a href="https://wa.me/6282174658073" target="_blank">+6282174658073 (Zepa)</a></p>
             </div>
             <hr class="uk-divider-icon">
-            <div id="sorot-sumirat" class="uk-margin">
+            <div id="rembug-budaya" class="uk-margin">
+                <h2 class="uk-text-uppercase outline-text">Rembug Budaya</h2>
+                <div class="uk-text-center">
+                    <img class="uk-width-2-3@m" src="images/rembug-budaya.jpg" alt="Rembug Budaya" />
+                </div>
+                <p class="outline-text">Road to 31st Yogyakarta Gamelan Festival 2026 “Rembug Budaya”.</p>
+                <p class="outline-text">“Raising Awareness of Intellectual Property for Gamelan Tradition Community”</p>
+                <div class="uk-h5 outline-text">
+                    Senin,<br/>
+                    27 Juli 2026<br/>
+                    15.00 - 18.00 WIB<br/>
+                    <b><a class="uk-link-text" href="https://maps.app.goo.gl/696Kvgb73zEnL1vs5" target="_blank">OKID Cafe (Jalan Panembahan No.1-3, Panembahan, Kecamatan Kraton, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55131)</a></b>
+                </div>
+                <ol class="uk-list uk-list-decimal outline-text">
+                    <li>
+                        Narasumber :
+                        <ul class="uk-list uk-list-hyphen outline-text">
+                            <li>Septiani (Head of Legal Department, PT Pragita Prabawa Pustaka),</li>
+                            <li>Eef van Breen (Musisi internasional),</li>
+                            <li>Dr. Drs. Sukisno, M.Sn. (Dosen, musisi tradisi dan komposer).</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Moderator :
+                        <ul class="uk-list uk-list-hyphen outline-text">
+                            <li>Anon Suneko, S.Sn., M.Sn. (Dosen dan Praktisi Gamelan).</li>
+                        </ul>
+                    </li>
+                </ol>
+                <p class="outline-text">
+                    <!-- <span class="uk-text-bold uk-text-large">LIMITED PARTICIPANT!</span><br/> -->
+                    Link pendaftaran : <a href="https://bit.ly/RembugBudayaYFG31" target="_blank">Link Pendaftaran!</a><br/>
+                    <!-- Fasilitas : Sertifikat, Konsumsi -->
+                </p>
+                <!-- <p class="outline-text">CP: <a href="https://wa.me/6282174658073" target="_blank">+6282174658073 (Zepa)</a></p> -->
+            </div>
+            <hr class="uk-divider-icon">
+            <!-- <div id="sorot-sumirat" class="uk-margin">
                 <h2 class="uk-text-uppercase outline-text">SOROT SUMIRAT</h2>
                 <div class="uk-text-center">
                     <img class="uk-width-2-3@m" src="images/sorot_sumirat.jpg" alt="Sorot Sumirat" />
@@ -108,8 +146,8 @@
                 </div>
                 <p><span class="uk-text-bold uk-text-large outline-text">GRATIS!</span></p>
             </div>
-            <hr class="uk-divider-icon">
-            <div id="konser-maestro" class="uk-margin">
+            <hr class="uk-divider-icon"> -->
+            <!-- <div id="konser-maestro" class="uk-margin">
                 <h2 class="uk-text-uppercase outline-text">KONSER MAESTRO</h2>
                 <div class="uk-text-center">
                     <img class="uk-width-2-3@m" src="images/konser_maestro.jpg" alt="Konser Maestro" />
@@ -123,11 +161,11 @@
                     <b><a class="uk-link-text" href="https://maps.app.goo.gl/iGSNmpLeqN3t9U9n8" target="_blank">Gedung Grha Budaya (Concert Hall) Taman Budaya Embung Giwangan</a></b>
                 </div>
                 <p class="outline-text">
-                    <!-- <span class="uk-text-bold uk-text-large">LIMITED PARTICIPANT!</span><br/> -->
+                    <span class="uk-text-bold uk-text-large">LIMITED PARTICIPANT!</span><br/>
                     Link Pembelian Tiket Konser Maestro : <a href="https://artatix.co.id/event/konser-maestro-yogyakarta-gamelan-festival " target="_blank">https://artatix.co.id/event/konser-maestro-yogyakarta-gamelan-festival </a>
                 </p>
-                <!-- <p>CP; <a href="https://wa.me/6282227862104" target="_blank">+6282227862104</a></p> -->
-            </div>
+                <p>CP; <a href="https://wa.me/6282227862104" target="_blank">+6282227862104</a></p>
+            </div> -->
             <!-- <hr class="uk-divider-icon">
             <div id="rembug-budaya" class="uk-margin">
                 <h2 class="uk-text-uppercase">REMBUG BUDAYA</h2>
@@ -153,7 +191,7 @@
                 </p>
                 <p>CP; <a href="https://wa.me/6282227862104" target="_blank">+6282227862104</a></p>
             </div> -->
-            <hr class="uk-divider-icon">
+            <!-- <hr class="uk-divider-icon">
             <div id="konser-gamelan" class="uk-margin">
                 <h2 class="uk-text-uppercase outline-text">KONSER GAMELAN</h2>
                 <div class="uk-text-center">
@@ -169,8 +207,8 @@
                 </div>
                 <p><span class="uk-text-bold uk-text-large outline-text">GRATIS!</span></p>
             </div>
-            <hr class="uk-divider-icon">
-            <div id="exhibition" class="uk-margin">
+            <hr class="uk-divider-icon"> -->
+            <!-- <div id="exhibition" class="uk-margin">
                 <h2 class="uk-text-uppercase outline-text">EXHIBITION</h2>
                 <div class="uk-text-center">
                     <img class="uk-width-2-3@m" src="images/exhibition.jpg" alt="Exhibition" />
@@ -195,8 +233,8 @@
                     15.00 - 22.00 WIB<br/>
                     <b><a class="uk-link-text" href="https://maps.app.goo.gl/iGSNmpLeqN3t9U9n8" target="_blank">Exhibition Hall Taman Budaya Embung Giwangan</a></b>
                 </div>
-                <!-- <p><span class="uk-text-bold uk-text-large">GRATIS!</span></p> -->
-            </div>
+                <p><span class="uk-text-bold uk-text-large">GRATIS!</span></p>
+            </div> -->
         </div>
     </div>
 </div>
