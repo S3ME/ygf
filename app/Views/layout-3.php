@@ -150,8 +150,8 @@
 			@media (max-width: 768px) {
 				.fixed-overlay {
 					width: 92%;
-					height: 60vh;
-					top: 50%;
+					height: 50vh;
+					top: 45%;
 					transform: translate(-50%, -50%);
 					border-radius: 20px;
 					border-width: 3px;
