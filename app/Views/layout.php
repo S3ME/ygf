@@ -52,15 +52,43 @@
 				background-attachment: fixed;
 			}
 			
-			/* State Hover & Active Navbar */
-			.uk-navbar-nav > li > a:hover {
-				transform: translateY(-2px);
-				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+			.uk-navbar-nav {
+				gap: 8px;
 			}
 
-			.uk-navbar-nav > li > a:active {
+			.uk-navbar-nav > li > a.nav-btn {
+				display: inline-flex !important;
+				align-items: center;
+				justify-content: center;
+				height: auto !important;
+				min-height: initial !important;
+				padding: 8px 18px !important;
+				border-radius: 10px;
+				text-decoration: none !important;
+				border: 2px solid #ffffff; 
+				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+				transition: all 0.2s ease-in-out;
+			}
+			
+			.uk-navbar-nav > li > a.nav-btn span {
+				font-family: Arial, sans-serif;
+				font-weight: bold;
+				font-size: 14px;
+				letter-spacing: 0.5px;
+				padding: 2px 6px;
+				display: inline-block;
+				line-height: 1.2;
+				text-transform: uppercase;
+			}
+			
+			.uk-navbar-nav > li > a.nav-btn:hover {
+				transform: translateY(-2px);
+				box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 6px 12px rgba(0, 0, 0, 0.15);
+			}
+			
+			.uk-navbar-nav > li > a.nav-btn:active {
 				transform: translateY(0);
-				box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 			}
 
 			.button-home {
@@ -88,80 +116,70 @@
 		</style>
     </head>
     <body>
-		<div class="uk-container uk-container-expand home-section">
+		<div class="uk-container uk-container-expand home-section" uk-height-viewport>
 			<?php if ($ismobile === false) { ?>
 				<div class="tm-header" style="z-index:2;" uk-header>
-					<div class="uk-navbar-container" style="background: transparent;">
-						<div class="uk-container uk-container-expand" style="padding-top:15px; padding-bottom:15px;">
-							<nav uk-navbar>
-								<div class="uk-navbar-left" uk-grid>
-									<div>
-										<img src="images/sec-1/kmg1.svg" style="height:70px;"/>
-									</div>
-									<div>
-										<img src="images/sec-1/bwdd.svg" style="height:100px;"/>
-									</div>
-								</div>
-								<div class="uk-navbar-center">
-									<ul class="uk-navbar-nav">
-										<li><a href="<?php echo base_url(); ?>" style="background-color:#FD6119"><span style="color:#000000;">Home</span></a></li>
-										<li><a href="about" style="background-color:#fe891c"><span style="color:#000000;">About</span></a></li>
-										<!--<li><a href="schedule" style="background-color:#00ffff"><span style="color:#000000;">Schedule</span></a></li>
-										<li><a href="artist" style="background-color:#00ffff"><span style="color:#000000;">Artist</span></a></li>-->
-										<li><a href="program" style="background-color:#ffd84d"><span style="color:#000000;">Program</span></a></li>
-										<li><a href="news" style="background-color:#ffff00"><span style="color:#000000;">News</span></a></li>
-										<li><a href="galeri" style="background-color:#cccf5d"><span style="color:#000000;">Gallery</span></a></li>
-										<li><a href="merchandise" style="background-color:#ffffff"><span style="color:#000000;">Merchandise</span></a></li>
-										<li><a href="partners" style="background-color:#000000; color:#fd6119;"><span style="color:#fd6119;">Partners</span></a></li>
-									</ul>
-								</div>
-								<div class="uk-navbar-right">
-									<a href="<?php echo base_url(); ?>"><img src="images/sec-1/ygf-logo-1.svg" style="height:75px;"/></a>
-								</div>
-							</nav>
-						</div>
+					<div class="uk-container uk-container-expand" style="padding-top:15px; padding-bottom:15px;">
+						<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+							<div class="uk-navbar-left">
+								<img src="images/sec-1/kmg1.svg" style="height:50px; margin-right:10px;"/>
+								<img src="images/sec-1/bwdd.svg" style="height:50px;"/>
+							</div>
+							<div class="uk-navbar-center">
+								<ul class="uk-navbar-nav">
+									<li><a href="<?php echo base_url(); ?>" class="nav-btn" style="background-color:#FD6119"><span style="color:#000000;">Home</span></a></li>
+									<li><a href="about" class="nav-btn" style="background-color:#fe891c"><span style="color:#000000;">About</span></a></li>
+									<!--<li><a href="schedule" class="nav-btn" style="background-color:#00ffff"><span style="color:#000000;">Schedule</span></a></li>
+									<li><a href="artist" class="nav-btn" style="background-color:#00ffff"><span style="color:#000000;">Artist</span></a></li>-->
+									<li><a href="program" class="nav-btn" style="background-color:#ffd84d"><span style="color:#000000;">Program</span></a></li>
+									<li><a href="news" class="nav-btn" style="background-color:#ffff00"><span style="color:#000000;">News</span></a></li>
+									<li><a href="galeri" class="nav-btn" style="background-color:#cccf5d"><span style="color:#000000;">Gallery</span></a></li>
+									<li><a href="merchandise" class="nav-btn" style="background-color:#ffffff"><span style="color:#000000;">Merchandise</span></a></li>
+									<li><a href="partners" class="nav-btn" style="background-color:#000000; color:#fd6119;"><span style="color:#fd6119;">Partners</span></a></li>
+								</ul>
+							</div>
+							<div class="uk-navbar-right">
+								<a href="<?php echo base_url(); ?>"><img src="images/sec-1/ygf-logo-1.svg"/></a>
+							</div>
+						</nav>
 					</div>
 				</div>
 			<?php } else { ?>
 				<div class="tm-header-mobile" style="z-index:2;">
-					<div>
-						<div class="uk-navbar-container" style="background-color:transparent;">
-							<nav uk-navbar>
-								<div class="uk-navbar-left">
-									<a class="uk-navbar-toggle" href="#offcanvas" uk-toggle uk-navbar-toggle-icon></a>
-								</div>
-								<div class="uk-navbar-center" uk-grid>
-									<div>
-										<img src="images/sec-1/kmg1.svg" style="height:40px;" />
-									</div>
-									<div>
-										<img src="images/sec-1/bwdd.svg" style="height:60px;" />
-									</div>
-								</div>
-								<div class="uk-navbar-right">
-									<a href="<?php echo base_url(); ?>"><img src="images/sec-1/ygf-logo-1.svg" style="height:40px; color: #000;" /></a>
-								</div>
-							</nav>
+					<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+						<div class="uk-navbar-left">
+							<a class="uk-navbar-toggle" href="#offcanvas" uk-toggle uk-navbar-toggle-icon></a>
 						</div>
-						<div id="offcanvas" uk-offcanvas mode="push" overlay>
-							<div class="uk-offcanvas-bar uk-flex">
-								<button class="uk-offcanvas-close" type="button" uk-close></button>
-								<div class="uk-margin-auto-vertical uk-width-1-1">
-									<div class="uk-child-width-1-1" uk-grid>
-										<div>
-											<div class="uk-panel" id="module-menu-mobile">
-												<ul class="uk-nav uk-nav-primary">
-													<li><a href="<?php echo base_url(); ?>">Home</a></li>
-													<li><a href="about">About</a></li>
-													<!--<li><a href="schedule">Schedule</a></li>
-													<li><a href="artist">Artist</a></li>-->
-													<li><a href="program">Program</a></li>
-													<li><a href="news">News</a></li>
-													<li><a href="galeri">Gallery</a></li>
-													<li><a href="merchandise">Merchandise</a></li>
-													<li><a href="partners">Partners</a></li>
-												</ul>
-											</div>
+						<div class="uk-navbar-center" uk-grid>
+							<div>
+								<img src="images/sec-1/kmg1.svg" style="height:40px;" />
+							</div>
+							<div>
+								<img src="images/sec-1/bwdd.svg" style="height:60px;" />
+							</div>
+						</div>
+						<div class="uk-navbar-right">
+							<a href="<?php echo base_url(); ?>"><img src="images/sec-1/ygf-logo-1.svg" style="height:40px; color: #000;" /></a>
+						</div>
+					</nav>
+					<div id="offcanvas" uk-offcanvas mode="push" overlay>
+						<div class="uk-offcanvas-bar uk-flex">
+							<button class="uk-offcanvas-close" type="button" uk-close></button>
+							<div class="uk-margin-auto-vertical uk-width-1-1">
+								<div class="uk-child-width-1-1" uk-grid>
+									<div>
+										<div class="uk-panel" id="module-menu-mobile">
+											<ul class="uk-nav uk-nav-primary">
+												<li><a href="<?php echo base_url(); ?>">Home</a></li>
+												<li><a href="about">About</a></li>
+												<!--<li><a href="schedule">Schedule</a></li>
+												<li><a href="artist">Artist</a></li>-->
+												<li><a href="program">Program</a></li>
+												<li><a href="news">News</a></li>
+												<li><a href="galeri">Gallery</a></li>
+												<li><a href="merchandise">Merchandise</a></li>
+												<li><a href="partners">Partners</a></li>
+											</ul>
 										</div>
 									</div>
 								</div>

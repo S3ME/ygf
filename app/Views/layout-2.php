@@ -53,7 +53,7 @@
                 flex-direction: column;
                 height: 100vh;
                 background-color: #ffff00;
-                background-image: url(../images/sec-2/bg-2-2.svg), url(../images/sec-2/bg-2-1.svg);
+                background-image: url(../images/sec-2/bg-2-2.png), url(../images/sec-2/bg-2-1.svg);
                 background-position: center center, center center;
                 background-repeat: no-repeat, no-repeat;
                 background-size: min(80vw, 65vh), cover;
@@ -154,76 +154,71 @@
         </style>
     </head>
     <body>
-        <div class="section-2" uk-height-viewport>
+        <div class="uk-container uk-container-expand section-2" uk-height-viewport>
             <!-- Navbar -->
             <?php if ($ismobile === false) { ?>
                 <div class="tm-header uk-margin-top" style="z-index:2;" uk-header>
-                    <div class="uk-navbar-container" style="background: transparent;">
-                        <div class="uk-container uk-container-expand" style="padding-top:15px; padding-bottom:15px;">
-                            <nav uk-navbar>
-                                <!-- <div class="uk-navbar-left">
-                                    <img src="images/sec1/kmg1.svg" style="height:70px;"/>
-                                </div> -->
-                                <div class="uk-navbar-center">
-                                    <ul class="uk-navbar-nav">
-                                        <li><a href="<?php echo base_url(); ?>" class="nav-btn"><span>Home</span></a></li>
-                                        <li><a href="about" class="nav-btn"><span>About</span></a></li>
-                                        <!--<li><a href="schedule" class="nav-btn"><span>Schedule</span></a></li>
-                                        <li><a href="artist" class="nav-btn"><span>Artist</span></a></li>-->
-                                        <li><a href="program" class="nav-btn"><span>Program</span></a></li>
-                                        <li><a href="news" class="nav-btn"><span>News</span></a></li>
-                                        <li><a href="galeri" class="nav-btn"><span>Gallery</span></a></li>
-                                        <li><a href="merchandise" class="nav-btn"><span>Merchandise</span></a></li>
-                                        <li><a href="partners" class="nav-btn"><span>Partners</span></a></li>
-                                    </ul>
-                                </div>
-                                <!-- <div class="uk-navbar-right">
-                                    <a href="</?php echo base_url(); ?>"><img src="images/sec1/ygf-top-right-1.svg" style="height:75px;"/></a>
-                                </div> -->
-                            </nav>
-                        </div>
+                    <div class="uk-container uk-container-expand" style="padding-top:15px; padding-bottom:15px;">
+                        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                            <div class="uk-navbar-left">
+                                <img src="images/sec-1/kmg1.svg" style="height:50px; margin-right:10px;"/>
+                                <img src="images/sec-1/bwdd.svg" style="height:50px;"/>
+                            </div>
+                            <div class="uk-navbar-center">
+                                <ul class="uk-navbar-nav">
+                                    <li><a href="<?php echo base_url(); ?>" class="nav-btn"><span>Home</span></a></li>
+                                    <li><a href="about" class="nav-btn"><span>About</span></a></li>
+                                    <!--<li><a href="schedule" class="nav-btn"><span>Schedule</span></a></li>
+                                    <li><a href="artist" class="nav-btn"><span>Artist</span></a></li>-->
+                                    <li><a href="program" class="nav-btn"><span>Program</span></a></li>
+                                    <li><a href="news" class="nav-btn"><span>News</span></a></li>
+                                    <li><a href="galeri" class="nav-btn"><span>Gallery</span></a></li>
+                                    <li><a href="merchandise" class="nav-btn"><span>Merchandise</span></a></li>
+                                    <li><a href="partners" class="nav-btn"><span>Partners</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="uk-navbar-right">
+                                <a href="<?php echo base_url(); ?>"><img src="images/sec-1/ygf-logo-1.svg"/></a>
+                            </div>
+                        </nav>
                     </div>
                 </div>
             <?php } else { ?>
                 <div class="tm-header-mobile" style="z-index:2;">
-                    <div>
-                        <div class="uk-navbar-container" style="background-color:transparent;">
-                            <nav uk-navbar>
-                                <div class="uk-navbar-left">
-                                    <a class="uk-navbar-toggle" href="#offcanvas" uk-toggle uk-navbar-toggle-icon></a>
-                                </div>
-								<div class="uk-navbar-center" uk-grid>
-									<div>
-										<img src="images/sec-1/kmg1.svg" style="height:40px;" />
-									</div>
-									<div>
-										<img src="images/sec-1/bwdd.svg" style="height:60px;" />
-									</div>
-								</div>
-								<div class="uk-navbar-right">
-									<a href="<?php echo base_url(); ?>"><img src="images/sec-1/ygf-logo-1.svg" style="height:40px; color: #000;" /></a>
-								</div>
-                            </nav>
+                    <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                        <div class="uk-navbar-left">
+                            <a class="uk-navbar-toggle" href="#offcanvas" uk-toggle uk-navbar-toggle-icon></a>
                         </div>
-                        <div id="offcanvas" uk-offcanvas mode="push" overlay>
-                            <div class="uk-offcanvas-bar uk-flex">
-                                <button class="uk-offcanvas-close" type="button" uk-close></button>
-                                <div class="uk-margin-auto-vertical uk-width-1-1">
-                                    <div class="uk-child-width-1-1" uk-grid>
-                                        <div>
-                                            <div class="uk-panel" id="module-menu-mobile">
-                                                <ul class="uk-nav uk-nav-primary">
-                                                    <li><a href="<?php echo base_url(); ?>">Home</a></li>
-                                                    <li><a href="about">About</a></li>
-                                                    <!--<li><a href="schedule">Schedule</a></li>
-                                                    <li><a href="artist">Artist</a></li>-->
-                                                    <li><a href="program">Program</a></li>
-                                                    <li><a href="news">News</a></li>
-                                                    <li><a href="galeri">Gallery</a></li>
-                                                    <li><a href="merchandise">Merchandise</a></li>
-                                                    <li><a href="partners">Partners</a></li>
-                                                </ul>
-                                            </div>
+                        <div class="uk-navbar-center" uk-grid>
+                            <div>
+                                <img src="images/sec-1/kmg1.svg" style="height:40px;" />
+                            </div>
+                            <div>
+                                <img src="images/sec-1/bwdd.svg" style="height:60px;" />
+                            </div>
+                        </div>
+                        <div class="uk-navbar-right">
+                            <a href="<?php echo base_url(); ?>"><img src="images/sec-1/ygf-logo-1.svg" style="height:40px; color: #000;" /></a>
+                        </div>
+                    </nav>
+                    <div id="offcanvas" uk-offcanvas mode="push" overlay>
+                        <div class="uk-offcanvas-bar uk-flex">
+                            <button class="uk-offcanvas-close" type="button" uk-close></button>
+                            <div class="uk-margin-auto-vertical uk-width-1-1">
+                                <div class="uk-child-width-1-1" uk-grid>
+                                    <div>
+                                        <div class="uk-panel" id="module-menu-mobile">
+                                            <ul class="uk-nav uk-nav-primary">
+                                                <li><a href="<?php echo base_url(); ?>">Home</a></li>
+                                                <li><a href="about">About</a></li>
+                                                <!--<li><a href="schedule">Schedule</a></li>
+                                                <li><a href="artist">Artist</a></li>-->
+                                                <li><a href="program">Program</a></li>
+                                                <li><a href="news">News</a></li>
+                                                <li><a href="galeri">Gallery</a></li>
+                                                <li><a href="merchandise">Merchandise</a></li>
+                                                <li><a href="partners">Partners</a></li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
