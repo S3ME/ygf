@@ -165,12 +165,12 @@
                     <div class="uk-container uk-container-expand" style="padding-top:15px; padding-bottom:15px;">
                         <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
                             <div class="uk-navbar-left">
-                                <img src="images/sec-1/kmg1.svg" style="height:50px; margin-right:10px;"/>
+								<a href="<?php echo base_url(); ?>"><img src="images/sec-1/kmg1.svg" style="height:40px; margin-right:10px;"/></a>
                                 <img src="images/sec-1/bwdd.svg" style="height:50px;"/>
                             </div>
                             <div class="uk-navbar-center">
                                 <ul class="uk-navbar-nav">
-                                    <li><a href="<?php echo base_url(); ?>" class="nav-btn"><span>Home</span></a></li>
+                                    <!-- <li><a href="</?php echo base_url(); ?>" class="nav-btn"><span>Home</span></a></li> -->
                                     <li><a href="about" class="nav-btn"><span>About</span></a></li>
                                     <!--<li><a href="schedule" class="nav-btn"><span>Schedule</span></a></li>
                                     <li><a href="artist" class="nav-btn"><span>Artist</span></a></li>-->

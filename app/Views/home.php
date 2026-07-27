@@ -246,11 +246,11 @@ foreach ($countriesarr as $countryarr) {
                     </li>
                     <li>
                         <a href="program#konser-maestro"><img src="images/slideshow/konser_maestro.jpg" alt="Konser Maestro" uk-cover></a>
-                    </li>
+                    </li> -->
                     <li>
-                        <a href="program#konser-gamelan"><img src="images/slideshow/konser_gamelan.jpg" alt="Konser Gamelan" uk-cover></a>
+                        <a href="program#konser-gamelan"><img src="images/slideshow/konser-gamelan.jpg" alt="Konser Gamelan" uk-cover></a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="program#exhibition"><img src="images/slideshow/exhibition.jpg" alt="Exhibition" uk-cover></a>
                     </li> -->
                 </ul>

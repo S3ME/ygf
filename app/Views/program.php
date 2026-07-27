@@ -166,38 +166,13 @@
                 </p>
                 <p>CP; <a href="https://wa.me/6282227862104" target="_blank">+6282227862104</a></p>
             </div> -->
-            <!-- <hr class="uk-divider-icon">
-            <div id="rembug-budaya" class="uk-margin">
-                <h2 class="uk-text-uppercase">REMBUG BUDAYA</h2>
-                <div class="uk-text-center">
-                    <img class="uk-width-2-3@m" src="images/rembug_budaya.jpg" alt="Rembug Budaya" />
-                </div>
-                <div class="uk-h5">
-                    6 Agustus 2024<br/>
-                    15.00 WIB - selesai<br/>
-                    <b><a class="uk-link-text" href="https://maps.app.goo.gl/hDz4qVVTySqL1o7Q6" target="_blank">OKID Cafe</a></b>
-                </div>
-                <h4>“Arsip musik sebagai warisan”</h4>
-                <p>Mengelola arsip musik dapat juga dianggap sebagai usaha dalam merawat sebuah warisan. Merawat bukan hanya bersifat fisik namun berupa upaya mengembangkan semangat-semangat masa lalu sebagai bekal masa depan.</p>
-                <p class="uk-margin-remove-bottom">Pembicara :</p>
-                <ol class="uk-margin-remove-top">
-                    <li>Jody Diamond (American Gamelan Institute/SUNY New Paltz)</li>
-                    <li>Danang Rusdy (Lokananta)</li>
-                </ol>
-                <p>Moderator : Himan (Jogja Sonic Index)</p>
-                <p>
-                    <span class="uk-text-bold uk-text-large">LIMITED PARTICIPANT!</span><br/>
-                    Link pendaftaran : <a href="https://bit.ly/LKYGF29" target="_blank">bit.ly/LKYGF29</a>
-                </p>
-                <p>CP; <a href="https://wa.me/6282227862104" target="_blank">+6282227862104</a></p>
-            </div> -->
-            <!-- <hr class="uk-divider-icon">
+            <!-- <hr class="uk-divider-icon"> -->
             <div id="konser-gamelan" class="uk-margin">
                 <h2 class="uk-text-uppercase outline-text">KONSER GAMELAN</h2>
                 <div class="uk-text-center">
-                    <img class="uk-width-2-3@m" src="images/konser_gamelan.jpg" alt="Konser Gamelan" />
+                    <img class="uk-width-2-3@m" src="images/konser-gamelan.jpg" alt="Konser Gamelan" />
                 </div>
-                <p class="outline-text">Konser Gamelan merupakan salah satu program yang menjadi wadah pertemuan antara para pelaku, pecinta, dan penikmat Gamelan dari berbagai penjuru dunia.</p>
+                <!-- <p class="outline-text">Konser Gamelan merupakan salah satu program yang menjadi wadah pertemuan antara para pelaku, pecinta, dan penikmat Gamelan dari berbagai penjuru dunia.</p>
                 <p class="outline-text">Melalui konser ini, tradisi dan inovasi dalam dunia Gamelan saling bersilangan, menciptakan ruang apresiasi,  kolaborasi, dan dialog budaya yang hidup.</p>
                 <div class="uk-h5 outline-text">
                     Jumat - Minggu,<br/>
@@ -205,9 +180,9 @@
                     19.00 - 22.00 WIB<br/>
                     <b><a class="uk-link-text" href="https://maps.app.goo.gl/iGSNmpLeqN3t9U9n8" target="_blank">Panggung Utama Taman Budaya Embung Giwangan</a></b>
                 </div>
-                <p><span class="uk-text-bold uk-text-large outline-text">GRATIS!</span></p>
+                <p><span class="uk-text-bold uk-text-large outline-text">GRATIS!</span></p> -->
             </div>
-            <hr class="uk-divider-icon"> -->
+            <hr class="uk-divider-icon">
             <!-- <div id="exhibition" class="uk-margin">
                 <h2 class="uk-text-uppercase outline-text">EXHIBITION</h2>
                 <div class="uk-text-center">
