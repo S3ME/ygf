@@ -172,15 +172,13 @@
                 <div class="uk-text-center">
                     <img class="uk-width-2-3@m" src="images/konser-gamelan.jpg" alt="Konser Gamelan" />
                 </div>
-                <!-- <p class="outline-text">Konser Gamelan merupakan salah satu program yang menjadi wadah pertemuan antara para pelaku, pecinta, dan penikmat Gamelan dari berbagai penjuru dunia.</p>
-                <p class="outline-text">Melalui konser ini, tradisi dan inovasi dalam dunia Gamelan saling bersilangan, menciptakan ruang apresiasi,  kolaborasi, dan dialog budaya yang hidup.</p>
+                <p class="outline-text">Konser Gamelan Yogyakarta Gamelan Festival ke-31 tahun 2026, dengan tema Sukacita (Joy), mari kita semua untuk bersenang-senang, girang bersama.</p>
                 <div class="uk-h5 outline-text">
                     Jumat - Minggu,<br/>
-                    25 - 27 Juli 2025<br/>
-                    19.00 - 22.00 WIB<br/>
-                    <b><a class="uk-link-text" href="https://maps.app.goo.gl/iGSNmpLeqN3t9U9n8" target="_blank">Panggung Utama Taman Budaya Embung Giwangan</a></b>
+                    31 Juli 2026 - 2 Agustus 2026<br/>
+                    <b><a class="uk-link-text" href="https://maps.app.goo.gl/M5JTk4epWMdSPTFg7" target="_blank">Plaza Pasar Ngasem, Yogyakarta.</a></b>
                 </div>
-                <p><span class="uk-text-bold uk-text-large outline-text">GRATIS!</span></p> -->
+                <p><span class="uk-text-bold uk-text-large outline-text">GRATIS!</span></p>
             </div>
             <hr class="uk-divider-icon">
             <!-- <div id="exhibition" class="uk-margin">
