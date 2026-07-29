@@ -4,16 +4,16 @@
 <div class="fixed-overlay">
     <div class="scroll-area">
         <div class="uk-section uk-section-small uk-container uk-text-center">
-            <h2 class="uk-heading-small uk-text-bold" style="color: #fff;">
+            <!-- <h2 class="uk-heading-small uk-text-bold" style="color: #fff;">
                 Yogyakarta Gamelan Festival 31
             </h2>
             <p class="uk-text-lead uk-margin-medium-top" style="color: #fff;">
                 Kami sedang mempersiapkan pengalaman budaya yang luar biasa untuk Anda. 
-                <span class="uk-text-bold" style="color: #fff;"><?= $title ?></span> akan hadir sebentar lagi!
+                <span class="uk-text-bold" style="color: #fff;"></?= $title ?></span> akan hadir sebentar lagi!
             </p>
             <p class="uk-text-muted uk-margin">
                 Tandai kalender Anda dan jangan lewatkan perjalanan musikal yang memukau ini.
-            </p>
+            </p> -->
             
 			<!-- <div class="uk-child-width-1-2 uk-child-width-1-4@m uk-grid-small" uk-grid="masonry: true" uk-lightbox="animation: slide">
 				</?php
@@ -32,24 +32,24 @@
 				?>
 			</div> -->
             
-			<!-- <div class="uk-grid-small uk-child-width-1-2 uk-child-width-1-3@m" uk-grid uk-height-match="target: > div > a > .folder-card">
+			<div class="uk-grid-small uk-child-width-1-2 uk-child-width-1-3@m" uk-grid uk-height-match="target: > div > a > .folder-card">
                 <div>
-                    <a href="galeri/day1">
+                    <a href="galeri/lokakarya">
                         <div class="folder-card uk-card uk-card-default uk-card-body uk-flex uk-flex-middle uk-flex-center">
-                            <div class="folder-tab">Day 1</div>
-                            <img class="uk-width-1-1" src="gallery/day1/01-01.jpg" alt="Day 1" />
+                            <div class="folder-tab">Lokakarya</div>
+                            <img class="uk-width-1-1" src="gallery/lokakarya/1.jpg" alt="Lokakarya" />
                         </div>
                     </a>
                 </div>
                 <div>
-                    <a href="galeri/day2">
+                    <a href="galeri/rembug-budaya">
                         <div class="folder-card uk-card uk-card-default uk-card-body uk-flex uk-flex-middle uk-flex-center">
-                            <div class="folder-tab">Day 2</div>
-                            <img class="uk-width-1-1" src="gallery/day2/02-01.jpg" alt="Day 2" />
+                            <div class="folder-tab">Rembug Budaya</div>
+                            <img class="uk-width-1-1" src="gallery/rembug-budaya/1.jpg" alt="Rembug Budaya" />
                         </div>
                     </a>
                 </div>
-                <div>
+                <!-- <div>
                     <a href="galeri/day3">
                         <div class="folder-card uk-card uk-card-default uk-card-body uk-flex uk-flex-middle uk-flex-center">
                             <div class="folder-tab">Day 3</div>
@@ -72,8 +72,8 @@
                             <img class="uk-width-1-1" src="gallery/day5/05-01.jpg" alt="Day 5" />
                         </div>
                     </a>
-                </div>
-            </div> -->
+                </div> -->
+            </div>
 
             <style>
             .folder-card {
