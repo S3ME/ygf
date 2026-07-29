@@ -33,7 +33,7 @@
 					<a href="https://ygf26.ygflive.com" target="_blank" style="font-weight: 600 !important;" class="outline-text">YGF 26</a>
 				</div>
 				<div>
-					<a href="https://ygf27.ygflive.com" target="_blank" style="font-weight: 600 !important;" class="outline-text">YGF 27</a>
+					<a href="https://ygflive.com" target="_blank" style="font-weight: 600 !important;" class="outline-text">YGF 27</a>
 				</div>
 				<div>
 					<a href="https://ygf28.ygflive.com" target="_blank" style="font-weight: 600 !important;" class="outline-text">YGF 28</a>
