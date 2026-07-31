@@ -170,7 +170,8 @@
             <div id="konser-gamelan" class="uk-margin">
                 <h2 class="uk-text-uppercase outline-text">KONSER GAMELAN</h2>
                 <div class="uk-text-center">
-                    <img class="uk-width-2-3@m" src="images/konser-gamelan.jpg" alt="Konser Gamelan" />
+                    <img class="uk-width-1-3@m uk-width-1-1 uk-margin" src="images/konser-gamelan.jpg" alt="Konser Gamelan" />
+                    <img class="uk-width-1-3@m uk-width-1-1 uk-margin uk-margin-remove-top" src="images/rundown-medpar.jpg" alt="Rundown MEDPAR" />
                 </div>
                 <p class="outline-text">Konser Gamelan Yogyakarta Gamelan Festival ke-31 tahun 2026, dengan tema Sukacita (Joy), mari kita semua untuk bersenang-senang, girang bersama.</p>
                 <div class="uk-h5 outline-text">
