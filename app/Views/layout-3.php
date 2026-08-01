@@ -156,6 +156,49 @@
 				}
 			}
         </style>
+        <script>
+            (function () {
+                'use strict';
+                var hash = window.location.hash;
+
+                // The page locks html/body with overflow:hidden and scrolls an
+                // inner card instead. If we let the browser perform its native
+                // fragment scroll for a hash like #lokakarya, some browsers
+                // scroll the whole document, pushing the header out of view with
+                // no scrollbar to get it back. So the hash is handled in JS and
+                // the native fragment scroll is suppressed.
+                if (hash && hash.length > 1) {
+                    history.replaceState(null, '', window.location.pathname + window.location.search);
+                }
+
+                function scrollCardToSection() {
+                    if (!hash || hash.length < 2) return;
+                    var id;
+                    try { id = decodeURIComponent(hash.slice(1)); } catch (e) { return; }
+                    var target = document.getElementById(id);
+                    var area = document.querySelector('.scroll-area');
+                    if (!target || !area || !area.contains(target)) return;
+                    var areaRect = area.getBoundingClientRect();
+                    var targetRect = target.getBoundingClientRect();
+                    area.scrollTop += targetRect.top - areaRect.top;
+                }
+
+                if (document.readyState === 'loading') {
+                    document.addEventListener('DOMContentLoaded', scrollCardToSection);
+                } else {
+                    scrollCardToSection();
+                }
+
+                window.addEventListener('load', function () {
+                    scrollCardToSection();
+                    // Put the hash back for deep-linking. replaceState never
+                    // triggers a scroll, so the header stays in place.
+                    if (hash && hash.length > 1) {
+                        history.replaceState(null, '', window.location.pathname + window.location.search + hash);
+                    }
+                });
+            })();
+        </script>
     </head>
     <body>
         <div class="uk-container uk-container-expand section-3" uk-height-viewport>
