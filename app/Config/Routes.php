@@ -37,8 +37,8 @@ $routes->group('news', static function ($routes) {
     $routes->get('(:any)', 'Home::newsdetail/$1');
 });
 $routes->get('galeri', 'Home::gallery');
-// $routes->get('galeri/lokakarya', 'Home::lokakarya');
-// $routes->get('galeri/rembug-budaya', 'Home::rembugbudaya');
+$routes->get('galeri/lokakarya', 'Home::lokakarya');
+$routes->get('galeri/rembug-budaya', 'Home::rembugbudaya');
 $routes->get('galeri/day1', 'Home::day1');
 $routes->get('galeri/day2', 'Home::day2');
 $routes->get('galeri/day3', 'Home::day3');

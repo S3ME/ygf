@@ -157,39 +157,39 @@ class Home extends BaseController
         // return view('comingsoon', $data);
 	}
 	
-	// public function lokakarya()
-	// {
-	// 	// Populating data
-	// 	$dirPath = FCPATH.'/gallery/lokakarya';
-	// 	$files = scandir($dirPath);
+	public function lokakarya()
+	{
+		// Populating data
+		$dirPath = FCPATH.'/gallery/lokakarya';
+		$files = scandir($dirPath);
 		
-	// 	// Parsing Data to View
-    //     $data                   = $this->data;
-    //     $data['title']          = 'Gallery Lokakarya YGF 31';
-    //     $data['desc']           = 'Gallery Lokakarya YGF 31';
-	// 	$data['files']			= $files;
+		// Parsing Data to View
+        $data                   = $this->data;
+        $data['title']          = 'Gallery Lokakarya YGF 31';
+        $data['desc']           = 'Gallery Lokakarya YGF 31';
+		$data['files']			= $files;
 
-	// 	// Rendering View
-    //     return view('lokakarya', $data);
-    //     // return view('comingsoon', $data);
-	// }
+		// Rendering View
+        return view('lokakarya', $data);
+        // return view('comingsoon', $data);
+	}
 	
-	// public function rembugbudaya()
-	// {
-	// 	// Populating data
-	// 	$dirPath = FCPATH.'/gallery/rembug-budaya';
-	// 	$files = scandir($dirPath);
+	public function rembugbudaya()
+	{
+		// Populating data
+		$dirPath = FCPATH.'/gallery/rembug-budaya';
+		$files = scandir($dirPath);
 		
-	// 	// Parsing Data to View
-    //     $data                   = $this->data;
-    //     $data['title']          = 'Gallery Rembug Budaya YGF 31';
-    //     $data['desc']           = 'Gallery Rembug Budaya YGF 31';
-	// 	$data['files']			= $files;
+		// Parsing Data to View
+        $data                   = $this->data;
+        $data['title']          = 'Gallery Rembug Budaya YGF 31';
+        $data['desc']           = 'Gallery Rembug Budaya YGF 31';
+		$data['files']			= $files;
 
-	// 	// Rendering View
-    //     return view('rembug-budaya', $data);
-    //     // return view('comingsoon', $data);
-	// }
+		// Rendering View
+        return view('rembug-budaya', $data);
+        // return view('comingsoon', $data);
+	}
 	
 	public function day1()
 	{
