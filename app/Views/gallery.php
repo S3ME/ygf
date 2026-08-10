@@ -33,7 +33,7 @@
 			</div> -->
             
 			<div class="uk-grid-small uk-child-width-1-2 uk-child-width-1-3@m" uk-grid uk-height-match="target: > div > a > .folder-card">
-                <div>
+                <!-- <div>
                     <a href="galeri/lokakarya">
                         <div class="folder-card uk-card uk-card-default uk-card-body uk-flex uk-flex-middle uk-flex-center">
                             <div class="folder-tab">Lokakarya</div>
@@ -48,31 +48,31 @@
                             <img class="uk-width-1-1" src="gallery/rembug-budaya/1.jpg" alt="Rembug Budaya" />
                         </div>
                     </a>
+                </div> -->
+                <div>
+                    <a href="galeri/day1">
+                        <div class="folder-card uk-card uk-card-default uk-card-body uk-flex uk-flex-middle uk-flex-center">
+                            <div class="folder-tab">Day 1</div>
+                            <img class="uk-width-1-1" src="gallery/day1/1.jpg" alt="Day 1" />
+                        </div>
+                    </a>
                 </div>
-                <!-- <div>
+                <div>
+                    <a href="galeri/day2">
+                        <div class="folder-card uk-card uk-card-default uk-card-body uk-flex uk-flex-middle uk-flex-center">
+                            <div class="folder-tab">Day 2</div>
+                            <img class="uk-width-1-1" src="gallery/day2/1.jpg" alt="Day 2" />
+                        </div>
+                    </a>
+                </div>
+                <div>
                     <a href="galeri/day3">
                         <div class="folder-card uk-card uk-card-default uk-card-body uk-flex uk-flex-middle uk-flex-center">
                             <div class="folder-tab">Day 3</div>
-                            <img class="uk-width-1-1" src="gallery/day3/03-01.jpg" alt="Day 3" />
+                            <img class="uk-width-1-1" src="gallery/day3/1.jpg" alt="Day 3" />
                         </div>
                     </a>
                 </div>
-                <div>
-                    <a href="galeri/day4">
-                        <div class="folder-card uk-card uk-card-default uk-card-body uk-flex uk-flex-middle uk-flex-center">
-                            <div class="folder-tab">Day 4</div>
-                            <img class="uk-width-1-1" src="gallery/day4/04-01.jpg" alt="Day 4" />
-                        </div>
-                    </a>
-                </div>
-                <div>
-                    <a href="galeri/day5">
-                        <div class="folder-card uk-card uk-card-default uk-card-body uk-flex uk-flex-middle uk-flex-center">
-                            <div class="folder-tab">Day 5</div>
-                            <img class="uk-width-1-1" src="gallery/day5/05-01.jpg" alt="Day 5" />
-                        </div>
-                    </a>
-                </div> -->
             </div>
 
             <style>

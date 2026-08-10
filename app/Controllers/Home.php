@@ -157,37 +157,71 @@ class Home extends BaseController
         // return view('comingsoon', $data);
 	}
 	
-	public function lokakarya()
+	// public function lokakarya()
+	// {
+	// 	// Populating data
+	// 	$dirPath = FCPATH.'/gallery/lokakarya';
+	// 	$files = scandir($dirPath);
+		
+	// 	// Parsing Data to View
+    //     $data                   = $this->data;
+    //     $data['title']          = 'Gallery Lokakarya YGF 31';
+    //     $data['desc']           = 'Gallery Lokakarya YGF 31';
+	// 	$data['files']			= $files;
+
+	// 	// Rendering View
+    //     return view('lokakarya', $data);
+    //     // return view('comingsoon', $data);
+	// }
+	
+	// public function rembugbudaya()
+	// {
+	// 	// Populating data
+	// 	$dirPath = FCPATH.'/gallery/rembug-budaya';
+	// 	$files = scandir($dirPath);
+		
+	// 	// Parsing Data to View
+    //     $data                   = $this->data;
+    //     $data['title']          = 'Gallery Rembug Budaya YGF 31';
+    //     $data['desc']           = 'Gallery Rembug Budaya YGF 31';
+	// 	$data['files']			= $files;
+
+	// 	// Rendering View
+    //     return view('rembug-budaya', $data);
+    //     // return view('comingsoon', $data);
+	// }
+	
+	public function day1()
 	{
 		// Populating data
-		$dirPath = FCPATH.'/gallery/lokakarya';
+		$dirPath = FCPATH.'/gallery/day1';
 		$files = scandir($dirPath);
 		
 		// Parsing Data to View
         $data                   = $this->data;
-        $data['title']          = 'Gallery Lokakarya YGF 31';
-        $data['desc']           = 'Gallery Lokakarya YGF 31';
+        $data['title']          = 'Gallery Day 1 YGF 31';
+        $data['desc']           = 'Gallery Day 1 YGF 31';
 		$data['files']			= $files;
 
 		// Rendering View
-        return view('lokakarya', $data);
+        return view('day1', $data);
         // return view('comingsoon', $data);
 	}
 	
-	public function rembugbudaya()
+	public function day2()
 	{
 		// Populating data
-		$dirPath = FCPATH.'/gallery/rembug-budaya';
+		$dirPath = FCPATH.'/gallery/day2';
 		$files = scandir($dirPath);
 		
 		// Parsing Data to View
         $data                   = $this->data;
-        $data['title']          = 'Gallery Rembug Budaya YGF 31';
-        $data['desc']           = 'Gallery Rembug Budaya YGF 31';
+        $data['title']          = 'Gallery Day 2 YGF 31';
+        $data['desc']           = 'Gallery Day 2 YGF 31';
 		$data['files']			= $files;
 
 		// Rendering View
-        return view('rembug-budaya', $data);
+        return view('day2', $data);
         // return view('comingsoon', $data);
 	}
 	
@@ -205,40 +239,6 @@ class Home extends BaseController
 
 		// Rendering View
         return view('day3', $data);
-        // return view('comingsoon', $data);
-	}
-	
-	public function day4()
-	{
-		// Populating data
-		$dirPath = FCPATH.'/gallery/day4';
-		$files = scandir($dirPath);
-		
-		// Parsing Data to View
-        $data                   = $this->data;
-        $data['title']          = 'Gallery Day 4 YGF 31';
-        $data['desc']           = 'Gallery Day 4 YGF 31';
-		$data['files']			= $files;
-
-		// Rendering View
-        return view('day4', $data);
-        // return view('comingsoon', $data);
-	}
-	
-	public function day5()
-	{
-		// Populating data
-		$dirPath = FCPATH.'/gallery/day5';
-		$files = scandir($dirPath);
-		
-		// Parsing Data to View
-        $data                   = $this->data;
-        $data['title']          = 'Gallery Day 5 YGF 31';
-        $data['desc']           = 'Gallery Day 5 YGF 31';
-		$data['files']			= $files;
-
-		// Rendering View
-        return view('day5', $data);
         // return view('comingsoon', $data);
 	}
 	
